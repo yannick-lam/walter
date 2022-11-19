@@ -264,9 +264,39 @@ a, button{
 }
 
 .form-section-one {
-    height: 100vh;
+    /* border: 3px solid red; */
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
     padding: 2em;
     background-color: rgb(220, 230, 250);
+}
+
+.contact-logo {
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-header {
+    letter-spacing: 1px;
+}
+
+.contact-logo img {
+    width: 100%;
+    max-width: 30px;
+    margin-bottom: 0.6rem;
+}
+
+.contact-logo p {
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+    text-align: center;
 }
 
 .form-section-two {
@@ -297,6 +327,7 @@ input, select {
 
 input {
     width: 100%;
+    border-radius: 0;
 }
 
 /* .apart-persons {
@@ -315,6 +346,8 @@ input {
 }
 
 .sub-btn {
+    color: black;
+    border: black;
     background: 0;
     width: 100%;
     max-width: 300px;
@@ -325,15 +358,55 @@ input {
 
 }
 
+@media (min-width: 300px) {
+    .contact-header {
+        font-size: 1.25rem;
+    }
+}
+
 @media (min-width: 500px) {
+    .form-section-one {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        min-height: 50vh;
+    }
+
+    .contact-logo:nth-child(1) {
+        grid-column: 1 / -1;
+    }
+
+    .contact-logo:not(:nth-child(1)) {
+        height: 95px;
+    }
+
+    .contact-header {
+        font-size: 1.5rem;
+    }
+ 
     .form {
+        /* border: 3px solid rebeccapurple; */
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-    }  
-
+        height: 100%;
+    }
+    
     .form-left, .form-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 40%;
+    }
+
+    .form-left {
+        /* border: 3px solid green; */
+
+    }
+
+    .form-right {
+        /* border: 3px solid red; */
+
     }
 }
 
@@ -342,21 +415,14 @@ input {
         flex-direction: row;
     }
 
-    .form-section-one, .form-section-two {
-        width: 50%;
-    }
-
     .form-section-one {
-        height: auto;
-    } 
-
-    .form {
-        flex-direction: column;
+        display: flex;
+        width: 30%;
+        min-height: 100vh;
     }
-
-    .form-left, .form-right {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
+    
+    .form-section-two {
+        width: 70%;
+        height: auto;
     }
 }
