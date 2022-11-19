@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <div class="site-title">
+        <h1>Agnesn Apartmenthaus</h1>
+        <img class="img logo" src="images/logo.jpeg" alt="Agnesn Apartmenthaus logo">
+      </div>
+      <nav class="nav-one">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="winter.html">Winter</a></li>
+          <li><a href="summer.html">Sommer</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="top">
+        <button class="hamburger nav-btn" onclick="show()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </button>
+      </div>
+      <div class="navigation">
+        <nav class="nav-two">
+          <ul>
+            <li><a class="a-two" href="index.html">Home</a></li>
+            <li><a class="a-two" href="winter.html">Winter</a></li>
+            <li><a class="a-two" href="summer.html">Sommer</a></li>
+            <li><a class="a-two" href="contact.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+
+      <div class="hello">hello</div>
+
+      <div class="slide-container">
+        <div class="slide">
+          <img src="images/gries.jpeg" alt="Bild von Gries im Sulztal">
+        </div>
+        <div class="slide">
+          <img src="images/haus.jpeg" alt="Agnesn Apartmenthaus von außen">
+        </div>
+        <div class="slide">
+          <img src="images/küche.jpeg" alt="große Küche">
+        </div>
+        <div class="slide">
+          <img src="images/schlafzimmer.jpeg" alt="großes Schlafzimmer">
+        </div>
+        <div class="slide">
+          <img src="images/bad.jpeg" alt="Badezimmer mit WC Dusche und Badewanne">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="form-container">
+      <div class="form-section-one">
+        <p>email</p>
+        <p>email</p>
+        <p>email</p>
+
+      </div>
+      <div class="form-section-two">
+        <form class="form" action="#" method="post">
+          <label for="title">Anrede</label>
+          <select name="sex" id="title">
+            <option value="option">-</option>
+            <option value="herr">Herr</option>
+            <option value="frau">Frau</option>
+          </select>
+          <br>
+          <label for="name">Vorname*</label>
+          <input type="text" id="name" name="first name" placeholder="Max" required>
+          <br>
+          <label for="name">Nachname*</label>
+          <input type="text" id="name" placeholder="Muster" required>
+          <br>
+          <label for="name">Land*</label>
+          <input type="text" id="name" placeholder="Land" required>
+          <br>
+          <label for="name">PLZ*</label>
+          <input type="text" id="name" placeholder="PLZ" required>
+          <br>
+          <label for="name">Ort*</label>
+          <input type="text" id="name" placeholder="Ort" required>
+          <br>
+          <label for="email">E-Mail*</label>
+          <input type="email" name="mail" id="email" placeholder="max@muster.gmail" required>
+          <br>
+          <label for="name">Telefon</label>
+          <input type="text" id="name" placeholder="+123456789">
+          <br>
+          <button class="sub-btn" type="submit">Absenden</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

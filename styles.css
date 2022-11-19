@@ -1,0 +1,283 @@
+@font-face {
+    font-family: myFont;
+    src: url(fonts/asenine.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===============
+   header 
+   ===============*/
+
+.site-title h1 {
+    font-family: myFont;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.2em;
+}
+
+.img {
+    width: 100%;
+    max-width: 200px;    
+    object-fit: cover;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(255, 230, 165);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.nav-one {
+    margin: auto 0;
+}
+
+.nav-one ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-one li {
+    margin-top: 1em;
+    margin-left: 0.8em;
+}
+
+.nav-one a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: rgb(60, 60, 80);
+    font-weight: 700;
+    padding: 0.25em 0;
+}
+
+.nav-one a:hover,
+.nav-one a:focus {
+    color: rgb(23, 146, 210);
+    border-bottom: 0.15rem solid rgb(60, 60, 80);
+}
+
+.top{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-btn{
+    position: absolute;
+    right: 4vw;
+    z-index: 2;
+}
+
+.bar{
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+
+#bar2, #bar3{
+    margin-top: 4px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+.nav-two {
+    position: absolute;
+    width: 15.625em;
+    top: 6.25em;
+    right: 3.125em;
+}
+
+.navigation{
+    position: fixed;
+    top: 0;
+    right: -200rem;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.navigation ul li{
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 1.25em 2em;
+    border-bottom: 1pt solid #252525;
+}
+
+.hamburger.bar{
+    position: fixed;
+}
+
+.hamburger{
+    background: 0;
+    border: 0;
+}
+
+.navigation.active{
+    right: 0;
+}
+
+.hamburger.open #bar1{
+    background-color: white;
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.hamburger.open #bar2{
+    background-color: transparent;
+    transform: translateX(-30px);
+}
+
+.hamburger.open #bar3{
+    background-color: white;
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.top, .navigation {
+    display: none;
+}
+
+@media (min-width: 350px) {
+    .container {
+        text-align: start;
+        flex-direction: row;
+    }
+
+    .nav-one {
+        display: none;
+    }
+    
+    .top, .navigation {
+        display: inherit;
+    }    
+}
+
+@media (min-width: 450px) {
+    .site-title h1 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+}
+
+@media (min-width: 720px) {
+    .navigation {
+        width: 22rem;
+    }
+}
+
+/* ===============
+   slide show 
+   ===============*/
+
+.main-container {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hello {
+    border: 3px solid green;
+    padding: 0.3em;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.slide-container {
+    display: flex;
+    position: relative;
+    width: 500%;
+    height: 52vh;
+    animation: coolio 30s linear infinite;
+}
+
+@keyframes coolio {
+    0% {left: 0%;}
+    16% {left: 0%;}
+    20% {left: -100%;}
+    36% {left: -100%;}
+    40% {left: -200%;}
+    56% {left: -200%;}
+    60% {left: -300%;}
+    76% {left: -300%;}
+    80% {left: -400%;}
+    96% {left: -400%;}
+    100% {left: 0%;}
+}
+
+.slide {
+    width: 100%;
+    /* text-align: center; */
+}
+
+.slide img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 450px) {
+    .slide-container {
+        height: 80vh;
+    }
+}
+
+/* ===============
+   contact form 
+   ===============*/
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section-one {
+    height: 100vh;
+    padding: 2em;
+    background-color: rgb(220, 230, 250);
+}
+
+.form-section-two {
+    height: 100vh;
+    padding: 2em;
+    background-color: rgb(255, 230, 165);
+}
+
+input, select {
+    display: block;
+    padding: 0.3em;
+    margin-top: 0.3em;
+    border: 1px solid black;
+}
