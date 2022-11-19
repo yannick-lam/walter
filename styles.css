@@ -200,19 +200,18 @@ a, button{
 /* ===============
    slide show 
    ===============*/
+   
+.pic-headliner {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
 
 .main-container {
     margin: 0;
     width: 100%;
     overflow: hidden;
-}
-
-.hello {
-    border: 3px solid green;
-    padding: 0.3em;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
 }
 
 .slide-container {
