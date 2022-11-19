@@ -208,7 +208,7 @@ a, button{
     z-index: -1;
 }
 
-.main-container {
+.main-container {  
     margin: 0;
     width: 100%;
     overflow: hidden;
@@ -218,7 +218,7 @@ a, button{
     display: flex;
     position: relative;
     width: 500%;
-    height: 52vh;
+    height: fit-content;
     animation: coolio 30s linear infinite;
 }
 
@@ -247,9 +247,9 @@ a, button{
     object-fit: cover;
 }
 
-@media (min-width: 450px) {
-    .slide-container {
-        height: 80vh;
+@media (min-width: 710px) {
+    .slide img {
+        max-width: 50vw;
     }
 }
 
