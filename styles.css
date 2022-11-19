@@ -218,7 +218,7 @@ a, button{
     display: flex;
     position: relative;
     width: 500%;
-    /* height: fit-content; */
+    height: fit-content;
     animation: coolio 30s linear infinite;
 }
 
