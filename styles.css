@@ -247,11 +247,11 @@ a, button{
     object-fit: cover;
 }
 
-/* @media (min-width: 710px) {
+@media (min-width: 710px) {
     .slide img {
         max-width: 50vw;
     }
-} */
+}
 
 /* ===============
    contact form 
