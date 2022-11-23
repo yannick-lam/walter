@@ -114,9 +114,9 @@
               <div class="form-left">
                 <label for="persons">Apartment</label>
                 <div>
-                  <input type="checkbox" class="apart-persons" id="persons"> für 4 Personen
+                  <input type="checkbox" class="apart-persons" id="persons" value="für 4 Personen"> für 4 Personen
                   <br>
-                  <input type="checkbox" class="apart-persons" id="persons"> für 2 Personen
+                  <input type="checkbox" class="apart-persons" id="persons" value="für 2 Personen"> für 2 Personen
                   <br>
                   <br>
                 </div>
@@ -150,13 +150,13 @@
                   <option value="10">10</option>
                 </select>
                 <br>
-                <label for="age">Alter</label>
+                <label for="age">Alter der Kinder</label>
                 <input type="text" name="age" id="age" placeholder="Alter">
                 <br>
               </div>
               <div class="form-right">
                 <label for="date">Terminwunsch</label>
-                <input type="date" name="date" id="date" placeholder="+123456789">
+                <input type="date" name="date" id="date">
                 <br>
                 <label for="nights">Nächte</label>
                 <select name="nights" id="nights">
@@ -223,8 +223,8 @@
                   <option value="60">60</option>
                 </select>
                 <br>
-                <label for="textarea">Wünsche / Anregungen</label>
-                <textarea type="text" name="textarea" id="textarea" placeholder="Ihre Wünsche/Anregungen"></textarea>
+                <label for="wish">Wünsche / Anregungen</label>
+                <textarea type="text" name="textarea" id="wish" placeholder="Ihre Wünsche/Anregungen"></textarea>
                 <br>
               </div>
             </div>
@@ -255,7 +255,7 @@
                 <input type="email" name="mail" id="email" placeholder="max@muster.gmail">
                 <br>
                 <label for="telnumber">Telefon</label>
-                <input type="tel" name="telnumber" id="telnumber" placeholder="+123456789">
+                <input type="text" name="telnumber" id="telnumber" placeholder="+123456789">
                 <br>
               </div>
               <div class="form-right">
@@ -272,18 +272,22 @@
                 <input type="text" name="country" id="country" placeholder="Land">
                 <br>
                 <label for="fax">Fax</label>
-                <input type="number" name="fax" id="fax" placeholder="+123456789">
+                <input type="text" name="fax" id="fax" placeholder="+123456789">
                 <br>
               </div>
             </div>
             <div class="form-bottom">
               <button class="back-btn">Zurück</button>
               <p class="back-p"><a href="#formelementone">Zurück</a></p>
-              <button class="sub-btn">Anfrage Senden</button>
+              <button class="sub-btn" onclick="sendMail()">Anfrage Senden</button>
             </div>
           </div>
         </div>
       </div>
+
+    </div>
+
+    <div class="gries">
 
     </div>
   </main>

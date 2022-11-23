@@ -21,6 +21,13 @@ function show() {
 
 
 function sendMail() {
+    const persons = document.getElementById("persons").value
+    const adult = document.getElementById("adult").value
+    const kid = document.getElementById("kid").value
+    const age = document.getElementById("age").value
+    const date = document.getElementById("date").value
+    const nights = document.getElementById("nights").value
+    const wish = document.getElementById("wish").value   
     const sex = document.getElementById("sex").value
     const firstname = document.getElementById("fname").value
     const lastname = document.getElementById("lname").value
@@ -35,6 +42,13 @@ function sendMail() {
         firstname: document.getElementById("fname").value,
         lastname: document.getElementById("lname").value,
         message: `
+            Apartment: ${persons}
+            Erwachsene: ${adult}
+            Kinder: ${kid}
+            Alter (Kinder): ${age}
+            Terminwunsch: ${date}
+            Nächte: ${nights}
+            Wünsche/Anregungen: ${wish}
             Anrede: ${sex}
             Vorname: ${firstname}
             Nachname: ${lastname}
