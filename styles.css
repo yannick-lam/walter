@@ -300,28 +300,72 @@ a, button{
 }
 
 .form-section-two {
+    /* border: 3px solid red; */
+    width: 100%;
+    overflow: hidden;
     height: fit-content;
-    padding: 4em;
     background-color: rgb(247, 239, 220);
 }
 
+.form-section-two-container {
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0;
+    width: 200%;
+    transition: 0.7s;
+}
+
 .form {
+    /* border: 3px solid rebeccapurple; */
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+    width: 100%;
 }
 
-.form-left, .form-right {
+.form-top {
+    /* border: 3px solid brown; */
+    font-size: 0.7rem;
+}
+
+.form-left-right {
+    /* border: 3px solid orangered; */
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-left {
+    /* border: 3px solid green; */
     width: 100%;
     max-width: 300px;
-    margin: 0 auto;
 }
 
-input, select {
-    display: block;
+.form-right {
+    /* border: 3px solid blue; */
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-bottom {
+    /* border: 3px solid black; */
+    display: flex;
+    height: fit-content;
+    margin-top: auto;
+}
+
+.form-header {
+    letter-spacing: 1px;
+    margin-bottom: 2em;
+}
+
+input, select, textarea {
+    border: 1px solid black;
+    display: flex;
     background: 0;
     padding: 0.3em;
-    margin-top: 0.3em;
-    border: 1px solid black;
+    margin-top: 0.5em;
     outline: none;
 }
 
@@ -330,37 +374,99 @@ input {
     border-radius: 0;
 }
 
-/* .apart-persons {
+.apart-persons {
     display: inline;
     width: auto;
     margin-top: 1rem;
-} */
+}
 
-/* <label for="persons">Apartment</label>
-<br>
-<input type="checkbox" class="apart-persons" id="persons"> für 4 Personen
-<br> */
+textarea {
+    background-color: white;
+    padding: 0.3rem;
+    width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    outline: none;
+    resize: none;
+}
 
 ::placeholder {
     font-style: italic;
 }
 
-.sub-btn {
-    color: black;
-    border: black;
+.next-p, .back-p, .next-btn, .back-btn {
+    font-size: 0.8rem;
+    padding: 0.35em 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    border-bottom: 1px solid black;
+    letter-spacing: 0.6px;
+    font-weight: bold;
+}
+
+.next-btn, .back-btn {
     background: 0;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+    color: black;
+    font-weight: bold;
+    padding: 0.2em 0.5rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
 
+.next-p a, .back-p a {
+    color: black;
+    text-decoration: none;
+}
 
+.next-btn, .next-p {
+    margin-left: auto;
+}
 
+.back-btn, .back-p {
+    margin-right: auto;
+}
 
+.sub-btn {
+    font-size: 0.7rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    padding: 0.2em 0.5em;
+    letter-spacing: 1px;
+}
+
+input, select, textarea, button {
+    line-height: 1.3;
+}
+
+input:hover, select:hover, textarea:hover, .next-p:hover, .back-p:hover, .next-btn:hover, .back-btn:hover {
+    scale: 1.05;
+}
+
+input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-btn:focus, .back-btn:focus {
+    scale: 1.05;
 }
 
 @media (min-width: 300px) {
     .contact-header {
         font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 400px) {
+    .form {
+        padding: 4rem;
+    }
+
+    .form-top {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .next-btn, .back-btn {
+        display: none;
     }
 }
 
@@ -383,31 +489,26 @@ input {
     .contact-header {
         font-size: 1.5rem;
     }
- 
+
     .form {
-        /* border: 3px solid rebeccapurple; */
-        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .form-left-right {
+        display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-        height: 100%;
     }
     
     .form-left, .form-right {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 40%;
+        width: 45%;
     }
 
-    .form-left {
-        /* border: 3px solid green; */
-
-    }
-
-    .form-right {
-        /* border: 3px solid red; */
-
-    }
+    .next-p, .back-p {
+        display: none;
+    } 
 }
 
 @media (min-width: 710px) {
@@ -417,6 +518,8 @@ input {
 
     .form-section-one {
         display: flex;
+        justify-content: space-between;
+        padding: 3rem 2rem;
         width: 30%;
         min-height: 100vh;
     }
@@ -424,5 +527,13 @@ input {
     .form-section-two {
         width: 70%;
         height: auto;
+    }
+
+    .form-header {
+        font-size: 1.5rem;
+    }
+
+    .form {
+        padding: 3rem 4rem;
     }
 }
