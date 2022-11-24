@@ -14,17 +14,13 @@
    header 
    ===============*/
 
-.site-title h1 {
-    font-family: myFont;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    margin-bottom: 0.2em;
-}
-
-.img {
+header {
+    background: linear-gradient(white, rgba(255, 255, 255, 0));
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
     width: 100%;
-    max-width: 200px;    
-    object-fit: cover;
 }
 
 .container {
@@ -34,11 +30,18 @@
     justify-content: space-between;
     flex-direction: column;
 }
+   
+.site-title h1 {
+    font-family: myFont;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.2em;
+}
 
-header {
-    background-color: rgb(255, 230, 165);
-    padding: 1em 0;
-    text-align: center;
+.logo-agnesn {
+    width: 100%;
+    max-width: 100px;    
+    object-fit: cover;
 }
 
 .nav-one {
@@ -554,6 +557,32 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
    ===============*/
 
 .gries {
-    background-color: rgb(190, 235, 170);
+    background-color: rgb(235, 235, 235);
     min-height: 100vh;
 }
+
+.googlemaps {
+    /* border: 3px solid green; */
+
+}
+
+.googlemaps iframe {
+    width: 100%;
+    min-height: 50vh;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
