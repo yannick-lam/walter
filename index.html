@@ -20,7 +20,7 @@
 
 <body>
 
-  <header>
+  <header class="header">
     <div class="container">
 
       <div class="site-title" id="sitetitle">
@@ -59,22 +59,14 @@
   <div class="pic-headliner">
 
     <div class="main-container">
-      <div class="slide-container">
-        <div class="slide">
-          <img src="images/gries.jpeg" alt="Bild von Gries im Sulztal">
-        </div>
-        <div class="slide">
-          <img src="images/haus.jpeg" alt="Agnesn Apartmenthaus von außen">
-        </div>
-        <div class="slide">
-          <img src="images/küche.jpeg" alt="große Küche">
-        </div>
-        <div class="slide">
-          <img src="images/schlafzimmer.jpeg" alt="großes Schlafzimmer">
-        </div>
-        <div class="slide">
-          <img src="images/bad.jpeg" alt="Badezimmer mit WC Dusche und Badewanne">
-        </div>
+      <div class="main-container-left">
+        <img class="slide slide1" src="images/gries.jpeg" alt="Bild von Gries im Sulztal">
+      </div>
+      <div class="main-container-right">
+        <img class="slide slide2" src="images/haus.jpeg" alt="Agnesn Apartmenthaus von außen">
+        <img class="slide slide3" src="images/küche.jpeg" alt="große Küche">
+        <img class="slide slide4" src="images/schlafzimmer.jpeg" alt="großes Schlafzimmer">
+        <img class="slide slide5" src="images/bad.jpeg" alt="Badezimmer mit WC Dusche und Badewanne">
       </div>
     </div>
 
@@ -156,7 +148,8 @@
               </div>
               <div class="form-right">
                 <label for="date">Terminwunsch</label>
-                <input type="date" name="date" id="date" value="tt.mm.jjjj" placeholder="tt.mm.jjjj" aria-placeholder="TT.MM.JJJJ">
+                <input type="date" name="date" id="date" value="tt.mm.jjjj" placeholder="tt.mm.jjjj"
+                  aria-placeholder="TT.MM.JJJJ">
                 <br>
                 <label for="nights">Nächte</label>
                 <select name="nights" id="nights">
@@ -288,11 +281,13 @@
     </div>
 
     <div class="gries">
-      <div class="googlemaps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.3851773521515!2d11.016642523008615!3d47.07190976947207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d3001d069456b%3A0x85fb275e77779b36!2sGries%207%2C%206444%20Gries!5e0!3m2!1sde!2sat!4v1669283075947!5m2!1sde!2sat" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
       <div class="anreise">
-
+      </div>
+      <div class="googlemaps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.3851773521515!2d11.016642523008615!3d47.07190976947207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d3001d069456b%3A0x85fb275e77779b36!2sGries%207%2C%206444%20Gries!5e0!3m2!1sde!2sat!4v1669283075947!5m2!1sde!2sat"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </main>

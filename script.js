@@ -1,14 +1,24 @@
-const nextBtn = document.querySelector(".next-btn")
-const backBtn = document.querySelector(".back-btn")
-const formEl = document.querySelector(".form-section-two-container")
+const body = document.body
+let lastScroll = 0
 
-nextBtn.addEventListener("click", function() {
-    formEl.style.left = "-100%";
-    // formEl.style.bottom = "-10%";
-})
+window.addEventListener("scroll", function() {
+    const currentScroll = this.window.pageYOffset
 
-backBtn.addEventListener("click", function() {
-    formEl.style.left = "0%";
+    if (currentScroll <= 0) {
+        body.classList.remove("scroll-up")
+    }
+
+    if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+        body.classList.remove("scroll-up")
+        body.classList.add("scroll-down")
+    }
+    
+    if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+        body.classList.remove("scroll-down")
+        body.classList.add("scroll-up")
+    }
+    lastScroll = currentScroll
+    console.log(currentScroll)
 })
 
 function show() {
@@ -16,9 +26,18 @@ function show() {
     document.querySelector(".navigation").classList.toggle("active")
 }
 
+const nextBtn = document.querySelector(".next-btn")
+const backBtn = document.querySelector(".back-btn")
+const formEl = document.querySelector(".form-section-two-container")
 
+nextBtn.addEventListener("click", function() {
+    formEl.style.left = "-100%";
+    formEl.style.bottom = "-10%";
+})
 
-
+backBtn.addEventListener("click", function() {
+    formEl.style.left = "0%";
+})
 
 function sendMail() {
     const persons = document.getElementById("persons").value
@@ -83,10 +102,10 @@ function sendMail() {
 
 
 // var counter = 1;
-// setInterval(function(){
-//   document.getElementById("radio" + counter).checked = true;
-//   counter++;
-//   if(counter > 4){
+// setInterval(function() {
+//   document.querySelector(".slide" + counter).classList.add("slideleft")
+//   counter++
+//   if (counter > 5) {
 //     counter = 1;
 //   }
 // }, 3000);
