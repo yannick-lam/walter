@@ -31,14 +31,14 @@ html {
    ===============*/
 
 header {
-    background: linear-gradient(white, rgba(255, 255, 255, 0));
+    background: linear-gradient(white, rgba(255, 255, 255, 0.1));
     /* background: white; */
     width: 100%;
-    /* height: 130px; */
+    /* height: 70px; */
     padding: 1em 0;
     text-align: center;
-    /* position: fixed; */
-    position: relative;
+    position: fixed;
+    /* position: relative; */
     top: 0;
     left: 0;
     right: 0;
@@ -224,133 +224,155 @@ a, button{
 }
 
 /* ===============
-   slide show 
-   ===============*/
-   
-.pic-headliner {
-    position: -webkit-sticky;
+slide show 
+===============*/
+
+.main-container {
+    /* border: 3px solid green; */
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     z-index: -1;
 }
 
-.main-container {
-    border: 3px solid red;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin: 0;
-    width: 100%;
+.slide-container {
+    /* border: 3px solid red; */
+    max-width: 600px;
+    margin: 0 auto;
     min-height: fit-content;
     overflow: hidden;
+    position: relative;
+    top: 0;
 }
-
-.main-container-left {
-    border: 3px solid green;
-    /* display: block; */
-    /* display: flex; */
-    /* position: relative; */
-    width: 50%;
-    /* height: fit-content; */
-
-    /* animation: coolio 30s linear infinite; */
-}
-
-.main-container-right {
-    border: 3px solid blue;
-    
-    /* display: flex; */
-    position: absolute;
-    left: 50%;
-    z-index: 9999;
-    /* position: relative; */
-    width: 50%;
-    height: 100%;
-    /* height: fit-content; */
-
-    /* animation: coolio 30s linear infinite; */
-}
-
-/* @keyframes coolio {
-    0% {left: 0%;}
-    16% {left: 0%;}
-    20% {left: -100%;}
-    36% {left: -100%;}
-    40% {left: -200%;}
-    56% {left: -200%;}
-    60% {left: -300%;}
-    76% {left: -300%;}
-    80% {left: -400%;}
-    96% {left: -400%;}
-    100% {left: 0%;}
-} */
 
 .slide {
-    /* ACHTUNG! nicht max-width: 100% verwenden!!! */
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.slide1 {
+    display: block;
     width: 100%;
     object-fit: cover;
-    /* display: block; */
-    /* position: relative; */
-    /* text-align: center; */
-}
-
-.slide2, .slide3, .slide4, .slide5 {
-    /* position: relative; */
-    position: absolute;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0; */
-}
-
-.slideleft {
-    left: -100%;
-    transition: all 0.3s ease-in-out;
+    position: relative;
+    animation: cool1 20s ease-in-out infinite;
 }
 
 .slide2 {
-    transition: all 0.3s ease-in-out;
-
-    /* z-index: -9999; */
+    animation: cool2 20s ease-in-out infinite;
 }
 
 .slide3 {
-    /* z-index: -9999; */
-    /* left: -100%; */
-    transition: all 0.3s ease-in-out;
-
+    animation: cool3 20s ease-in-out infinite;
 }
 
 .slide4 {
-
-    /* z-index: -9999; */
+    animation: cool4 20s ease-in-out infinite;
 }
 
 .slide5 {
-    /* z-index: -9999; */
+    animation: cool5 20s ease-in-out infinite;
 }
 
-@media (min-width: 710px) {
-    .slide {
-        width: 50VW;
+@keyframes cool1 {
+    0% {right: 0%;}
+    24% {right: 0%;}
+    25% {right: -100%;}
+    96% {right: -100%;}
+    100% {right: 0%;}
+}
+
+@keyframes cool2 {
+    0% {right: -100%;}
+    16% {right: -100%;}
+    20% {right: 0%;}
+    96% {right: 0%;}
+    100% {right: 100%;}
+}
+
+@keyframes cool3 {
+    0% {right: -100%;}
+    36% {right: -100%;}
+    40% {right: 0%;}
+    96% {right: 0%;}
+    100% {right: 100%;}
+}
+
+@keyframes cool4 {
+    0% {right: -100%;}
+    56% {right: -100%;}
+    60% {right: 0%;}
+    96% {right: 0%;}
+    100% {right: 100%;}
+}
+
+@keyframes cool5 {
+    0% {right: -100%;}
+    76% {right: -100%;}
+    80% {right: 0%;}
+    96% {right: 0%;}
+    100% {right: 100%;}
+}
+
+/*==================
+@media - slide show 
+==================*/
+
+@media (min-width: 600px) {
+    .main-container {
+        min-height: 100vh;
     }
 
     .slide-container {
-        width: 250%;
-        animation: cool 30s linear infinite;
+        margin: 70px auto 0;
+        box-shadow: 0 0 40px rgb(170, 170, 170);
+    }
+    /* .slide-container {
+        width: 50VW;
+        overflow: inherit;
+    }
+
+    @keyframes cool1 {
+        0% {right: -100%;}
+        100% {right: -100%;}
+    }
+
+    .slide2, .slide3, .slide5 {
+        z-index: -9999;
+    }
+
+    @keyframes cool2 {
+        0% {right: 0%;}
+        100% {right: 0%;}
     }
     
-    @keyframes cool {
-        0% {left: 0%;}
-        22% {left: 0%;}
-        25% {left: -50%;}
-        47% {left: -50%;}
-        50% {left: -100%;}
-        72% {left: -100%;}
-        75% {left: -150%;}
-        97% {left: -150%;}
-        100% {left: 0%;}
+    @keyframes cool3 {
+        0% {right: -100%;}
+        21% {right: -100%;}
+        25% {right: 0%;}
+        96% {right: 0%;}
+        100% {right: 100%;}
     }
+    
+    @keyframes cool4 {
+        0% {right: -200%;}
+        46% {right: -200%;}
+        50% {right: -100%;}
+        96% {right: -100%;}
+        100% {right: 100%;}
+    }
+    
+    @keyframes cool5 {
+        0% {right: -100%;}
+        71% {right: -100%;}
+        75% {right: 0%;}
+        96% {right: 0%;}
+        100% {right: 100%;}
+    } */
 }
 
 /* ===============
@@ -358,12 +380,16 @@ a, button{
    ===============*/
 
 .form-container {
+    background-color: white;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
 }
 
 .form-section-one {
     /* border: 3px solid red; */
+    width: 85%;
+    margin: 0 auto;
     font-size: 0.7rem;
     display: flex;
     flex-direction: column;
@@ -404,6 +430,12 @@ a, button{
 }
 
 .form-section-two {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.form-section-two-main {
     /* border: 3px solid red; */
     width: 100%;
     overflow: hidden;
@@ -632,7 +664,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
         height: inherit;
     }
     
-    .form-section-two {
+    .form-section-two-main {
         width: 70%;
         height: auto;
     }
@@ -657,15 +689,47 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 /* ===============
    location 
    ===============*/
-
+   
 .gries {
     /* border: 3px solid red; */
-    background-color: rgb(240, 240, 240);
+    background-color: white;
     height: fit-content;
+    padding-top: 2rem;
+}
+    
+.anreise {
+    /* border: 3px solid blue; */
+    background-color: white;
+    width: 85%;
+    margin: 0 auto;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anreise h1 {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.anreise h3 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    width: fit-content;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    letter-spacing: 2px;
 }
 
 .googlemaps {
     /* border: 3px solid green; */
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2rem;
     min-height: 50vh;
     padding: 0.3rem;
     background-color: rgb(70, 70, 70);
@@ -675,10 +739,6 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     width: 100%;
     min-height: 50vh;
     border: 0;
-}
-
-.anreise {
-    border: 3px solid blue;
 }
 
 @media (min-width: 710px) {

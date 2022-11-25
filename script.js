@@ -103,9 +103,18 @@ function sendMail() {
 
 // var counter = 1;
 // setInterval(function() {
-//   document.querySelector(".slide" + counter).classList.add("slideleft")
-//   counter++
+//     document.querySelector(".slide" + counter).classList.add("slideleft")
+//     counter++
 //   if (counter > 5) {
 //     counter = 1;
+//   }
+// }, 3000);
+
+// var count = 0
+// setInterval(function() {
+//     document.querySelector(".slide" + count).classList.remove("slideleft")
+//     count++
+//   if (count > 5) {
+//     count = 1;
 //   }
 // }, 3000);

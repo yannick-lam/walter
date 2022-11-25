@@ -25,16 +25,16 @@
 
       <div class="site-title" id="sitetitle">
         <h1>Agnesn Apartmenthaus</h1>
-        <img class="logo-agnesn" src="images/logo.jpeg" alt="Agnesn Apartmenthaus logo">
+        <!-- <img class="logo-agnesn" src="images/logo.jpeg" alt="Agnesn Apartmenthaus logo"> -->
       </div>
-      <nav class="nav-one">
+      <!-- <nav class="nav-one">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="winter.html">Winter</a></li>
           <li><a href="summer.html">Sommer</a></li>
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
-      </nav>
+      </nav> -->
       <div class="top">
         <button class="hamburger nav-btn" onclick="show()">
           <div id="bar1" class="bar"></div>
@@ -56,20 +56,14 @@
     </div>
   </header>
 
-  <div class="pic-headliner">
-
-    <div class="main-container">
-      <div class="main-container-left">
-        <img class="slide slide1" src="images/gries.jpeg" alt="Bild von Gries im Sulztal">
-      </div>
-      <div class="main-container-right">
-        <img class="slide slide2" src="images/haus.jpeg" alt="Agnesn Apartmenthaus von außen">
-        <img class="slide slide3" src="images/küche.jpeg" alt="große Küche">
-        <img class="slide slide4" src="images/schlafzimmer.jpeg" alt="großes Schlafzimmer">
-        <img class="slide slide5" src="images/bad.jpeg" alt="Badezimmer mit WC Dusche und Badewanne">
-      </div>
+  <div class="main-container">
+    <div class="slide-container">
+      <img class="slide1" src="images/gries-neu.jpeg" alt="Bild von Gries im Sulztal">
+      <img class="slide slide2" src="images/haus-neu.jpeg" alt="Agnesn Apartmenthaus von außen">
+      <img class="slide slide3" src="images/küche.jpeg" alt="große Küche">
+      <img class="slide slide4" src="images/schlafzimmer-neu.jpeg" alt="großes Schlafzimmer">
+      <img class="slide slide5" src="images/bad.jpeg" alt="Badezimmer mit WC Dusche und Badewanne">
     </div>
-
   </div>
 
   <main>
@@ -96,183 +90,185 @@
       </div>
 
       <div class="form-section-two">
-        <div class="form-section-two-container">
-          <div class="form" id="formelementone">
+        <div class="form-section-two-main">
+          <div class="form-section-two-container">
+            <div class="form" id="formelementone">
 
-            <div class="form-top">
-              <h2 class="form-header">Unverbindliche Anfrage</h2>
-            </div>
-            <div class="form-left-right">
-              <div class="form-left">
-                <label for="persons">Apartment</label>
-                <div>
-                  <input type="checkbox" class="apart-persons" id="persons" value="für 4 Personen"> für 4 Personen
+              <div class="form-top">
+                <h2 class="form-header">Unverbindliche Anfrage</h2>
+              </div>
+              <div class="form-left-right">
+                <div class="form-left">
+                  <label for="persons">Apartment</label>
+                  <div>
+                    <input type="checkbox" class="apart-persons" id="persons" value="für 4 Personen"> für 4 Personen
+                    <br>
+                    <input type="checkbox" class="apart-persons" id="persons" value="für 2 Personen"> für 2 Personen
+                    <br>
+                    <br>
+                  </div>
+                  <label for="adult">Erwachsene</label>
+                  <select name="adult" id="adult">
+                    <option value="-">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
                   <br>
-                  <input type="checkbox" class="apart-persons" id="persons" value="für 2 Personen"> für 2 Personen
+                  <label for="kid">Kinder</label>
+                  <select name="kid" id="kid">
+                    <option value="-">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
                   <br>
+                  <label for="age">Alter der Kinder</label>
+                  <input type="text" name="age" id="age" placeholder="Alter">
                   <br>
                 </div>
-                <label for="adult">Erwachsene</label>
-                <select name="adult" id="adult">
-                  <option value="-">-</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
-                <br>
-                <label for="kid">Kinder</label>
-                <select name="kid" id="kid">
-                  <option value="-">-</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
-                <br>
-                <label for="age">Alter der Kinder</label>
-                <input type="text" name="age" id="age" placeholder="Alter">
-                <br>
+                <div class="form-right">
+                  <label for="date">Terminwunsch</label>
+                  <input type="date" name="date" id="date" value="tt.mm.jjjj" placeholder="tt.mm.jjjj"
+                    aria-placeholder="TT.MM.JJJJ">
+                  <br>
+                  <label for="nights">Nächte</label>
+                  <select name="nights" id="nights">
+                    <option value="-">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                    <option value="48">48</option>
+                    <option value="49">49</option>
+                    <option value="50">50</option>
+                    <option value="51">51</option>
+                    <option value="52">52</option>
+                    <option value="53">53</option>
+                    <option value="54">54</option>
+                    <option value="55">55</option>
+                    <option value="56">56</option>
+                    <option value="57">57</option>
+                    <option value="58">58</option>
+                    <option value="59">59</option>
+                    <option value="60">60</option>
+                  </select>
+                  <br>
+                  <label for="wish">Wünsche / Anregungen</label>
+                  <textarea type="text" name="textarea" id="wish" placeholder="Ihre Wünsche/Anregungen"></textarea>
+                  <br>
+                </div>
               </div>
-              <div class="form-right">
-                <label for="date">Terminwunsch</label>
-                <input type="date" name="date" id="date" value="tt.mm.jjjj" placeholder="tt.mm.jjjj"
-                  aria-placeholder="TT.MM.JJJJ">
-                <br>
-                <label for="nights">Nächte</label>
-                <select name="nights" id="nights">
-                  <option value="-">-</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                  <option value="13">13</option>
-                  <option value="14">14</option>
-                  <option value="15">15</option>
-                  <option value="16">16</option>
-                  <option value="17">17</option>
-                  <option value="18">18</option>
-                  <option value="19">19</option>
-                  <option value="20">20</option>
-                  <option value="21">21</option>
-                  <option value="22">22</option>
-                  <option value="23">23</option>
-                  <option value="24">24</option>
-                  <option value="25">25</option>
-                  <option value="26">26</option>
-                  <option value="27">27</option>
-                  <option value="28">28</option>
-                  <option value="29">29</option>
-                  <option value="30">30</option>
-                  <option value="31">31</option>
-                  <option value="32">32</option>
-                  <option value="33">33</option>
-                  <option value="34">34</option>
-                  <option value="35">35</option>
-                  <option value="36">36</option>
-                  <option value="37">37</option>
-                  <option value="38">38</option>
-                  <option value="39">39</option>
-                  <option value="40">40</option>
-                  <option value="41">41</option>
-                  <option value="42">42</option>
-                  <option value="43">43</option>
-                  <option value="44">44</option>
-                  <option value="45">45</option>
-                  <option value="46">46</option>
-                  <option value="47">47</option>
-                  <option value="48">48</option>
-                  <option value="49">49</option>
-                  <option value="50">50</option>
-                  <option value="51">51</option>
-                  <option value="52">52</option>
-                  <option value="53">53</option>
-                  <option value="54">54</option>
-                  <option value="55">55</option>
-                  <option value="56">56</option>
-                  <option value="57">57</option>
-                  <option value="58">58</option>
-                  <option value="59">59</option>
-                  <option value="60">60</option>
-                </select>
-                <br>
-                <label for="wish">Wünsche / Anregungen</label>
-                <textarea type="text" name="textarea" id="wish" placeholder="Ihre Wünsche/Anregungen"></textarea>
-                <br>
+              <div class="form-bottom">
+                <button class="next-btn">Weiter</button>
+                <p class="next-p"><a href="#formelementtwo">Weiter</a></p>
               </div>
             </div>
-            <div class="form-bottom">
-              <button class="next-btn">Weiter</button>
-              <p class="next-p"><a href="#formelementtwo">Weiter</a></p>
-            </div>
-          </div>
 
-          <div class="form" id="formelementtwo">
-            <div class="form-top"></div>
-            <div class="form-left-right">
-              <div class="form-left">
-                <label for="sex">Anrede</label>
-                <select name="sex" id="sex">
-                  <option value="option">-</option>
-                  <option value="herr">Herr</option>
-                  <option value="frau">Frau</option>
-                </select>
-                <br>
-                <label for="fname">Vorname*</label>
-                <input type="text" name="firstname" id="fname" placeholder="Max">
-                <br>
-                <label for="lname">Nachname*</label>
-                <input type="text" name="lastname" id="lname" placeholder="Muster">
-                <br>
-                <label for="email">E-Mail*</label>
-                <input type="email" name="mail" id="email" placeholder="max@muster.gmail">
-                <br>
-                <label for="telnumber">Telefon</label>
-                <input type="text" name="telnumber" id="telnumber" placeholder="+123456789">
-                <br>
+            <div class="form" id="formelementtwo">
+              <div class="form-top"></div>
+              <div class="form-left-right">
+                <div class="form-left">
+                  <label for="sex">Anrede</label>
+                  <select name="sex" id="sex">
+                    <option value="option">-</option>
+                    <option value="herr">Herr</option>
+                    <option value="frau">Frau</option>
+                  </select>
+                  <br>
+                  <label for="fname">Vorname*</label>
+                  <input type="text" name="firstname" id="fname" placeholder="Max">
+                  <br>
+                  <label for="lname">Nachname*</label>
+                  <input type="text" name="lastname" id="lname" placeholder="Muster">
+                  <br>
+                  <label for="email">E-Mail*</label>
+                  <input type="email" name="mail" id="email" placeholder="max@muster.gmail">
+                  <br>
+                  <label for="telnumber">Telefon</label>
+                  <input type="text" name="telnumber" id="telnumber" placeholder="+123456789">
+                  <br>
+                </div>
+                <div class="form-right">
+                  <label for="street">Straße*</label>
+                  <input type="text" name="street" id="street" placeholder="Straße">
+                  <br>
+                  <label for="location">Ort*</label>
+                  <input type="text" name="location" id="location" placeholder="Ort">
+                  <br>
+                  <label for="locnumber">PLZ*</label>
+                  <input type="text" name="locnumber" id="locnumber" placeholder="PLZ">
+                  <br>
+                  <label for="country">Land*</label>
+                  <input type="text" name="country" id="country" placeholder="Land">
+                  <br>
+                  <label for="fax">Fax</label>
+                  <input type="text" name="fax" id="fax" placeholder="+123456789">
+                  <br>
+                </div>
               </div>
-              <div class="form-right">
-                <label for="street">Straße*</label>
-                <input type="text" name="street" id="street" placeholder="Straße">
-                <br>
-                <label for="location">Ort*</label>
-                <input type="text" name="location" id="location" placeholder="Ort">
-                <br>
-                <label for="locnumber">PLZ*</label>
-                <input type="text" name="locnumber" id="locnumber" placeholder="PLZ">
-                <br>
-                <label for="country">Land*</label>
-                <input type="text" name="country" id="country" placeholder="Land">
-                <br>
-                <label for="fax">Fax</label>
-                <input type="text" name="fax" id="fax" placeholder="+123456789">
-                <br>
+              <div class="form-bottom">
+                <button class="back-btn">Zurück</button>
+                <p class="back-p"><a href="#formelementone">Zurück</a></p>
+                <button class="sub-btn" onclick="sendMail()">Anfrage Senden</button>
               </div>
-            </div>
-            <div class="form-bottom">
-              <button class="back-btn">Zurück</button>
-              <p class="back-p"><a href="#formelementone">Zurück</a></p>
-              <button class="sub-btn" onclick="sendMail()">Anfrage Senden</button>
             </div>
           </div>
         </div>
@@ -282,6 +278,9 @@
 
     <div class="gries">
       <div class="anreise">
+        <h1>Anfahrt</h1>
+        <h3>Anreise Planen - Google Maps</h3>
+        <h3>Anreise Planen - Öffentliche Verkehrsmittel</h3>
       </div>
       <div class="googlemaps">
         <iframe
