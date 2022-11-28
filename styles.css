@@ -516,10 +516,6 @@ input, select {
     margin-top: 1rem;
 }
 
-#date {
-    height: 1.8rem;
-}
-
 textarea {
     background-color: white;
     padding: 0.3rem;
@@ -578,6 +574,7 @@ textarea {
 }
 
 input, select, textarea, button, #date {
+    height: 1.8rem;
     line-height: 1.5;
 }
 
@@ -679,7 +676,6 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     .form-header {
         font-size: 1.5rem;
         margin-bottom: 5rem;
-
     }
 
     .form {
