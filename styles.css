@@ -528,6 +528,7 @@ textarea {
 
 ::placeholder {
     font-style: italic;
+    font-size: 0.8rem;
 }
 
 .next-p, .back-p, .next-btn, .back-btn {
@@ -646,7 +647,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 
     .next-p, .back-p {
         display: none;
-    } 
+    }
 }
 
 @media (min-width: 710px) {
@@ -680,11 +681,15 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     }
 
     .form {
-        padding: 3rem 4rem;
+        /* padding: 3rem 4rem; */
     }
 
     .form-left-right-first {
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
+    }
+
+    ::placeholder {
+        font-size: 0.9rem;
     }
 }
 
@@ -698,7 +703,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     }
     
     .form {
-        padding: 3rem 6rem;
+        /* padding: 3rem 6rem; */
     }
 } 
 

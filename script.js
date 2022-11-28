@@ -30,16 +30,19 @@ const nextBtn = document.querySelector(".next-btn")
 const backBtn = document.querySelector(".back-btn")
 const formEl = document.querySelector(".form-section-two-container")
 
-nextBtn.addEventListener("click", function() {
+nextBtn.addEventListener("click", function(e) {
+    e.preventDefault()
     formEl.style.left = "-100%";
     formEl.style.bottom = "-10%";
 })
 
-backBtn.addEventListener("click", function() {
+backBtn.addEventListener("click", function(e) {
+    e.preventDefault()
     formEl.style.left = "0%";
 })
 
-function sendMail() {
+function sendMail(e) {
+    e.preventDefault()
     const persons = document.getElementById("persons").value
     const adult = document.getElementById("adult").value
     const kid = document.getElementById("kid").value
