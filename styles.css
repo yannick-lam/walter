@@ -438,7 +438,7 @@ slide show
 .form-section-two-main {
     /* border: 3px solid red; */
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     height: fit-content;
     background-color: rgb(247, 239, 220);
 }
