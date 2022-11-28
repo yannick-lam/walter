@@ -1,16 +1,3 @@
-document.ready(function() {
-    this.scrollTop(0)
-    document.getElementById("html").scrollTop(0)
-    document.getElementById("body").scrollTop(0)
-    
-    window.on("load", function() {
-        setTimeout(function() {
-            document.getElementById("html").scrollTop(0)
-            document.getElementById("body").scrollTop(0)
-        }, 0)
-    })
-})
-
 
 const body = document.body
 let lastScroll = 0
@@ -46,10 +33,13 @@ const formEl = document.querySelector(".form-section-two-container")
 
 nextBtn.addEventListener("click", function() {
     formEl.style.left = "-100%";
+    window.location.reload(true)
 })
 
 backBtn.addEventListener("click", function() {
     formEl.style.left = "0%";
+    window.location.reload(true)
+
 })
 
 function sendMail() {
