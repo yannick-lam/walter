@@ -657,7 +657,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     .form-section-one {
         display: flex;
         justify-content: space-between;
-        padding: 3rem 2rem;
+        padding: 3rem 2rem 3.5rem;
         width: 30%;
     }
 
