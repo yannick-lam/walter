@@ -363,13 +363,13 @@ slide show
 ==================*/
 
 @media (min-width: 900px) {
-    .main-container {
-        /* min-height: 100vh; */
-    }
+    /* .main-container {
+        min-height: 100vh;
+    } */
 
     .slide-container {
         margin: 70px auto 40px;
-        box-shadow: 0 0 20px rgb(100, 100, 100);
+        box-shadow: 0 0 20px rgb(170, 170, 170);
     }
     /* .slide-container {
         width: 50VW;
@@ -758,7 +758,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     background-color: rgb(220, 230, 250);
     width: 90%;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 3rem 4rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -770,6 +770,13 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     text-transform: uppercase;
 }
 
+.anreise p {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
 .anreise h3 {
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -779,6 +786,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     margin-top: 2rem;
     padding: 0.8rem 1.5rem;
     letter-spacing: 2px;
+    line-height: 1.7;
 }
 
 .googlemaps {
@@ -825,6 +833,10 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
         font-size: 0.8rem;
     }
 }
+
+/* ===============
+   footer
+   ===============*/
 
 .container-footer {
     display: flex;

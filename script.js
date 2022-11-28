@@ -1,3 +1,17 @@
+document.ready(function() {
+    this.scrollTop(0)
+    document.getElementById("html").scrollTop(0)
+    document.getElementById("body").scrollTop(0)
+    
+    window.on("load", function() {
+        setTimeout(function() {
+            document.getElementById("html").scrollTop(0)
+            document.getElementById("body").scrollTop(0)
+        }, 0)
+    })
+})
+
+
 const body = document.body
 let lastScroll = 0
 
