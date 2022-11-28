@@ -30,13 +30,11 @@ const nextBtn = document.querySelector(".next-btn")
 const backBtn = document.querySelector(".back-btn")
 const formEl = document.querySelector(".form-section-two-container")
 
-nextBtn.addEventListener("click", function(event) {
-    event.preventDefault()
+nextBtn.addEventListener("click", function() {
     formEl.style.left = "-100%";
 })
 
-backBtn.addEventListener("click", function(e) {
-    e.preventDefault()
+backBtn.addEventListener("click", function() {
     formEl.style.left = "0%";
 })
 
