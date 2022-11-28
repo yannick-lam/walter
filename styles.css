@@ -228,11 +228,50 @@ slide show
 ===============*/
 
 .main-container {
-    /* border: 3px solid green; */
+    /*!!! ACHTUNG !!! Unbedingt Border aktiv lassen !! */
+    border: 0.0000000000001pt solid black;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     z-index: -1;
+}
+
+.main-one, .main-two, .main-three, .main-four, .main-five {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(120, 120, 120);
+/*FÜR BLEND-MODE IMMER AUCH BACKGROUND COLOR VERWENDEN!*/
+    background-blend-mode: multiply;
+    height: 100%;
+    width: 100%;
+    z-index: -9999999;
+}
+
+.main-one {
+    /* border: 3px solid blueviolet; */
+    background-image: url(images/gries-neu.jpeg);
+    animation: cool1 20s ease-in-out infinite;
+}
+.main-two {
+    /* border: 3px solid orangered; */
+    background-image: url(images/haus-neu.jpeg);
+    animation: cool2 20s ease-in-out infinite;
+}
+.main-three {
+    /* border: 3px solid green; */
+    background-image: url(images/küche.jpeg);
+    animation: cool3 20s ease-in-out infinite;
+}
+.main-four {
+    /* border: 3px solid yellow; */
+    background-image: url(images/schlafzimmer-neu.jpeg);
+    animation: cool4 20s ease-in-out infinite;
+}
+.main-five {
+    /* border: 3px solid red; */
+    background-image: url(images/bad.jpeg);
+    animation: cool5 20s ease-in-out infinite;
 }
 
 .slide-container {
@@ -329,7 +368,7 @@ slide show
 
     .slide-container {
         margin: 70px auto 0;
-        box-shadow: 0 0 40px rgb(170, 170, 170);
+        box-shadow: 0 0 20px rgb(100, 100, 100);
     }
     /* .slide-container {
         width: 50VW;
