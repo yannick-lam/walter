@@ -758,7 +758,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     background-color: rgb(220, 230, 250);
     width: 90%;
     margin: 0 auto;
-    padding: 3rem 4rem;
+    padding: 3rem 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -816,6 +816,10 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 
     .googlemaps, .anreise {
         width: 50%;
+    }
+
+    .anreise {
+        padding: 3rem 4rem;
     }
 
     .googlemaps {

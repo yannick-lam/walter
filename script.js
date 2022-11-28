@@ -33,13 +33,10 @@ const formEl = document.querySelector(".form-section-two-container")
 
 nextBtn.addEventListener("click", function() {
     formEl.style.left = "-100%";
-    window.location.reload(true)
 })
 
 backBtn.addEventListener("click", function() {
     formEl.style.left = "0%";
-    window.location.reload(true)
-
 })
 
 function sendMail() {
