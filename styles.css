@@ -363,11 +363,11 @@ slide show
 
 @media (min-width: 600px) {
     .main-container {
-        min-height: 100vh;
+        /* min-height: 100vh; */
     }
 
     .slide-container {
-        margin: 70px auto 0;
+        margin: 70px auto;
         box-shadow: 0 0 20px rgb(100, 100, 100);
     }
     /* .slide-container {
@@ -412,6 +412,13 @@ slide show
         96% {right: 0%;}
         100% {right: 100%;}
     } */
+}
+
+@media (min-width: 900px) {
+    .slide-container {
+        margin: 70px auto 25px;
+        box-shadow: 0 0 20px rgb(100, 100, 100);
+    }
 }
 
 /* ===============
