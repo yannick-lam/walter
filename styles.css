@@ -433,11 +433,8 @@ slide show
     width: 90%;
     margin: 0 auto;
     margin-top: 2rem;
-}
 
-.form-section-two-main {
     /* border: 3px solid red; */
-    width: 100%;
     overflow-x: hidden;
     height: fit-content;
     background-color: rgb(247, 239, 220);
@@ -468,7 +465,7 @@ slide show
 
 .form-left-right {
     /* border: 3px solid orangered; */
-    height: 100%;
+    height: auto;
     margin-bottom: 1rem;
 }
 
@@ -493,7 +490,6 @@ slide show
 
 .form-header {
     letter-spacing: 1px;
-    margin-bottom: 2em;
 }
 
 input, select, textarea {
@@ -671,21 +667,17 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     .form-section-two {
         width: 70%;
         margin-top: 0;
-        /* height: auto; */
+        min-height: 90vh;
     }
 
     .form-header {
         font-size: 1.5rem;
-        /* margin-bottom: 5rem; */
         margin: 0;
+        margin-bottom: 5rem;
     }
 
     .form {
         padding: 3rem 4rem;
-    }
-
-    .form-left-right-first {
-        margin-top: 5rem;
     }
 
     ::placeholder {
