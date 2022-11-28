@@ -32,7 +32,7 @@ const formEl = document.querySelector(".form-section-two-container")
 
 nextBtn.addEventListener("click", function() {
     formEl.style.left = "-100%";
-    formEl.style.bottom = "-10%";
+    // formEl.style.bottom = "-10%";
 })
 
 backBtn.addEventListener("click", function() {

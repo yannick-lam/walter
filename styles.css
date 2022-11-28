@@ -435,7 +435,7 @@ slide show
     margin-top: 2rem;
 
     /* border: 3px solid red; */
-    overflow-x: hidden;
+    overflow: hidden;
     height: fit-content;
     background-color: rgb(247, 239, 220);
 }
@@ -490,6 +490,7 @@ slide show
 
 .form-header {
     letter-spacing: 1px;
+    margin-bottom: 2rem;
 }
 
 input, select, textarea {
