@@ -1,7 +1,8 @@
 const body = document.body
 let lastScroll = 0
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function(e) {
+    e.preventDefault()
     const currentScroll = this.window.pageYOffset
 
     if (currentScroll <= 0) {

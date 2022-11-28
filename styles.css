@@ -671,7 +671,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     .form-section-two {
         width: 70%;
         margin-top: 0;
-        height: auto;
+        /* height: auto; */
     }
 
     .form-header {
@@ -681,11 +681,11 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     }
 
     .form {
-        /* padding: 3rem 4rem; */
+        padding: 3rem 4rem;
     }
 
     .form-left-right-first {
-        /* margin-top: 5rem; */
+        margin-top: 5rem;
     }
 
     ::placeholder {
@@ -703,7 +703,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     }
     
     .form {
-        /* padding: 3rem 6rem; */
+        padding: 3rem 6rem;
     }
 } 
 
