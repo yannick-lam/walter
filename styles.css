@@ -31,7 +31,7 @@ html {
    ===============*/
 
 header {
-    background: linear-gradient(white, rgba(255, 255, 255, 0.1));
+    background: linear-gradient(white 0%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.1));
     /* background: white; */
     width: 100%;
     /* height: 70px; */
@@ -47,6 +47,7 @@ header {
 }
 
 .container {
+    /* border: 3px solid red; */
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -61,59 +62,27 @@ header {
     margin-bottom: 0.2em;
 }
 
-.logo-agnesn {
+/* .logo-agnesn {
     width: 100%;
     max-width: 100px;    
     object-fit: cover;
-}
+} */
 
-.nav-one {
-    margin: auto 0;
-}
-
-.nav-one ul {
-    list-style: none;
-    padding: 0;
+.top{
+    /* border: 3px solid green; */
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
-.nav-one li {
-    margin-top: 1em;
-    margin-left: 0.8em;
-}
-
-.nav-one a {
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: rgb(60, 60, 80);
-    font-weight: 700;
-    padding: 0.25em 0;
-}
-
-.nav-one a:hover,
-.nav-one a:focus {
-    color: rgb(23, 146, 210);
-    border-bottom: 0.15rem solid rgb(60, 60, 80);
-}
-
-.top{
-    display: flex;
-    align-items: center;
-}
-
-
 .nav-btn{
-    position: absolute;
-    right: 4vw;
+    position: relative;
+    /* right: 4vw; */
     z-index: 2;
 }
 
 .bar{
-    width: 30px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     background-color: black;
     border-radius: 10px;
     transition: all 0.3s ease-in;
@@ -124,7 +93,7 @@ header {
 }
 
 a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -132,32 +101,45 @@ a, button{
     cursor: pointer;
 }
 
-.nav-two {
-    position: absolute;
-    width: 15.625em;
-    top: 6.25em;
-    right: 3.125em;
-}
-
 .navigation{
+    /* border: 3px solid blue; */
     position: fixed;
     top: 0;
-    right: -200rem;
+    bottom: 0;
+    right: 0;
     width: 100vw;
     height: 100%;
-    background-color: black;
-    transition: 0.7s;
+    right: -100%;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
     z-index: 1;
 }
 
-.navigation ul li{
-    color: white;
-    text-align: right;
+.nav {
+    /* border: 3px solid yellow; */
+    position: absolute;
+    width: 100%;
+    top: 7rem;
+}
+
+.navigation ul li {
+    /* border: 3px solid green; */
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    text-align: left;
     text-transform: uppercase;
     list-style-type: none;
-    font-size: 1.5rem;
-    padding: 1.25em 2em;
-    border-bottom: 1pt solid #252525;
+    padding-left: 1rem;
+    padding-bottom: 0.9rem;
+    margin: 1.3rem 1rem;
+    border-bottom: 1pt solid rgba(37, 37, 37, 0.5);
+}
+
+.a-two:hover, .a-two:focus {
+    scale: 1.03;
+    transition: 0.2;
+    color: red;
 }
 
 .hamburger.bar{
@@ -165,8 +147,9 @@ a, button{
 }
 
 .hamburger{
-    background: 0;
     border: 0;
+    /* border: 1px solid yellow; */
+    background: 0;
 }
 
 .navigation.active{
@@ -174,8 +157,8 @@ a, button{
 }
 
 .hamburger.open #bar1{
-    background-color: white;
-    transform: rotate(45deg) translate(5px, 6px);
+    /* background-color: white; */
+    transform: rotate(45deg) translate(4px, 6px);
 }
 
 .hamburger.open #bar2{
@@ -184,36 +167,61 @@ a, button{
 }
 
 .hamburger.open #bar3{
-    background-color: white;
-    transform: rotate(-45deg) translate(5px, -6px);
+    /* background-color: white; */
+    transform: rotate(-45deg) translate(4px, -6px);
 }
 
-.top, .navigation {
-    display: none;
-}
-
-@media (min-width: 350px) {
+@media (min-width: 300px) {
     .container {
         text-align: start;
         flex-direction: row;
     }
 
-    .nav-one {
-        display: none;
+    .site-title {
+        z-index: 2;
     }
-    
-    .top, .navigation {
-        display: inherit;
-    }    
+
+    .nav {
+        top: 5rem;
+    }
+
+    .navigation ul li{
+        font-size: 0.9rem;
+    }
 }
 
 @media (min-width: 450px) {
     .site-title h1 {
         font-size: 2rem;
     }
+    
+    .navigation{
+        position: fixed;
+        top: 0;
+        right: -80rem;
+        width: 100vw;
+        height: 100%;
+        background-color: black;
+        transition: 0.7s;
+        z-index: 1;
+    }
 
-    .navigation {
-        width: 100%;
+    .nav {
+        border: 3px solid rebeccapurple;
+        position: absolute;
+        width: 15.625em;
+        top: 6.25em;
+        right: 3.125em;
+    }
+    
+    .navigation ul li{
+        color: white;
+        text-align: right;
+        text-transform: uppercase;
+        list-style-type: none;
+        font-size: 1.5rem;
+        padding: 1.25em 2em;
+        border-bottom: 1pt solid #252525;
     }
 }
 
