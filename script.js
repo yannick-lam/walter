@@ -27,6 +27,14 @@ function show() {
     document.querySelector(".navigation").classList.toggle("active")
 }
 
+function goToNext() {
+    document.getElementById("formelementtwo").scrollIntoView()
+}
+
+function goToBack() {
+    document.getElementById("formelementone").scrollIntoView()
+}
+
 const nextBtn = document.querySelector(".next-btn")
 const backBtn = document.querySelector(".back-btn")
 const formEl = document.querySelector(".form-section-two-container")

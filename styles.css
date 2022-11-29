@@ -228,8 +228,8 @@ slide show
 ===============*/
 
 .main-container {
-    /*!!! ACHTUNG !!! Unbedingt Border aktiv lassen !! */
-    border: 0.0000000000001pt solid black;
+    /*!!! ACHTUNG !!! Unbedingt Border aktiv lassen falls slide nicht funktioniert !! */
+    /* border: 0.0000000000001pt solid black; */
     position: sticky;
     position: -webkit-sticky;
     top: 0;

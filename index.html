@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="html">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -18,7 +18,7 @@
   </script>
 </head>
 
-<body id="body">
+<body>
 
   <header class="header">
     <div class="container">
@@ -222,7 +222,7 @@
             </div>
             <div class="form-bottom">
               <button class="next-btn">Weiter</button>
-              <p class="next-p"><a href="#formelementtwo">Weiter</a></p>
+              <p class="next-p" onclick="goToNext()">Weiter</p>
             </div>
           </div>
 
@@ -272,7 +272,7 @@
             </div>
             <div class="form-bottom">
               <button class="back-btn">Zurück</button>
-              <p class="back-p"><a href="#formelementone">Zurück</a></p>
+              <p class="back-p" onclick="goToBack()">Zurück</p>
               <button class="sub-btn" onclick="sendMail()">Anfrage Senden</button>
             </div>
           </div>
