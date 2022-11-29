@@ -616,12 +616,18 @@ input, select, textarea, button, #date {
     line-height: 1.5;
 }
 
-input:hover, select:hover, textarea:hover, .next-p:hover, .back-p:hover, .next-btn:hover, .back-btn:hover {
-    scale: 1.05;
+input:hover, select:hover, textarea:hover, .next-p:hover, .back-p:hover, .next-btn:hover, .back-btn:hover, .sub-btn:hover {
+    scale: 1.03;
+    transition: 0.2s;
 }
 
-input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-btn:focus, .back-btn:focus {
-    scale: 1.05;
+input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-btn:focus, .back-btn:focus, .sub-btn:focus {
+    scale: 1.03;
+    transition: 0.2s;
+}
+
+.next-p:hover, .back-p:hover, .next-p:focus, .back-p:focus {
+    cursor: pointer;
 }
 
 @media (min-width: 300px) {
@@ -758,7 +764,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     background-color: rgb(220, 230, 250);
     width: 90%;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 3rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -770,14 +776,67 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     text-transform: uppercase;
 }
 
-.anreise p {
+.anreise-text {
+    /* border: 3px solid red; */
     margin-top: 3rem;
     margin-bottom: 2rem;
     font-size: 1.2rem;
     line-height: 1.7;
 }
 
-.anreise h3 {
+.anreise-text-p {
+    /* border: 3px solid rebeccapurple; */
+    position: relative;
+    background: linear-gradient(transparent 40%, rgba(220, 230, 250) 100%);
+    height: 200px;
+    overflow: hidden;
+}
+
+.anreise-text-p.read-more {
+    height: auto;
+}
+
+.anreise-text .anreise-text-p::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(transparent, rgba(220, 230, 250));
+}
+
+.anreise-text.read-more .anreise-text-p::before {
+    display: none;
+}
+
+.anreise-text-rm {
+    /* border: 3px solid green; */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: end;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.anreise-text-rm.read-more {
+    margin-top: 1rem;
+}
+
+.anreise-text-rm:hover, .anreise-text-rm:focus {
+    scale: 1.03;
+    transition: 0.2s;
+}
+
+.anreise-text-rm p::before {
+    content: "mehr lesen";
+}
+
+.anreise-text-rm.read-more p::before {
+    content: "weniger lesen";
+}
+
+.anreise h3  {
     font-size: 0.7rem;
     text-transform: uppercase;
     color: white;
@@ -805,6 +864,16 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     border: 0;
 }
 
+@media (min-width: 500px) {
+    .anreise {
+        padding: 3rem 4rem;
+    }
+
+    .anreise-text-p {
+        height: 150px;
+    }
+}
+
 @media (min-width: 710px) {
     .gries {
         display: flex;
@@ -814,13 +883,14 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
         min-height: fit-content;
     }
 
+    .anreise {
+        padding: 3rem;
+    }
+
     .googlemaps, .anreise {
         width: 50%;
     }
 
-    .anreise {
-        padding: 3rem 4rem;
-    }
 
     .googlemaps {
         margin-top: 0;
@@ -833,6 +903,10 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 }
 
 @media (min-width: 900px) {
+    .anreise {
+        padding: 3rem 4rem;
+    }
+
     .anreise h3 {
         font-size: 0.8rem;
     }

@@ -1,4 +1,3 @@
-
 const body = document.body
 let lastScroll = 0
 
@@ -22,6 +21,13 @@ window.addEventListener("scroll", function() {
     console.log(currentScroll)
 })
 
+
+function readMore() {
+    document.querySelector(".anreise-text").classList.toggle("read-more")
+    document.querySelector(".anreise-text-p").classList.toggle("read-more")
+    document.querySelector(".anreise-text-rm").classList.toggle("read-more")
+}
+
 function show() {
     document.querySelector(".hamburger").classList.toggle("open")
     document.querySelector(".navigation").classList.toggle("active")
@@ -29,10 +35,18 @@ function show() {
 
 function goToNext() {
     document.getElementById("formelementtwo").scrollIntoView()
+    setTimeout(function() {
+        body.classList.remove("scroll-up")
+        body.classList.add("scroll-down")
+    }, 500)
 }
 
 function goToBack() {
     document.getElementById("formelementone").scrollIntoView()
+    setTimeout(function() {
+        body.classList.remove("scroll-up")
+        body.classList.add("scroll-down")
+    }, 500)
 }
 
 const nextBtn = document.querySelector(".next-btn")
