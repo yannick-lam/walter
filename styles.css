@@ -585,8 +585,8 @@ textarea {
 ::placeholder {
     font-style: italic;
     font-size: 0.8rem;
-    font-weight: bold;
-    /* color: rgb(70, 70, 70); */
+    /* font-weight: bold; */
+    color: rgb(70, 70, 70);
 }
 
 .next-p, .back-p, .next-btn, .back-btn {
@@ -633,6 +633,8 @@ textarea {
 }
 
 input, select, textarea, button, #date {
+    font-size: 0.8rem;
+    font-weight: bold;
     height: 1.8rem;
     line-height: 1.5;
     cursor: pointer;
