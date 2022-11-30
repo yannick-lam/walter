@@ -61,7 +61,7 @@ header {
    
 .site-title h1 {
     font-family: myFont;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     letter-spacing: 2px;
     margin-bottom: 0.2em;
 }
@@ -187,8 +187,12 @@ header {
         flex-direction: row;
     }
     
-    .site-title {
-        z-index: 2;
+.site-title {
+    z-index: 2;
+}
+
+    .site-title h1 {
+        font-size: 1.8rem;
     }
     
     .nav {
@@ -224,6 +228,12 @@ header {
 @media (min-width: 450px) {
     .navigation{
         width: 300px;
+    }
+}
+
+@media (min-width: 710px) {
+    .site-title h1 {
+        font-size: 2.2rem;
     }
 }
 
