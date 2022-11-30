@@ -14,6 +14,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.body.open {
+    overflow: hidden;
+}
+
 /* ===============
    Scroll Stuff
    ===============*/
@@ -92,24 +96,14 @@ header {
     margin-top: 4px;
 }
 
-a{
-    color: black;
-    text-decoration: none;
-}
-
-a, button{
-    cursor: pointer;
-}
-
 .navigation{
     /* border: 3px solid blue; */
     position: fixed;
     top: 0;
-    bottom: 0;
-    right: 0;
-    width: 100vw;
-    height: 100%;
+    /* right: 0; */
     right: -100%;
+    width: 100vw;
+    height: 10000rem;
     background-color: white;
     transition: all 0.5s ease-in-out;
     z-index: 1;
@@ -117,9 +111,14 @@ a, button{
 
 .nav {
     /* border: 3px solid yellow; */
+    background: white;
     position: absolute;
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
     top: 7rem;
+    left: 0;
+    right: 0;
 }
 
 .navigation ul li {
@@ -130,16 +129,26 @@ a, button{
     text-align: left;
     text-transform: uppercase;
     list-style-type: none;
-    padding-left: 1rem;
-    padding-bottom: 0.9rem;
-    margin: 1.3rem 1rem;
+    padding-left: 0.7rem;
+    padding-bottom: 0.8rem;
+    margin: 0 0.8rem 1.3rem;
     border-bottom: 1pt solid rgba(37, 37, 37, 0.5);
 }
 
-.a-two:hover, .a-two:focus {
-    scale: 1.03;
-    transition: 0.2;
-    color: red;
+.a-two {
+    text-decoration: none;
+    color: black;   
+}
+
+.a-two, .hamburger {
+    cursor: pointer;
+}
+
+.nav ul li:hover, .nav ul li:focus {
+    color: rgb(10, 100, 170);
+    border-bottom: 3px solid rgb(20, 60, 80);
+    font-size: 1.07rem;
+    transition: 0.1s;
 }
 
 .hamburger.bar{
@@ -176,58 +185,36 @@ a, button{
         text-align: start;
         flex-direction: row;
     }
-
+    
     .site-title {
         z-index: 2;
     }
-
+    
     .nav {
-        top: 5rem;
+        top: 6rem;
     }
 
     .navigation ul li{
         font-size: 0.9rem;
+        padding-left: 1rem;
+        margin: 0 1.5rem 1.5rem;
+    }
+}
+
+@media (min-width: 380px) {
+    .site-title h1 {
+        font-size: 2rem;
+    }
+
+    .navigation ul li{
+        font-size: 1rem;
+        margin: 0 1.7rem 1.7rem;
     }
 }
 
 @media (min-width: 450px) {
-    .site-title h1 {
-        font-size: 2rem;
-    }
-    
     .navigation{
-        position: fixed;
-        top: 0;
-        right: -80rem;
-        width: 100vw;
-        height: 100%;
-        background-color: black;
-        transition: 0.7s;
-        z-index: 1;
-    }
-
-    .nav {
-        border: 3px solid rebeccapurple;
-        position: absolute;
-        width: 15.625em;
-        top: 6.25em;
-        right: 3.125em;
-    }
-    
-    .navigation ul li{
-        color: white;
-        text-align: right;
-        text-transform: uppercase;
-        list-style-type: none;
-        font-size: 1.5rem;
-        padding: 1.25em 2em;
-        border-bottom: 1pt solid #252525;
-    }
-}
-
-@media (min-width: 720px) {
-    .navigation {
-        width: 22rem;
+        width: 300px;
     }
 }
 
@@ -855,6 +842,11 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     padding: 0.8rem 1.5rem;
     letter-spacing: 2px;
     line-height: 1.7;
+}
+
+.anreise h3 a {
+    color: white;
+    text-decoration: none;
 }
 
 .googlemaps {
