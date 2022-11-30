@@ -163,7 +163,7 @@ header {
 
 .navigation.active{
     right: 0;
-    box-shadow: 0 0 20px rgb(50, 50, 50);
+    box-shadow: 0 0 20px rgb(100, 100, 100);
 }
 
 .hamburger.open #bar1{
