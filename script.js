@@ -2,7 +2,7 @@ const body = document.body
 let lastScroll = 0
 
 window.addEventListener("scroll", function() {
-    const currentScroll = this.window.pageYOffset
+    const currentScroll = this.window.pageYOffset - 70
 
     if (currentScroll <= 0) {
         body.classList.remove("scroll-up")
@@ -17,7 +17,10 @@ window.addEventListener("scroll", function() {
         body.classList.remove("scroll-down")
         body.classList.add("scroll-up")
     }
-    lastScroll = currentScroll
+
+    if (currentScroll >= 0) {
+        lastScroll = currentScroll
+    }
     console.log(currentScroll)
 })
 
