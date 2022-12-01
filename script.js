@@ -46,27 +46,22 @@ document.onclick = function(clickEvent) {
 function goToAnreise() {
     document.getElementById("gries-anreise").scrollIntoView()
     setTimeout(function() {
-        body.classList.remove("scroll-up")
-        body.classList.add("scroll-down")
-    }, 500)
-    // document.querySelector(".navigation").style.right = "-100%";
-    // document.querySelector(".body").style.overflow = "inherit";
+        window.scrollBy(0, -70)
+    }, 700)
 }
 
 function goToNext() {
     document.getElementById("formelementtwo").scrollIntoView()
     setTimeout(function() {
-        body.classList.remove("scroll-up")
-        body.classList.add("scroll-down")
-    }, 500)
+        window.scrollBy(0, -70)
+    }, 700)
 }
 
 function goToBack() {
     document.getElementById("formelementone").scrollIntoView()
     setTimeout(function() {
-        body.classList.remove("scroll-up")
-        body.classList.add("scroll-down")
-    }, 500)
+        window.scrollBy(0, -70)
+    }, 700)
 }
 
 const nextBtn = document.querySelector(".next-btn")
