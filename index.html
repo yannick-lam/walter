@@ -21,35 +21,52 @@
 <body class="body">
 
   <header class="header">
-    <div class="container">
 
+    <div class="container">
       <div class="site-title" id="sitetitle">
         <h1>Agnesn Apartmenthaus</h1>
         <!-- <img class="logo-agnesn" src="images/logo.jpeg" alt="Agnesn Apartmenthaus logo"> -->
       </div>
       <div class="top">
-        <button class="hamburger nav-btn" onclick="show()">
+        <button class="hamburger nav-btn" id="hamburger" onclick="show()">
           <div id="bar1" class="bar"></div>
           <div id="bar2" class="bar"></div>
           <div id="bar3" class="bar"></div>
         </button>
       </div>
-      <div class="navigation">
-        <nav class="nav">
-          <ul>
-            <a class="a-two" href="index.html"><li>Home</li></a>
-            <a class="a-two" href="apartment.html"><li>Apartments / Preise</li></a>
-            <a class="a-two" href="winter.html"><li>Winter</li></a>
-            <a class="a-two" href="summer.html"><li>Sommer</li></a>
-            <a class="a-two" href="#"><li>Lage / Anreise</li></a>
-            <a class="a-two" href="#"><li>Kontakt / Anfrage</li></a>
-            <a class="a-two" href="galery.html"><li>Bildergalerie</li></a>
-            <a class="a-two" href="impressum.html"><li>Impressum</li></a>
-          </ul>
-        </nav>
-      </div>
-
     </div>
+    <div class="navigation" id="navigation">
+      <nav class="nav">
+        <ul>
+          <a class="a-two" id="a-two" href="index.html">
+            <li>Home</li>
+          </a>
+          <a class="a-two" id="a-two" href="apartment.html">
+            <li>Apartments / Preise</li>
+          </a>
+          <a class="a-two" id="a-two" href="winter.html">
+            <li>Winter</li>
+          </a>
+          <a class="a-two" id="a-two" href="summer.html">
+            <li>Sommer</li>
+          </a>
+          <a class="a-two" id="a-two" href="#" onclick="goToAnreise()">
+            <li>Lage / Anreise</li>
+          </a>
+          <a class="a-two" id="a-two" href="#contact">
+            <li>Kontakt / Anfrage</li>
+          </a>
+          <a class="a-two" id="a-two" href="galery.html">
+            <li>Bildergalerie</li>
+          </a>
+          <a class="a-two" id="a-two" href="impressum.html">
+            <li>Impressum</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+
+
   </header>
 
   <div class="main-container">
@@ -68,7 +85,7 @@
   </div>
 
   <main>
-    <div class="form-container">
+    <div class="form-container" id="contact">
 
       <div class="form-section-one">
         <div class="contact-logo">
@@ -280,7 +297,7 @@
 
     </div>
 
-    <div class="gries">
+    <div class="gries" id="gries-anreise">
       <div class="anreise">
         <h1>Anfahrt</h1>
         <div class="anreise-text">

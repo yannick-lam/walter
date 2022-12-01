@@ -1,28 +1,26 @@
-const body = document.body
-let lastScroll = 0
+// const body = document.body
+// let lastScroll = 0
 
-window.addEventListener("scroll", function() {
-    const currentScroll = this.window.pageYOffset - 70
+// window.addEventListener("scroll", function() {
+//     const currentScroll = this.window.pageYOffset
 
-    if (currentScroll <= 0) {
-        body.classList.remove("scroll-up")
-    }
-
-    if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-        body.classList.remove("scroll-up")
-        body.classList.add("scroll-down")
-    }
+//     if (currentScroll > lastScroll) {
+//         body.classList.add("scroll-down")
+//     }
     
-    if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
-        body.classList.remove("scroll-down")
-        body.classList.add("scroll-up")
-    }
+//     if (currentScroll < lastScroll) {
+//         body.classList.remove("scroll-down")
+//     }
 
-    if (currentScroll >= 0) {
-        lastScroll = currentScroll
-    }
-    console.log(currentScroll)
-})
+//     if (currentScroll < 70) {
+//         body.classList.add("scroll-down")
+//     }
+
+//     if (currentScroll >= 0) {
+//         lastScroll = currentScroll
+//     }
+//     console.log(currentScroll)
+// })
 
 
 function readMore() {
@@ -32,9 +30,27 @@ function readMore() {
 }
 
 function show() {
-    document.querySelector(".body").classList.toggle("open")
+    document.querySelector(".body").classList.toggle("locked")
     document.querySelector(".hamburger").classList.toggle("open")
     document.querySelector(".navigation").classList.toggle("active")
+}
+
+document.onclick = function(clickEvent) {
+    if (clickEvent.target.id !== "a-two" && clickEvent.target.id !== "navigation" && clickEvent.target.id !== "hamburger" && clickEvent.target.id !== "bar1" && clickEvent.target.id !== "bar2" && clickEvent.target.id !== "bar3") {
+        document.querySelector(".body").classList.remove("locked")
+        document.querySelector(".hamburger").classList.remove("open")
+        document.querySelector(".navigation").classList.remove("active")
+    }
+}
+
+function goToAnreise() {
+    document.getElementById("gries-anreise").scrollIntoView()
+    setTimeout(function() {
+        body.classList.remove("scroll-up")
+        body.classList.add("scroll-down")
+    }, 500)
+    // document.querySelector(".navigation").style.right = "-100%";
+    // document.querySelector(".body").style.overflow = "inherit";
 }
 
 function goToNext() {
