@@ -192,6 +192,10 @@ header {
 }
 
 @media (min-width: 330px) {
+    header {
+        height: 70px;
+    }
+
     .container {
         text-align: start;
         flex-direction: row;
@@ -211,7 +215,7 @@ header {
     }
 
     .nav {
-        top: 6rem;
+        top: 6.6rem;
     }
 
     .navigation ul li{
