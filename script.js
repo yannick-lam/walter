@@ -43,25 +43,18 @@ document.onclick = function(clickEvent) {
     }
 }
 
-function goToAnreise() {
-    document.getElementById("gries-anreise").scrollIntoView()
-    setTimeout(function() {
-        window.scrollBy(0, -70)
-    }, 300)
-}
-
 function goToNext() {
     document.getElementById("formelementtwo").scrollIntoView()
     setTimeout(function() {
         window.scrollBy(0, -70)
-    }, 250)
+    }, 350)
 }
 
 function goToBack() {
     document.getElementById("formelementone").scrollIntoView()
     setTimeout(function() {
         window.scrollBy(0, -70)
-    }, 200)
+    }, 300)
 }
 
 const nextBtn = document.querySelector(".next-btn")
