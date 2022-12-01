@@ -149,7 +149,7 @@ header {
     cursor: pointer;
 }
 
-.nav ul li:hover, .nav ul li:focus {
+.nav ul li:hover {
     color: rgb(10, 100, 170);
     border-bottom: 3px solid rgb(20, 60, 80);
     font-size: 0.9rem;
