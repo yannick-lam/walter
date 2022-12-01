@@ -47,21 +47,21 @@ function goToAnreise() {
     document.getElementById("gries-anreise").scrollIntoView()
     setTimeout(function() {
         window.scrollBy(0, -70)
-    }, 600)
+    }, 400)
 }
 
 function goToNext() {
     document.getElementById("formelementtwo").scrollIntoView()
     setTimeout(function() {
         window.scrollBy(0, -70)
-    }, 300)
+    }, 150)
 }
 
 function goToBack() {
     document.getElementById("formelementone").scrollIntoView()
     setTimeout(function() {
         window.scrollBy(0, -70)
-    }, 300)
+    }, 150)
 }
 
 const nextBtn = document.querySelector(".next-btn")
