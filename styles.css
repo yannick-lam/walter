@@ -121,7 +121,7 @@ header {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    top: 8.5rem;
+    top: 8.2rem;
     left: 0;
     right: 0;
 }
@@ -136,7 +136,7 @@ header {
     list-style-type: none;
     padding-left: 0.7rem;
     padding-bottom: 0.8rem;
-    margin: 0 0 1.3rem;
+    margin: 1.3rem 0 0;
     border-bottom: 1pt solid black;
 }
 
@@ -188,7 +188,7 @@ header {
 
 @media (min-width: 260px) {
     .nav {
-        top: 7.5rem;
+        top: 7.3rem;
     }
 }
 
@@ -216,13 +216,13 @@ header {
     }
 
     .nav {
-        top: 6.6rem;
+        top: 6.3rem;
     }
 
     .navigation ul li{
         font-size: 0.9rem;
         padding-left: 1rem;
-        margin: 0 1.5rem 1.5rem;
+        margin: 1.5rem 1.5rem 0;
     }
 
     .nav ul li:hover, .nav ul li:focus {
@@ -237,7 +237,7 @@ header {
 
     .navigation ul li{
         font-size: 1rem;
-        margin: 0 1.7rem 1.7rem;
+        margin: 1.7rem 1.7rem 0;
     }
 
     .nav ul li:hover, .nav ul li:focus {
