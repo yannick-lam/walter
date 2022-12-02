@@ -1002,7 +1002,7 @@ Impressum
 }
 
 .impressum-container h1 {
-    padding: 2rem 0;
+    padding: 1.8rem 0;
 }
 
 .impressum-child-container p:not(:last-of-type) {
@@ -1014,11 +1014,16 @@ Impressum
 }
 
 .impressum-child-container p span {
-    
+    text-decoration: none;
+    color: black;
 }
 
 @media (min-width: 400px) {
     .impressum-container {
         font-size: 1.1rem;
+    }
+
+    .impressum-container h1 {
+        padding: 2rem 0;
     }
 }
