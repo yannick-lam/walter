@@ -30,6 +30,10 @@ html {
    header 
    ===============*/
 
+.scroll-margin {
+    scroll-margin-top: 70px;
+}
+
 header {
     /* border: 3px solid red; */
     width: 100%;
@@ -980,4 +984,14 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 .footer-title {
     color: rgb(200, 200, 200);
     margin-bottom: 0.1rem;
+}
+
+/* ===============
+Impressum
+===============*/
+
+.impressum-container {
+    background: white;
+    padding: 4rem;
+    font-size: 1.2rem;
 }

@@ -47,14 +47,14 @@ function goToNext() {
     document.getElementById("formelementtwo").scrollIntoView()
     setTimeout(function() {
         window.scrollBy(0, -70)
-    }, 350)
+    }, 500)
 }
 
 function goToBack() {
     document.getElementById("formelementone").scrollIntoView()
     setTimeout(function() {
         window.scrollBy(0, -70)
-    }, 300)
+    }, 500)
 }
 
 const nextBtn = document.querySelector(".next-btn")
