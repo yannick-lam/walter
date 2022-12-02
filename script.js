@@ -1,3 +1,17 @@
+const toTop = document.querySelector(".to-top")
+
+window.addEventListener("scroll", function() {
+    if (this.window.pageYOffset > 100) {
+        toTop.classList.add("active")
+    } else {
+        toTop.classList.remove("active")
+    }
+})
+
+toTop.addEventListener("click", function() {
+    window.scrollTo(0, 0)
+})
+
 // const body = document.body
 // let lastScroll = 0
 

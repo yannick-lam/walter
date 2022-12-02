@@ -73,12 +73,6 @@ header {
     letter-spacing: 2px;
 }
 
-/* .logo-agnesn {
-    width: 100%;
-    max-width: 100px;    
-    object-fit: cover;
-} */
-
 .top{
     /* border: 3px solid green; */
     display: flex;
@@ -519,12 +513,14 @@ slide show
 }
 
 .contact-number-home {
+    text-align: center;
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
 .contact-email-home {
+    text-align: center;
     font-weight: bold;
     color: black;
 }
@@ -1011,6 +1007,33 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 .footer-title {
     color: rgb(200, 200, 200);
     margin-bottom: 0.1rem;
+}
+
+.to-top {
+    position: fixed;
+    bottom: -100%;
+    right: 6px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.to-top.active {
+    bottom: 4px;
+}
+
+
+.to-top img {
+    background-color: rgb(200, 200, 200);
+    width: 100%;
+    max-width: 30px;
+    height: 30px;   
+    object-fit: cover;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+
+.to-top img:hover, .to-top img:focus {
+    scale: 1.07;
 }
 
 /* ===============
