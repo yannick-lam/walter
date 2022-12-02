@@ -514,6 +514,11 @@ slide show
     text-align: center;
 }
 
+#phone-text {
+    text-decoration: none;
+    color: black;
+}
+
 .contact-logo-home {
     text-decoration: none;
     color: black;
