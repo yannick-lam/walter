@@ -514,11 +514,6 @@ slide show
     text-align: center;
 }
 
-#phone-text {
-    text-decoration: none;
-    color: black;
-}
-
 .contact-logo-home {
     text-decoration: none;
     color: black;
@@ -1027,11 +1022,6 @@ Impressum
 
 .impressum-child-container p:last-of-type {
     margin-bottom: 2rem;
-}
-
-#phone-text {
-    text-decoration: none;
-    color: black;
 }
 
 @media (min-width: 400px) {
