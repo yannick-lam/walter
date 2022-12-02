@@ -524,6 +524,11 @@ slide show
     color: black;
 }
 
+.contact-email-home {
+    font-weight: bold;
+    color: black;
+}
+
 .contact-logo-home {
     text-decoration: none;
     color: black;
@@ -1038,12 +1043,19 @@ Impressum
     color: black;
 }
 
+.y-lam {
+    color: black;
+    text-decoration: none;
+}
+
 .contact-number-impressum:hover,
 .contact-number-impressum:focus,
 .contact-email-impressum:hover,
 .contact-email-impressum:focus,
 .website:hover,
-.website:focus {
+.website:focus,
+.y-lam:hover,
+.y-lam:focus {
     font-size: 1.03rem;
 }
 
@@ -1061,7 +1073,9 @@ Impressum
     .contact-email-impressum:hover,
     .contact-email-impressum:focus,
     .website:hover,
-    .website:focus {
+    .website:focus,
+    .y-lam:hover,
+    .y-lam:focus {
         font-size: 1.13rem;
     }
 }
