@@ -14,6 +14,23 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    /* border: 3px solid yellow; */
+    width: 100%;
+}
+
+@media (min-width: 850px) {
+    body {
+        padding-right: 250px;
+    }
+}
+
+@media (min-width: 1050px) {
+    body {
+        padding-right: 300px;
+    }
+}
+
 /* ===============
    Scroll Stuff
    ===============*/
@@ -36,12 +53,11 @@ html {
 
 header {
     /* border: 3px solid red; */
-    width: 100%;
-    position: fixed;
-    /* position: relative; */
+    width: 100vw;
+    height: 110px;
+    position: sticky;
+    position: -webkit-sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 9999;
     transition: all 0.3s ease-in-out;
 }
@@ -106,6 +122,7 @@ header {
     /* right: 0; */
     right: -100%;
     width: 100vw;
+    max-width: 250px;
     height: 100vh;
     background: white;
     transition: all 0.5s ease-in-out;
@@ -117,7 +134,7 @@ header {
     background: white;
     position: absolute;
     width: 100%;
-    max-width: 400px;
+    max-width: 200px;
     margin: 0 auto;
     top: 8.2rem;
     left: 0;
@@ -135,7 +152,7 @@ header {
     padding-left: 0.7rem;
     padding-bottom: 0.8rem;
     margin: 1.3rem 0 0;
-    border-bottom: 1pt solid black;
+    border-bottom: 1pt solid rgba(0, 0, 0, 0.3);
 }
 
 .a-two {
@@ -149,7 +166,7 @@ header {
 
 .nav ul li:hover {
     color: rgb(10, 100, 170);
-    border-bottom: 3px solid rgb(20, 60, 80);
+    border-bottom: 2px solid rgb(20, 60, 80);
     font-size: 0.9rem;
     transition: 0.1s;
 }
@@ -166,7 +183,7 @@ header {
 
 .navigation.active{
     right: 0;
-    box-shadow: 0 0 20px rgb(100, 100, 100);
+    box-shadow: 0 0 10px rgb(100, 100, 100);
 }
 
 .hamburger.open #bar1{
@@ -214,17 +231,17 @@ header {
     }
 
     .nav {
-        top: 6.3rem;
+        top: 6rem;
     }
 
     .navigation ul li{
-        font-size: 0.9rem;
-        padding-left: 1rem;
-        margin: 1.5rem 1.5rem 0;
+        /* font-size: 0.9rem; */
+        /* padding-left: 1rem; */
+        /* margin: 1.5rem 1.5rem 0; */
     }
 
     .nav ul li:hover, .nav ul li:focus {
-        font-size: 0.97rem;
+        /* font-size: 0.97rem; */
     }
 }
 
@@ -234,24 +251,43 @@ header {
     }
 
     .navigation ul li{
-        font-size: 1rem;
-        margin: 1.7rem 1.7rem 0;
+        /* font-size: 1rem; */
+        /* margin: 1.7rem 1.7rem 0; */
     }
 
     .nav ul li:hover, .nav ul li:focus {
-        font-size: 1.07rem;
+        /* font-size: 1.07rem; */
     }
 }
 
 @media (min-width: 450px) {
     .navigation{
-        width: 300px;
+        /* width: 300px; */
     }
 }
 
 @media (min-width: 710px) {
     .site-title h1 {
         font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 850px) {
+    .navigation{
+        right: 0;
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+
+    .top {
+        display: none;
+    }
+}
+
+@media (min-width: 1050px) {
+    .navigation{
+        max-width: 300px;
+        right: 0;
+        box-shadow: 0 0 10px rgb(100, 100, 100);
     }
 }
 
@@ -264,12 +300,13 @@ slide show
     /* border: 0.0000000000001pt solid black; */
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
+    top: 110px;
     z-index: -1;
     overflow: hidden;
 }
 
 .main-one, .main-two, .main-three, .main-four, .main-five {
+    /* border: 3px solid green; */
     position: absolute;
     background-size: cover;
     background-position: center;
@@ -278,7 +315,7 @@ slide show
     background-blend-mode: multiply;
     height: 100%;
     width: 100%;
-    z-index: -9999999;
+    z-index: -1;
 }
 
 .main-one {
@@ -308,13 +345,12 @@ slide show
 }
 
 .slide-container {
-    /* border: 3px solid red; */
+    /* border: 3px solid pink; */
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
     min-height: fit-content;
     overflow: hidden;
     position: relative;
-    top: 0;
 }
 
 .slide {
@@ -394,13 +430,19 @@ slide show
 @media - slide show 
 ==================*/
 
+@media (min-width: 330px) {
+    .main-container {
+        top: 70px;
+    }
+}
+
 @media (min-width: 900px) {
     /* .main-container {
         min-height: 100vh;
     } */
 
     .slide-container {
-        margin: 70px auto 40px;
+        /* margin: 70px auto 40px; */
         box-shadow: 0 0 20px rgb(170, 170, 170);
     }
     /* .slide-container {

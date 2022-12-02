@@ -73,11 +73,14 @@ const backBtn = document.querySelector(".back-btn")
 const formEl = document.querySelector(".form-section-two-container")
 
 nextBtn.addEventListener("click", function() {
-    formEl.style.left = "-100%";
+    // formEl.style.left = "-100%";
+    document.getElementById("formelementtwo").scrollIntoView()
 })
 
 backBtn.addEventListener("click", function() {
-    formEl.style.left = "0%";
+    // formEl.style.left = "0%";
+    document.getElementById("formelementone").scrollIntoView()
+
 })
 
 function sendMail() {
