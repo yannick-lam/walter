@@ -1012,13 +1012,13 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 .to-top {
     position: fixed;
     bottom: -100%;
-    right: 6px;
+    right: 13px;
     cursor: pointer;
     transition: all 0.5s;
 }
 
 .to-top.active {
-    bottom: 4px;
+    bottom: 10px;
 }
 
 
