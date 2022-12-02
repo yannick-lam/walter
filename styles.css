@@ -1102,7 +1102,7 @@ Impressum
 }
 
 .impressum-child-container p:last-of-type {
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 .contact-number-impressum, .contact-email-impressum, .website {
