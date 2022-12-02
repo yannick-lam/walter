@@ -1029,6 +1029,11 @@ Impressum
     margin-bottom: 2rem;
 }
 
+#phone-text {
+    text-decoration: none;
+    color: black;
+}
+
 @media (min-width: 400px) {
     .impressum-container {
         font-size: 1.1rem;
