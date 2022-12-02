@@ -503,9 +503,9 @@ slide show
     text-align: center;
 }
 
-.contact-number {
-    color: black;
+a[href^="tel"] {
     text-decoration: none;
+    color: black;
 }
 
 .form-section-two {
@@ -1013,9 +1013,9 @@ Impressum
     margin-bottom: 2rem;
 }
 
-.impressum-child-container p span {
+a[href^="tel"] {
     text-decoration: none;
-    color: green;
+    color: black;
 }
 
 @media (min-width: 400px) {
