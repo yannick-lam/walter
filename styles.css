@@ -484,6 +484,15 @@ slide show
     flex-direction: column;
     align-items: center;
     width: 100%;
+    cursor: pointer;
+}
+
+.contact-logo-div {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
 }
 
 .contact-header {
@@ -492,18 +501,20 @@ slide show
 }
 
 .contact-logo img {
+    /* border: 3px solid rebeccapurple; */
     width: 100%;
     max-width: 30px;
     margin-bottom: 0.6rem;
 }
 
 .contact-logo p {
+    /* border: 3px solid yellow; */
     font-weight: bold;
     margin-bottom: 0.1rem;
     text-align: center;
 }
 
-a[href^="tel"] {
+.contact-logo-home {
     text-decoration: none;
     color: black;
 }
