@@ -1015,7 +1015,7 @@ Impressum
 
 .impressum-child-container p span {
     text-decoration: none;
-    color: black;
+    color: green;
 }
 
 @media (min-width: 400px) {
