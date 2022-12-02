@@ -1025,8 +1025,8 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 .to-top img {
     background-color: rgb(200, 200, 200);
     width: 100%;
-    max-width: 30px;
-    height: 30px;   
+    max-width: 37px;
+    height: 37px;   
     object-fit: cover;
     border-radius: 0.2rem;
     box-shadow: 0 0 10px rgb(100, 100, 100);
