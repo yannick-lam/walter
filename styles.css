@@ -127,6 +127,7 @@ header {
     background: white;
     transition: all 0.5s ease-in-out;
     z-index: -1;
+    overflow: scroll;
 }
 
 .nav {
