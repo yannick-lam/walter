@@ -487,6 +487,10 @@ slide show
     cursor: pointer;
 }
 
+.contact-logo:hover, .contact-logo:focus {
+    scale: 1.05;
+}
+
 .contact-logo-div {
     /* border: 3px solid blue; */
     display: flex;
@@ -514,7 +518,7 @@ slide show
     text-align: center;
 }
 
-.contact-number {
+.contact-number-home {
     text-decoration: none;
     font-weight: bold;
     color: black;
@@ -1030,9 +1034,17 @@ Impressum
     margin-bottom: 2rem;
 }
 
-.contact-number {
-    text-decoration: none;
+.contact-number-impressum, .contact-email-impressum, .website {
     color: black;
+}
+
+.contact-number-impressum:hover,
+.contact-number-impressum:focus,
+.contact-email-impressum:hover,
+.contact-email-impressum:focus,
+.website:hover,
+.website:focus {
+    font-size: 1.03rem;
 }
 
 @media (min-width: 400px) {
@@ -1042,5 +1054,14 @@ Impressum
 
     .impressum-container h1 {
         padding: 2rem 0;
+    }
+
+    .contact-number-impressum:hover,
+    .contact-number-impressum:focus,
+    .contact-email-impressum:hover,
+    .contact-email-impressum:focus,
+    .website:hover,
+    .website:focus {
+        font-size: 1.13rem;
     }
 }
