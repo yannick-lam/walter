@@ -1024,6 +1024,11 @@ Impressum
     margin-bottom: 2rem;
 }
 
+.contact-number {
+    text-decoration: none;
+    color: black;
+}
+
 @media (min-width: 400px) {
     .impressum-container {
         font-size: 1.1rem;
