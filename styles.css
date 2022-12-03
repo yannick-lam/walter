@@ -15,54 +15,31 @@ html {
 }
 
 body {
-    border: 3px solid yellow;
+    border: 3px solid green;
     width: 100%;
 }
 
-@media (min-width: 960px) {
-    body {
-        border: 3px solid red;
-    }
-}
-
-@media (min-width: 970px) {
-    body {
-        border: 3px solid orangered;
-    }
-}
-
-@media (min-width: 980px) {
+@media (min-width: 1020px) {
     body {
         border: 3px solid yellow;
     }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 1025px) {
     body {
-        border: 3px solid green;
+        border: 3px solid red;
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1030px) {
     body {
         border: 3px solid blue;
     }
 }
 
-@media (min-width: 1010px) {
-    body {
-        border: 3px solid rebeccapurple;
-    }
-}
-
-@media (min-width: 1020px) {
-    body {
-        border: 3px solid black;
-    }
-}
-
 @media (min-width: 1037px) {
     body {
+        border: 3px solid orangered;
         padding-right: 250px;
     }
 }
