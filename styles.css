@@ -19,7 +19,7 @@ body {
     width: 100%;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1037px) {
     body {
         padding-right: 250px;
     }
@@ -267,7 +267,7 @@ header {
     }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1037px) {
     .top {
         display: none;
     }
