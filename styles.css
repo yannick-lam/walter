@@ -226,7 +226,7 @@ header {
     }
 
     .nav {
-        top: 5.8rem;
+        top: 6rem;
     }
 
     .navigation ul li{
@@ -839,7 +839,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 
 @media (min-width: 900px) {
     .form-container {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
     
     .form {
