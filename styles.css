@@ -19,15 +19,9 @@ body {
     width: 100%;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 950px) {
     body {
         padding-right: 250px;
-    }
-}
-
-@media (min-width: 1050px) {
-    body {
-        padding-right: 300px;
     }
 }
 
@@ -232,17 +226,17 @@ header {
     }
 
     .nav {
-        top: 6rem;
+        top: 5.8rem;
     }
 
     .navigation ul li{
-        /* font-size: 0.9rem; */
+        font-size: 0.9rem;
         /* padding-left: 1rem; */
         /* margin: 1.5rem 1.5rem 0; */
     }
 
     .nav ul li:hover, .nav ul li:focus {
-        /* font-size: 0.97rem; */
+        font-size: 0.97rem;
     }
 }
 
@@ -273,22 +267,20 @@ header {
     }
 }
 
-@media (min-width: 850px) {
-    .navigation{
-        right: 0;
-        box-shadow: 0 0 10px rgb(100, 100, 100);
-    }
-
+@media (min-width: 950px) {
     .top {
         display: none;
     }
-}
 
-@media (min-width: 1050px) {
-    .navigation{
-        max-width: 300px;
+    .navigation {
         right: 0;
         box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+
+    .navigation ul li{
+        /* font-size: 0.9rem; */
+        /* padding-left: 1rem; */
+        /* margin: 1.5rem 1.5rem 0; */
     }
 }
 
@@ -678,7 +670,7 @@ textarea {
 }
 
 .next-p, .back-p, .next-btn, .back-btn {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.35em 0.5rem;
     width: fit-content;
     height: fit-content;
@@ -710,7 +702,7 @@ textarea {
 }
 
 .sub-btn {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
