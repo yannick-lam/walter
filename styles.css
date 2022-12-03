@@ -837,16 +837,26 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     }
 }
 
-@media (min-width: 900px) {
-    .form-container {
-        /* font-size: 1.2rem; */
-    }
-    
+@media (min-width: 900px) {    
     .form {
-        padding-left: 6rem;
-        padding-right: 6rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
-} 
+}
+
+@media (min-width: 1020px) {
+    .form {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {    
+    .form {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
 
 /* ===============
    location 
