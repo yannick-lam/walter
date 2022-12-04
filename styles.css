@@ -983,14 +983,14 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     width: 90%;
     margin: 0 auto;
     margin-top: 2rem;
-    min-height: 65vh;
+    min-height: 60vh;
     padding: 0.3rem;
     background-color: rgb(70, 70, 70);
 }
 
 .googlemaps iframe {
     width: 100%;
-    min-height: 65vh;
+    min-height: 60vh;
     border: 0;
 }
 
