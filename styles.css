@@ -42,7 +42,13 @@ body {
    ===============*/
 
 .scroll-margin {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 110px;
+}
+
+@media (min-width: 330px) {
+    .scroll-margin {
+        scroll-margin-top: 70px;
+    }
 }
 
 header {
@@ -762,7 +768,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
-        min-height: 50vh;
+        min-height: 280px;
     }
 
     .contact-logo:nth-child(1) {
