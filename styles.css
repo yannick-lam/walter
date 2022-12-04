@@ -3,6 +3,11 @@
     src: url(fonts/asenine.ttf);
 }
 
+@font-face {
+    font-family: myWelcome;
+    src: url(fonts/lumpia-brush-free.regular.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -250,21 +255,6 @@ header {
     .site-title h1 {
         font-size: 2rem;
     }
-
-    .navigation ul li{
-        /* font-size: 1rem; */
-        /* margin: 1.7rem 1.7rem 0; */
-    }
-
-    .nav ul li:hover, .nav ul li:focus {
-        /* font-size: 1.07rem; */
-    }
-}
-
-@media (min-width: 450px) {
-    .navigation{
-        /* width: 300px; */
-    }
 }
 
 @media (min-width: 710px) {
@@ -281,12 +271,6 @@ header {
     .navigation {
         right: 0;
         box-shadow: 0 0 10px rgb(100, 100, 100);
-    }
-
-    .navigation ul li{
-        /* font-size: 0.9rem; */
-        /* padding-left: 1rem; */
-        /* margin: 1.5rem 1.5rem 0; */
     }
 }
 
@@ -486,6 +470,57 @@ slide show
         96% {right: 0%;}
         100% {right: 100%;}
     } */
+}
+
+/* ===============
+   welcome 
+   ===============*/
+
+.welcome-main {
+    background: white;
+    font-size: 1rem;
+    padding-top: 2rem;
+}
+
+.welcome-container {
+    /* background-color: rgb(247, 239, 220); */
+    /* background-color: rgb(245, 245, 245); */
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-container h1 {
+    font-family: myWelcome;
+    font-size: 3rem;
+    font-weight: 100;
+    color: rgb(241, 159, 35);
+    /* color: rgb(20, 60, 80); */
+    margin-bottom: 2rem;
+}
+
+.welcome-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 330px) {
+    .welcome-container {
+        min-height: inherit;
+    }
+
+    .welcome-container h1 {
+        margin: 1rem 0 3rem;
+    }
+    
+    .welcome-container p {
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 /* ===============
@@ -1166,5 +1201,37 @@ Impressum
     .y-lam:hover,
     .y-lam:focus {
         font-size: 1.13rem;
+    }
+}
+
+/* ===============
+galery
+===============*/
+
+.galery-main {
+    background: white;
+    font-size: 1rem;
+}
+
+.galery-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.galery-container h1 {
+    padding: 1.8rem 0;
+}
+
+.galery-container:last-child {
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 400px) {
+    .galery-container {
+        font-size: 1.1rem;
+    }
+
+    .galery-container h1 {
+        padding: 2rem 0;
     }
 }
