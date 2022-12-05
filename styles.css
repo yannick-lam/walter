@@ -483,15 +483,23 @@ slide show
 }
 
 .welcome-container {
+    background-image: url(images/mountain.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(70, 70, 70);
+/*FÜR BLEND-MODE IMMER AUCH BACKGROUND COLOR VERWENDEN!*/
+    background-blend-mode: soft-light;
     /* background-color: rgb(247, 239, 220); */
     /* background-color: rgb(245, 245, 245); */
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    min-height: 50vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    z-index: -999;
 }
 
 .welcome-container h1 {
@@ -500,26 +508,57 @@ slide show
     font-weight: 100;
     color: rgb(241, 159, 35);
     /* color: rgb(20, 60, 80); */
-    margin-bottom: 2rem;
+    margin-top: 20%;
+    margin-bottom: 3rem;
 }
 
 .welcome-container p {
+    color: white;
+    /* text-shadow: 20px 20px red; */
     font-size: 1rem;
+    font-weight: bold;
     line-height: 1.5;
 }
 
 @media (min-width: 330px) {
-    .welcome-container {
-        min-height: inherit;
+    .welcome-container h1 {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (min-width: 400px) {
+    .welcome-container h1 {
+        margin-top: 15%;
+    }
+}
+
+@media (min-width: 460px) {
+    .welcome-container h1 {
+        font-size: 3.5rem;
     }
 
-    .welcome-container h1 {
-        margin: 1rem 0 3rem;
-    }
-    
     .welcome-container p {
-        padding: 0 2rem;
-        margin-bottom: 2rem;
+        max-width: 410px;
+    }
+}
+
+@media (min-width: 600px) {
+    .welcome-container h1 {
+        margin-top: 5rem;
+    }
+
+    .welcome-container p {
+        max-width: inherit;
+    }
+}
+
+@media (min-width: 710px) {
+    .welcome-container h1 {
+        font-size: 4rem;
+    }
+
+    .welcome-container p {
+        font-size: 1.1rem;
     }
 }
 
