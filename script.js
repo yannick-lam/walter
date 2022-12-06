@@ -36,7 +36,6 @@ toTop.addEventListener("click", function() {
 //     console.log(currentScroll)
 // })
 
-
 function readMore() {
     document.querySelector(".anreise-text").classList.toggle("read-more")
     document.querySelector(".anreise-text-p").classList.toggle("read-more")
@@ -82,6 +81,33 @@ backBtn.addEventListener("click", function() {
     document.getElementById("formelementone").scrollIntoView()
 
 })
+
+function arrowBed() {
+    const imgArrowBed = document.querySelector(".img-arrow-bed")
+    const arrowBed = document.querySelector(".show-text-bed")
+    const arrowBedP = document.querySelector(".show-text-bed-p")
+    imgArrowBed.classList.toggle("show")
+    arrowBed.classList.toggle("show")
+    arrowBedP.classList.toggle("show")
+}
+
+function arrowKitchen() {
+    const imgArrowKitchen = document.querySelector(".img-arrow-kitchen")
+    const arrowKitchen = document.querySelector(".show-text-kitchen")
+    const arrowKitchenP = document.querySelector(".show-text-kitchen-p")
+    imgArrowKitchen.classList.toggle("show")
+    arrowKitchen.classList.toggle("show")
+    arrowKitchenP.classList.toggle("show")
+}
+
+function arrowBath() {
+    const imgArrowBath = document.querySelector(".img-arrow-bath")
+    const arrowBath = document.querySelector(".show-text-bath")
+    const arrowBathP = document.querySelector(".show-text-bath-p")
+    imgArrowBath.classList.toggle("show")
+    arrowBath.classList.toggle("show")
+    arrowBathP.classList.toggle("show")
+}
 
 function sendMail() {
     const persons = document.getElementById("persons").value

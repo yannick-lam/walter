@@ -1191,9 +1191,16 @@ apartment
     padding: 2rem 0 1.8rem;
 }
 
+.apartment-container-child {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .apartment-pic {
     /* border: 3px solid rebeccapurple; */
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .apartment-pic img {
@@ -1204,29 +1211,87 @@ apartment
 
 .apartment-info {
     /* border: 3px solid red; */
+    width: 100%;
+    max-width: 400px;
 }
 
-.apartment-info-parent {
-    /* border: 3px solid blue; */
+.apartment-info-header p {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
 }
 
 .apartment-info-child {
     /* border: 3px solid green; */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1pt solid rgba(0, 0, 0, 0.3);    
 }
 
-.apartment-info-child img {}
+.apartment-info-child-bed, .apartment-info-child-kitchen, .apartment-info-child-bath {
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+}
+
+.apartment-info-child img {
+    width: 100%;
+    max-width: 24px;
+    object-fit: cover;
+}
 
 .apartment-info-child p {
     line-height: 1.5;
-    margin-left: 0.8rem;
+    margin-left: 1rem;
 }
 
 
 .apartment-info-child span {
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.show-text-bed, .show-text-kitchen, .show-text-bath {
+    opacity: 0;
+    height: 0;
+    transition: 0.2s;
+}
+
+.show-text-bed.show, .show-text-kitchen.show, .show-text-bath.show {
+    height: auto;
+    opacity: 1;
+    width: 100%;
+    line-height: 1.7;
+    padding: 0.8rem;
+    padding-left: 2.5rem;
+    letter-spacing: 0.3px;
+}
+
+.show-text-bed-p, .show-text-kitchen-p, .show-text-bath-p {
+    position: relative;
+    right: -100%;
+    transition: all 0.8s ease-out;
+}
+
+.show-text-bed-p.show, .show-text-kitchen-p.show, .show-text-bath-p.show {
+    right: 0;
+}
+
+.img-arrow-bed, .img-arrow-kitchen, .img-arrow-bath {
+    margin-left: auto;
+    transform: rotate(180deg);
+    transition: all 0.3s;
+}
+
+.img-arrow-bed.show, .img-arrow-kitchen.show, .img-arrow-bath.show {
+    transform: inherit;
 }
 
 .apartment-container:last-child {
@@ -1240,6 +1305,41 @@ apartment
 
     .apartment-container h1 {
         padding: 2rem 0;
+    }
+
+    .apartment-container-child {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 650px) {
+    .apartment-container-child {
+        /* border: 3px solid yellow; */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .apartment-pic, .apartment-info {
+        width: 47%;
+    }
+}
+
+@media (min-width: 900px) {
+    .apartment-container-child {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1020px) {
+    .apartment-container-child {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) {
+    .apartment-container-child {
+        justify-content: space-around;
     }
 }
 
