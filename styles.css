@@ -1187,6 +1187,10 @@ apartment
     margin: 0 auto;
 }
 
+.apartment-container-child {
+    padding-top: 1rem;
+}
+
 .apartment-container h1 {
     padding: 2rem 0 1.8rem;
 }
@@ -1219,7 +1223,7 @@ apartment
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-bottom: 1rem;
+    margin: 2.5rem 0 1.5rem;
 }
 
 .apartment-info-child {
@@ -1229,7 +1233,8 @@ apartment
     flex-wrap: wrap;
     align-items: center;
     padding: 0.5rem 0;
-    border-bottom: 1pt solid rgba(0, 0, 0, 0.3);    
+    border-bottom: 1pt solid rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;  
 }
 
 .apartment-info-child-bed, .apartment-info-child-kitchen, .apartment-info-child-bath {
@@ -1268,7 +1273,6 @@ apartment
     height: auto;
     opacity: 1;
     width: 100%;
-    line-height: 1.7;
     padding: 0.8rem;
     padding-left: 2.5rem;
     letter-spacing: 0.3px;
@@ -1281,6 +1285,7 @@ apartment
 }
 
 .show-text-bed-p.show, .show-text-kitchen-p.show, .show-text-bath-p.show {
+    line-height: 1.6;
     right: 0;
 }
 
@@ -1296,6 +1301,12 @@ apartment
 
 .apartment-container:last-child {
     padding-bottom: 2rem;
+}
+
+@media (min-width: 300px) {
+    .apartment-container-child {
+        font-size: 0.9rem;
+    }
 }
 
 @media (min-width: 400px) {
@@ -1318,6 +1329,10 @@ apartment
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+    }
+
+    .apartment-info-header p {
+        margin: 0 0 1.5rem;
     }
 
     .apartment-pic, .apartment-info {
