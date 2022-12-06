@@ -1188,6 +1188,7 @@ apartment
 }
 
 .apartment-container-child {
+    /* border: 3px solid red; */
     padding-top: 1rem;
 }
 
@@ -1196,22 +1197,138 @@ apartment
 }
 
 .apartment-container-child {
+    /* border: 3px solid red; */
     font-size: 0.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.apartment-pic {
-    /* border: 3px solid rebeccapurple; */
+.apartment-pic-container {
+    /* border: 3px solid green; */
+    width: 100%;
     max-width: 400px;
+    overflow: hidden;
 }
 
-.apartment-pic img {
+.apartment-pic {
+    /* border: 3px solid blue; */
+    width: 500%;
+    display: flex;
+    flex-direction: row;
+}
+
+.radio-input {
+    display: none;
+}
+
+.apartment-slide {
+    /* border: 3px solid yellow; */
+    width: 20%;
+    transition: 2s;
+}
+
+.apartment-slide img {
     width: 100%;
-    max-width: 100%;
+    height: 100%;
+    max-width: 400px;
     object-fit: cover;
 }
+
+/* manual slide */
+
+.navigation-manual {
+    position: absolute;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn1, .manual-btn2, .manual-btn3, .manual-btn4, .manual-btn5 {
+    border: 1px solid black;
+    background: black;
+    margin-top: 1rem;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.manual-btn:hover {
+    background: orange;
+}
+
+#radio1:checked ~ .slide-first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .slide-first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .slide-first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .slide-first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .slide-first {
+    margin-left: -80%;
+}
+
+/* auto slide */
+
+.navigation-auto {
+    /* border: 3px solid red; */
+    margin-bottom: -1.75rem;
+    align-self: flex-end;
+    position: absolute;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div {
+    border: 1px solid black;
+    /* background: orange; */
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 1rem;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: orange;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: orange;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: orange;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: orange;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background: orange;
+}
+
 
 .apartment-info {
     /* border: 3px solid red; */

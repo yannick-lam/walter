@@ -1,3 +1,19 @@
+var counter = 1
+setInterval(function(){
+    // if (document.getElementById("radio" + counter).checked = true) {
+    //     document.querySelector(".manual-btn" + counter).style.background = "orange";
+    // }
+
+    document.getElementById("radio" + counter).checked = true
+
+    counter++
+
+    if(counter > 5){
+        counter = 1
+    }
+}, 3000)
+
+
 const toTop = document.querySelector(".to-top")
 
 window.addEventListener("scroll", function() {
@@ -171,14 +187,7 @@ function sendMail() {
 
 
 
-// var counter = 1;
-// setInterval(function() {
-//     document.querySelector(".slide" + counter).classList.add("slideleft")
-//     counter++
-//   if (counter > 5) {
-//     counter = 1;
-//   }
-// }, 3000);
+
 
 // var count = 0
 // setInterval(function() {
