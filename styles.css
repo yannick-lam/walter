@@ -1209,16 +1209,15 @@ apartment
 
 .oans {
     display: flex;
-    /* border: 3px solid red; */
+    /* border: 3px solid aqua; */
     max-width: fit-content;
     width: 100%;
-    /* background-color: gray; */
     padding: 40px 0;
 }
 
 .zwoa {
     /* border: 3px solid rebeccapurple; */
-    margin: 0 20px 40px;
+    margin: 0 5px 40px;
     width: 100%;
     max-width: 400px;
     overflow: hidden;
@@ -1226,7 +1225,6 @@ apartment
 
 .drei {
     /* border: 3px solid green; */
-
 }
 
 .vier {
@@ -1244,6 +1242,7 @@ apartment
 
 .swiper-nextBtn {
     /* border: 3px solid red; */
+    display: none;
     width: 2rem;
     height: 2rem;
     transform: rotate(90deg);
@@ -1257,6 +1256,7 @@ apartment
 
 .swiper-backBtn {
     /* border: 3px solid red; */
+    display: none;
     width: 2rem;
     height: 2rem;
     transform: rotate(270deg);
@@ -1278,12 +1278,42 @@ apartment
     object-fit: cover;    
 }
 
+@media (min-width: 450px) {
+    .swiper-backBtn, .swiper-nextBtn {
+        display: inherit;
+    }
+}
+
+@media (min-width: 710px) {
+    .swiper-backBtn, .swiper-nextBtn {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .swiper-backBtn, .swiper-nextBtn {
+        display: inherit;
+    }
+}
+
+@media (min-width: 1020px) {
+    .swiper-backBtn, .swiper-nextBtn {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .swiper-backBtn, .swiper-nextBtn {
+        display: inherit;
+    }
+}
+
 /* slide apartment end */
 
 
 
 .apartment-info {
-    /* border: 3px solid red; */
+    /* border: 3px solid pink; */
     width: 100%;
     max-width: 400px;
 }
@@ -1323,7 +1353,7 @@ apartment
 
 .apartment-info-child p {
     line-height: 1.5;
-    margin-left: 1rem;
+    margin-left: 0.3rem;
 }
 
 
@@ -1372,9 +1402,13 @@ apartment
     padding-bottom: 2rem;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 335px) {
     .apartment-container-child {
         font-size: 0.9rem;
+    }
+
+    .apartment-info-child p {
+        margin-left: 1rem;
     }
 }
 
@@ -1392,7 +1426,7 @@ apartment
     }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 710px) {
     .apartment-container-child {
         /* border: 3px solid yellow; */
         flex-direction: row;
@@ -1404,7 +1438,7 @@ apartment
         margin: 0 0 1.5rem;
     }
 
-    .apartment-pic-container, .apartment-info {
+    .oans, .apartment-info {
         width: 47%;
     }
 }
