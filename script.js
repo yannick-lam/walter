@@ -1,17 +1,34 @@
-var counter = 1
-setInterval(function(){
-    // if (document.getElementById("radio" + counter).checked = true) {
-    //     document.querySelector(".manual-btn" + counter).style.background = "orange";
-    // }
+var swiper = new Swiper(".zwoa", {
+    slidesPerView: 1,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: "true",
+    fade: "true",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-backBtn",
+    },
+  });
 
-    document.getElementById("radio" + counter).checked = true
+// var counter = 1
+// setInterval(function(){
+//     if (document.getElementById("radio" + counter).checked = true) {
+//         document.querySelector(".manual-btn" + counter).style.background = "orange";
+//     }
 
-    counter++
+//     document.getElementById("radio" + counter).checked = true
 
-    if(counter > 5){
-        counter = 1
-    }
-}, 3000)
+//     counter++
+
+//     if(counter > 5){
+//         counter = 1
+//     }
+// }, 3000)
 
 
 const toTop = document.querySelector(".to-top")
