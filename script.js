@@ -7,10 +7,10 @@ var swiper = new Swiper(".zwoa", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-      dynamicBullets: true,
+    //   dynamicBullets: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
+      nextEl: ".swiper-nextBtn",
       prevEl: ".swiper-backBtn",
     },
   });

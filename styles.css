@@ -1205,24 +1205,22 @@ apartment
     overflow: hidden;
 }
 
-
-
-
-
-
+/* slide apartment start */
 
 .oans {
     display: flex;
     /* border: 3px solid red; */
     max-width: 1000px;
-    width: 100%;
+    width: fit-content;
     /* background-color: gray; */
     padding: 40px 0;
 }
 
 .zwoa {
     /* border: 3px solid rebeccapurple; */
-    margin: 40px;
+    margin: 0 20px 40px;
+    width: 100%;
+    max-width: 400px;
     overflow: hidden;
 }
 
@@ -1233,7 +1231,6 @@ apartment
 
 .vier {
     /* border: 3px solid blue; */
-
 }
 
 .vier img {
@@ -1245,32 +1242,17 @@ apartment
     object-fit: cover;
 }
 
-.swiper-navBtn {
-    color: black;
-    transition: color 0.3s ease;
-}
-
-.swiper-bavBtn:hover {
-    color: rgb(20, 60, 80);
-    scale: 1.1;
-}
-
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-    font-size: 2rem;
-}
-
-.swiper-button-next {
-    right: 0;
-}
-
-.swiper-pagination-bullet {
-    background-color: rgb(10, 100, 170);
-    opacity: 1;
-}
-
-.swiper-pagination-bullet.active {
-    background-color: rgb(0, 0, 170);
+.swiper-nextBtn {
+    /* border: 3px solid red; */
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(90deg);
+    order: 3;
+    align-self: center;
+    justify-self: start;
+    transition: all 0.3s;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
 }
 
 .swiper-backBtn {
@@ -1281,153 +1263,23 @@ apartment
     order: -1;
     align-self: center;
     justify-self: start;
-
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
-.swiper-backBtn img {
+.swiper-nextBtn:hover, .swiper-backBtn:hover {
+    scale: 1.1;
+}
+
+.swiper-backBtn img, .swiper-nextBtn img {
     display: block;
     width: 2rem;
     height: 2rem;
-    /* width: 100%; */
-    /* height: 100%; */
-    object-fit: cover;
+    object-fit: cover;    
 }
 
-.swiper-button-next {
-    line-height: 0.5;
-    color: red;
-}
+/* slide apartment end */
 
-
-
-.apartment-pic-container {
-    /* border: 3px solid green; */
-    width: 100%;
-    max-width: 400px;
-    overflow: hidden;
-}
-
-.apartment-pic {
-    /* border: 3px solid blue; */
-    width: 500%;
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.radio-input {
-    display: none;
-}
-
-.apartment-slide {
-    /* border: 3px solid yellow; */
-    width: 20%;
-    transition: 2s;
-}
-
-.apartment-slide img {
-    width: 100%;
-    height: 100%;
-    max-width: 400px;
-    object-fit: cover;
-}
-
-/* manual slide */
-
-.navigation-manual {
-    /* border: 3px solid red; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn1, .manual-btn2, .manual-btn3, .manual-btn4, .manual-btn5 {
-    border: 1px solid black;
-    background: black;
-    margin-top: 1rem;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 1rem;
-}
-
-.manual-btn:hover {
-    background: orange;
-}
-
-#radio1:checked ~ .slide-first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .slide-first {
-    margin-left: -20%;
-}
-
-#radio3:checked ~ .slide-first {
-    margin-left: -40%;
-}
-
-#radio4:checked ~ .slide-first {
-    margin-left: -60%;
-}
-
-#radio5:checked ~ .slide-first {
-    margin-left: -80%;
-}
-
-/* auto slide */
-
-.navigation-auto {
-    /* border: 3px solid red; */
-    /* margin-bottom: -1.75rem; */
-    display: flex;
-    position: absolute;
-    width: 124px;
-    margin-bottom: -1.75rem;
-    margin-left: calc(((100vw*0.9)-124px)/2);
-    flex-direction: row;
-    align-self: flex-end;
-    
-}
-
-.navigation-auto div {
-    border: 1px solid black;
-    /* background: orange; */
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-    z-index: 2;
-}
-
-.navigation-auto div:not(:last-child) {
-    margin-right: 1rem;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: orange;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: orange;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: orange;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: orange;
-}
-
-#radio5:checked ~ .navigation-auto .auto-btn5 {
-    background: orange;
-}
 
 
 .apartment-info {
