@@ -1353,9 +1353,11 @@ apartment
 
 .apartment-info-child p {
     line-height: 1.5;
-    margin-left: 0.3rem;
 }
 
+.category {
+    margin-left: 0.3rem;
+}
 
 .apartment-info-child span {
     text-transform: uppercase;
@@ -1373,7 +1375,7 @@ apartment
     opacity: 1;
     width: 100%;
     padding: 0.8rem;
-    padding-left: 2.5rem;
+    padding-left: 1.8rem;
     letter-spacing: 0.3px;
 }
 
@@ -1407,8 +1409,12 @@ apartment
         font-size: 0.9rem;
     }
 
-    .apartment-info-child p {
+    .category {
         margin-left: 1rem;
+    }
+
+    .show-text-bed.show, .show-text-kitchen.show, .show-text-bath.show {
+        padding-left: 2.5rem;
     }
 }
 
