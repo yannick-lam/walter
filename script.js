@@ -1,19 +1,45 @@
-var swiper = new Swiper(".zwoa", {
+// declare Swiper.js .classes
+const myCustomSlider = document.querySelectorAll('.zwoa');
+
+// declare navigation arrows classes
+const mySliderPrev = document.querySelectorAll('.swiper-backBtn');
+const mySliderNext = document.querySelectorAll('.swiper-nextBtn');
+const mySliderPag = document.querySelectorAll('.swiper-pagination');
+
+
+for( i=0; i< myCustomSlider.length; i++ ) {
+// add special class with number to each Swiper.js slider and its nabigation arrows  
+  myCustomSlider[i].classList.add('zwoa-' + i);
+  mySliderPrev[i].classList.add('swiper-backBtn-' + i);
+  mySliderNext[i].classList.add('swiper-nextBtn-' + i);
+  mySliderPag[i].classList.add('swiper-pagination-' + i);
+
+// Initiate the Sliders
+  var vidswiper = new Swiper('.zwoa-' + i, {
+   // Set sliders parameters
     slidesPerView: 1,
     spaceBetween: 25,
     loop: true,
     centerSlide: "true",
     fade: "true",
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination-" +i,
       clickable: true,
     //   dynamicBullets: true,
     },
     navigation: {
-      nextEl: ".swiper-nextBtn",
-      prevEl: ".swiper-backBtn",
+        nextEl: '.swiper-nextBtn-' +i,
+        prevEl: '.swiper-backBtn-' +i,
     },
   });
+
+}
+
+
+
+
+
+
 
 // var counter = 1
 // setInterval(function(){
@@ -137,6 +163,33 @@ function arrowBath() {
     const imgArrowBath = document.querySelector(".img-arrow-bath")
     const arrowBath = document.querySelector(".show-text-bath")
     const arrowBathP = document.querySelector(".show-text-bath-p")
+    imgArrowBath.classList.toggle("show")
+    arrowBath.classList.toggle("show")
+    arrowBathP.classList.toggle("show")
+}
+
+function arrowBed2() {
+    const imgArrowBed = document.querySelector(".img-arrow-bed2")
+    const arrowBed = document.querySelector(".show-text-bed2")
+    const arrowBedP = document.querySelector(".show-text-bed-p2")
+    imgArrowBed.classList.toggle("show")
+    arrowBed.classList.toggle("show")
+    arrowBedP.classList.toggle("show")
+}
+
+function arrowKitchen2() {
+    const imgArrowKitchen = document.querySelector(".img-arrow-kitchen2")
+    const arrowKitchen = document.querySelector(".show-text-kitchen2")
+    const arrowKitchenP = document.querySelector(".show-text-kitchen-p2")
+    imgArrowKitchen.classList.toggle("show")
+    arrowKitchen.classList.toggle("show")
+    arrowKitchenP.classList.toggle("show")
+}
+
+function arrowBath2() {
+    const imgArrowBath = document.querySelector(".img-arrow-bath2")
+    const arrowBath = document.querySelector(".show-text-bath2")
+    const arrowBathP = document.querySelector(".show-text-bath-p2")
     imgArrowBath.classList.toggle("show")
     arrowBath.classList.toggle("show")
     arrowBathP.classList.toggle("show")
