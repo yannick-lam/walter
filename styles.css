@@ -1581,6 +1581,7 @@ winter
 }
 
 .winter-container {
+    /* border: 3px solid red; */
     width: 90%;
     margin: 0 auto;
 }
@@ -1593,6 +1594,38 @@ winter
     padding-bottom: 2rem;
 }
 
+.winter-child {
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+}
+
+.winter-child-left {
+    /* border: 3px solid blue; */
+    max-width: 400px;
+}
+
+.winter-child-left img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.winter-child-right {
+    /* border: 3px solid green; */
+}
+
+.winter-child-right h2 {
+    font-size: 1.3rem;
+    margin: 2rem 0 1.5rem;
+}
+
+.winter-child-right p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+}
+
 @media (min-width: 400px) {
     .winter-container {
         font-size: 1.1rem;
@@ -1600,6 +1633,26 @@ winter
 
     .winter-container h1 {
         padding: 2rem 0;
+    }
+
+    .winter-child-right p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 710px) {
+    .winter-child {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .winter-child-left, .winter-child-right {
+        width: 48%;
+    }
+
+    .winter-child-right h2 {
+        margin: 0 0 1.5rem;
     }
 }
 
@@ -1613,6 +1666,7 @@ summer
 }
 
 .summer-container {
+    /* border: 3px solid red; */
     width: 90%;
     margin: 0 auto;
 }
@@ -1625,6 +1679,38 @@ summer
     padding-bottom: 2rem;
 }
 
+.summer-child {
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+}
+
+.summer-child-left {
+    /* border: 3px solid blue; */
+    max-width: 400px;
+}
+
+.summer-child-left img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.summer-child-right {
+    /* border: 3px solid green; */
+}
+
+.summer-child-right h2 {
+    font-size: 1.3rem;
+    margin: 2rem 0 1.5rem;
+}
+
+.summer-child-right p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+}
+
 @media (min-width: 400px) {
     .summer-container {
         font-size: 1.1rem;
@@ -1633,6 +1719,27 @@ summer
     .summer-container h1 {
         padding: 2rem 0;
     }
+
+    .summer-child-right p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 710px) {
+    .summer-child {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .summer-child-left, .summer-child-right {
+        width: 48%;
+    }
+
+    .summer-child-right h2 {
+        margin: 0 0 1.5rem;
+    }
+    
 }
 
 /* ===============
