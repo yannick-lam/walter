@@ -1604,6 +1604,7 @@ winter
 .winter-child-left {
     /* border: 3px solid blue; */
     margin: 0 auto;
+    width: 100%;
     max-width: 400px;
 }
 
@@ -1614,7 +1615,11 @@ winter
 }
 
 .winter-child-left iframe {
+    /* border: 3px solid yellow; */
+    height: calc((100vw*0.9)*0.5625);
+    max-height: 225px;
     width: 100%;
+    object-fit: cover;
 }
 
 .winter-child-right {
@@ -1661,6 +1666,10 @@ winter
         margin: 0;
     }
 
+    .winter-child-left iframe {
+        height: calc(((100vw*0.9)*0.48)*0.5625);
+    }
+
     .winter-child-right h2 {
         margin: 0 0 1.5rem;
     }
@@ -1699,6 +1708,7 @@ summer
 .summer-child-left {
     /* border: 3px solid blue; */
     margin: 0 auto;
+    width: 100%;
     max-width: 400px;
 }
 
@@ -1709,6 +1719,9 @@ summer
 }
 
 .summer-child-left iframe {
+    /* border: 3px solid yellow; */
+    height: calc((100vw*0.9)*0.5625);
+    max-height: 225px;
     width: 100%;
 }
 
@@ -1754,6 +1767,10 @@ summer
     
     .summer-child-left {
         margin: 0;
+    }
+
+    .summer-child-left iframe {
+        height: calc(((100vw*0.9)*0.48)*0.5625);
     }
 
     .summer-child-right h2 {
