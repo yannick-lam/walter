@@ -1613,6 +1613,10 @@ winter
     object-fit: cover;
 }
 
+.winter-child-left iframe {
+    width: 100%;
+}
+
 .winter-child-right {
     /* border: 3px solid green; */
 }
@@ -1704,9 +1708,8 @@ summer
     object-fit: cover;
 }
 
-.summer-child-left video {
+.summer-child-left iframe {
     width: 100%;
-    height: auto;
 }
 
 .summer-child-right {
