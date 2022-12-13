@@ -216,6 +216,7 @@ function sendMail() {
     var params = {
         firstname: document.getElementById("fname").value,
         lastname: document.getElementById("lname").value,
+        email: document.getElementById("email").value,
         message: `
             Apartment: ${persons}
             Erwachsene: ${adult}
@@ -249,6 +250,8 @@ function sendMail() {
         console.log("Error")
     })
 }
+
+document.querySelector(".apart-persons").required = true
 
 
 

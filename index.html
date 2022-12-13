@@ -135,7 +135,7 @@
             </div>
             <div class="form-left-right">
               <div class="form-left">
-                <label for="persons">Apartment</label>
+                <label for="persons">Apartment*</label>
                 <div>
                   <label>
                     <input type="checkbox" class="apart-persons" id="persons" value="für 4 Personen"> für 4 Personen
@@ -182,11 +182,11 @@
                 <br>
               </div>
               <div class="form-right">
-                <label for="date">Terminwunsch</label>
-                <input type="date" name="date" id="date" placeholder="tt.mm.jjjj">
+                <label for="date">Terminwunsch*</label>
+                <input type="date" name="date" id="date" placeholder="tt.mm.jjjj" required>
                 <br>
-                <label for="nights">Nächte</label>
-                <select name="nights" id="nights">
+                <label for="nights">Nächte*</label>
+                <select name="nights" id="nights" required>
                   <option value="-">-</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -276,13 +276,13 @@
                 </select>
                 <br>
                 <label for="fname">Vorname*</label>
-                <input type="text" name="firstname" id="fname" placeholder="Max">
+                <input type="text" name="firstname" id="fname" placeholder="Max" required>
                 <br>
                 <label for="lname">Nachname*</label>
-                <input type="text" name="lastname" id="lname" placeholder="Muster">
+                <input type="text" name="lastname" id="lname" placeholder="Muster" required>
                 <br>
                 <label for="email">E-Mail*</label>
-                <input type="email" name="mail" id="email" placeholder="max@muster.gmail">
+                <input type="email" name="mail" id="email" placeholder="max@muster.gmail" required>
                 <br>
                 <label for="telnumber">Telefon</label>
                 <input type="text" name="telnumber" id="telnumber" placeholder="+123456789">
@@ -290,16 +290,16 @@
               </div>
               <div class="form-right">
                 <label for="street">Straße*</label>
-                <input type="text" name="street" id="street" placeholder="Straße">
+                <input type="text" name="street" id="street" placeholder="Straße" required>
                 <br>
                 <label for="location">Ort*</label>
-                <input type="text" name="location" id="location" placeholder="Ort">
+                <input type="text" name="location" id="location" placeholder="Ort" required>
                 <br>
                 <label for="locnumber">PLZ*</label>
-                <input type="text" name="locnumber" id="locnumber" placeholder="PLZ">
+                <input type="text" name="locnumber" id="locnumber" placeholder="PLZ" required>
                 <br>
                 <label for="country">Land*</label>
-                <input type="text" name="country" id="country" placeholder="Land">
+                <input type="text" name="country" id="country" placeholder="Land" required>
                 <br>
                 <label for="fax">Fax</label>
                 <input type="text" name="fax" id="fax" placeholder="+123456789">
