@@ -1614,7 +1614,7 @@ winter
 }
 
 .winter-child-left iframe {
-    /* border: 3px solid yellow; */
+    /* border: 3px solid green; */
     height: calc((100vw*0.9)*0.5625);
     max-height: 225px;
     width: 100%;
@@ -1676,7 +1676,7 @@ winter
 
 @media (min-width: 1020px) {
     .winter-child-left iframe {
-        max-height: 180px;
+        max-height: 190px;
     }
 }
 
@@ -1791,7 +1791,7 @@ summer
 
 @media (min-width: 1020px) {
     .summer-child-left iframe {
-        max-height: 180px;
+        max-height: 190px;
     }
 }
 
