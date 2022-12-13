@@ -1594,14 +1594,14 @@ winter
 }
 
 .winter-child {
-    /* border: 3px solid yellow; */
+    border: 3px solid yellow;
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
 }
 
 .winter-child-left {
-    /* border: 3px solid blue; */
+    border: 3px solid blue;
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
@@ -1614,7 +1614,7 @@ winter
 }
 
 .winter-child-left iframe {
-    /* border: 3px solid yellow; */
+    border: 3px solid yellow;
     height: calc((100vw*0.9)*0.5625);
     max-height: 225px;
     width: 100%;
