@@ -251,9 +251,6 @@ function sendMail() {
     })
 }
 
-document.querySelector(".apart-persons").required = true
-
-
 
 
 
