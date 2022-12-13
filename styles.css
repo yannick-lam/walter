@@ -1676,7 +1676,7 @@ winter
 
 @media (min-width: 1020px) {
     .winter-child-left iframe {
-        max-height: 210px;
+        max-height: 200px;
     }
 }
 
@@ -1791,7 +1791,7 @@ summer
 
 @media (min-width: 1020px) {
     .summer-child-left iframe {
-        max-height: 210px;
+        max-height: 200px;
     }
 }
 
