@@ -1586,7 +1586,7 @@ winter
 }
 
 .winter-container h1 {
-    padding-top: 2rem;
+    padding: 2rem 0;
 }
 
 .winter-container:last-child {
@@ -1599,7 +1599,7 @@ winter
     flex-direction: column;
 }
 
-.summer-child:not(:first-of-type) {
+.winter-child:not(:first-of-type) {
     margin-top: 4rem;
 }
 
@@ -1642,10 +1642,6 @@ winter
 @media (min-width: 400px) {
     .winter-container {
         font-size: 1.1rem;
-    }
-
-    .winter-container h1 {
-        padding: 2rem 0;
     }
 
     .winter-child-right p {
@@ -1705,7 +1701,7 @@ summer
 }
 
 .summer-container h1 {
-    padding-top: 2rem;
+    padding: 2rem 0;
 }
 
 .summer-container:last-child {
@@ -1757,13 +1753,14 @@ summer
     letter-spacing: 0.7px;
 }
 
+.hier {
+    color: rgb(20, 60, 80);
+    font-weight: bold;
+}
+
 @media (min-width: 400px) {
     .summer-container {
         font-size: 1.1rem;
-    }
-
-    .summer-container h1 {
-        padding: 2rem 0;
     }
 
     .summer-child-right p {
