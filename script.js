@@ -101,6 +101,12 @@ function readMore() {
     document.querySelector(".anreise-text-rm").classList.toggle("read-more")
 }
 
+function showCopy() {
+    document.querySelector(".copyright").classList.toggle("show")
+    document.querySelector(".copyright-p").classList.toggle("show")
+    document.querySelector(".fa-camera").classList.toggle("show")
+}
+
 function show() {
     document.querySelector(".body").classList.toggle("locked")
     document.querySelector(".hamburger").classList.toggle("open")

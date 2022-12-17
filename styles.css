@@ -288,6 +288,79 @@ slide show
     overflow: hidden;
 }
 
+.main-container-home {
+    background-image: url(images/gries-quality.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(100, 100, 100);
+    /*FÜR BLEND-MODE IMMER AUCH BACKGROUND COLOR VERWENDEN!*/
+    background-blend-mode: multiply;
+}
+
+.home-img-div {
+    background-image: url(images/gries-quality.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(100, 100, 100);
+    min-height: 65vh;
+    height: calc(100vw*0.65);
+    max-height: 80vh;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-img-div img {
+    width: 100%;
+}
+
+.copyright-container-home {
+    /* border: 3px solid yellow; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: black;
+    padding: 1rem;
+    margin-top: -77px;
+}
+
+.copyright {
+    /* border: 3px solid red; */
+    display: flex;
+    padding: 0.2rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+.copyright.show {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.copyright-p {
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.3rem;
+    display: none;
+}
+
+.copyright-p.show {
+    display: inherit;
+}
+
+.fa-camera {
+    font-size: 0.6rem;
+    padding: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    align-self: center;
+}
+
+.fa-camera.show {
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0.3rem;
+}
+
 .main-one, .main-two, .main-three, .main-four, .main-five {
     /* border: 3px solid green; */
     position: absolute;
@@ -1574,6 +1647,65 @@ apartment
 winter
 ===============*/
 
+.main-container-winter {
+    min-height: 65vh;
+    background-image: url(images/winter.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(120, 120, 120);   
+}
+
+.copyright-container-winter {
+    /* border: 3px solid yellow; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: black;
+    padding: 1rem;
+    margin-top: -77px;
+}
+
+.copyright-container-winter h1 {
+    text-shadow: 0px 0px 4px white;
+}
+
+.copyright {
+    /* border: 3px solid red; */
+    display: flex;
+    padding: 0.2rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+.copyright.show {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.copyright-p {
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.3rem;
+    display: none;
+}
+
+.copyright-p.show {
+    display: inherit;
+}
+
+.fa-camera {
+    font-size: 0.6rem;
+    padding: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    align-self: center;
+}
+
+.fa-camera.show {
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0.3rem;
+}
+
 .winter-main {
     background: white;
     font-size: 1rem;
@@ -1583,14 +1715,7 @@ winter
     /* border: 3px solid red; */
     width: 90%;
     margin: 0 auto;
-}
-
-.winter-container h1 {
-    padding: 2rem 0;
-}
-
-.winter-container:last-child {
-    padding-bottom: 2rem;
+    padding: 3rem 0 2rem;
 }
 
 .winter-child {
@@ -1689,6 +1814,65 @@ winter
 summer
 ===============*/
 
+.main-container-summer {
+    min-height: 65vh;
+    background-image: url(images/summer.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(120, 120, 120);   
+}
+
+.copyright-container-summer {
+    /* border: 3px solid yellow; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: white;
+    padding: 1rem;
+    margin-top: -77px;
+}
+
+.copyright-container-summer h1 {
+    text-shadow: 0px 0px 4px black;
+}
+
+.copyright {
+    /* border: 3px solid red; */
+    display: flex;
+    padding: 0.2rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+.copyright.show {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.copyright-p {
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.3rem;
+    display: none;
+}
+
+.copyright-p.show {
+    display: inherit;
+}
+
+.fa-camera {
+    font-size: 0.6rem;
+    padding: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    align-self: center;
+}
+
+.fa-camera.show {
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0.3rem;
+}
+
 .summer-main {
     background: white;
     font-size: 1rem;
@@ -1698,14 +1882,7 @@ summer
     /* border: 3px solid red; */
     width: 90%;
     margin: 0 auto;
-}
-
-.summer-container h1 {
-    padding: 2rem 0;
-}
-
-.summer-container:last-child {
-    padding-bottom: 2rem;
+    padding: 3rem 0 2rem;
 }
 
 .summer-child {
