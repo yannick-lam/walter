@@ -1650,7 +1650,7 @@ winter
 
 .main-container-winter {
     min-height: 65vh;
-    background-image: url(images/gries_langlaufen.jpg);
+    background-image: url(images/winter.webp);
     background-size: cover;
     background-position: center;
     background-color: rgb(120, 120, 120);   
@@ -1667,7 +1667,7 @@ winter
 }
 
 .copyright-container-winter h1 {
-    text-shadow: 0px 0px 4px white;
+    text-shadow: 0px 0px 2px white;
 }
 
 .copyright {
@@ -1816,8 +1816,8 @@ summer
 ===============*/
 
 .main-container-summer {
-    min-height: 45vh;
-    background-image: url(images/wandern.jpg);
+    min-height: 65vh;
+    background-image: url(images/sommer-wandern.jpg);
     background-size: cover;
     background-position: center;
     background-color: rgb(120, 120, 120);   
@@ -1943,12 +1943,6 @@ summer
 
     .summer-child-right p {
         font-size: 1rem;
-    }
-}
-
-@media (min-width: 450px) {
-    .main-container-summer {
-        min-height: 65vh;
     }
 }
 
