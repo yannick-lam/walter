@@ -1816,7 +1816,7 @@ summer
 ===============*/
 
 .main-container-summer {
-    min-height: 65vh;
+    min-height: 45vh;
     background-image: url(images/wandern.jpg);
     background-size: cover;
     background-position: center;
@@ -1943,6 +1943,12 @@ summer
 
     .summer-child-right p {
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 450px) {
+    .main-container-summer {
+        min-height: 65vh;
     }
 }
 
