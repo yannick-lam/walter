@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/7bc91d0a4f.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>
@@ -111,7 +112,7 @@
   <main>
 
     <div class="welcome-main">
-      <div class="welcome-container">
+      <div class="welcome-container" data-aos="fade-up">
         <div class="welcome-content">
           <h1>Herzlich willkommen</h1>
           <p>in unserem Apartmenthaus in ruhiger und sonniger Lage in Gries.</p>
@@ -121,7 +122,7 @@
 
     <div class="form-container scroll-margin" id="contact">
 
-      <div class="form-section-one">
+      <div class="form-section-one" data-aos="fade-up">
         <div class="contact-logo">
           <h2 class="contact-header">Kontakt</h2>
         </div>
@@ -144,7 +145,7 @@
         </div>
       </div>
 
-      <div class="form-section-two">
+      <div class="form-section-two" data-aos="fade-up">
         <div class="form-section-two-container">
           <div class="form scroll-margin" id="formelementone">
 
@@ -336,7 +337,7 @@
     </div>
 
     <div class="gries scroll-margin" id="gries-anreise">
-      <div class="anreise">
+      <div class="anreise" data-aos="fade-up">
 
         <h1>Anfahrt</h1>
 
@@ -387,6 +388,13 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
 
 </body>
 
