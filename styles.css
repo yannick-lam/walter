@@ -289,7 +289,7 @@ slide show
 }
 
 .main-container-home {
-    background-image: url(images/gries-quality.jpg);
+    background-image: url(images/ötztal-tvb/gries.jpg);
     background-size: cover;
     background-position: center;
     background-color: rgb(100, 100, 100);
@@ -298,7 +298,7 @@ slide show
 }
 
 .home-img-div {
-    background-image: url(images/gries-quality.jpg);
+    background-image: url(images/ötztal-tvb/gries.jpg);
     background-size: cover;
     background-position: center;
     background-color: rgb(100, 100, 100);
@@ -1650,7 +1650,7 @@ winter
 
 .main-container-winter {
     min-height: 65vh;
-    background-image: url(images/winter.webp);
+    background-image: url(images/ötztal-tvb/winter.webp);
     background-size: cover;
     background-position: center;
     background-color: rgb(120, 120, 120);   
@@ -1817,7 +1817,7 @@ summer
 
 .main-container-summer {
     min-height: 65vh;
-    background-image: url(images/sommer-wandern.jpg);
+    background-image: url(images/ötztal-tvb/sommer.jpg);
     background-size: cover;
     background-position: center;
     background-color: rgb(120, 120, 120);   
@@ -2000,6 +2000,41 @@ galery
     padding: 2rem 0 1.8rem;
 }
 
+.galery-pic-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(autofit, minmax(100px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+
+.galery-pic-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.normal-pic {
+    /* border: 3px solid red; */
+}
+
+.vertical-pic {
+    /* border: 3px solid green; */
+    grid-row: span 2;
+}
+
+.horizontal-pic {
+    /* border: 3px solid blue; */
+    grid-column: span 2;
+}
+
+.big-pic {
+    /* border: 3px solid yellow; */
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
 .galery-container:last-child {
     padding-bottom: 2rem;
 }
@@ -2038,6 +2073,19 @@ Impressum
 
 .impressum-child-container p:last-of-type {
     padding-bottom: 2rem;
+}
+
+.impressum-br-copywright p {
+    font-size: 0.9rem;
+}
+
+.impressum-br-copywright p:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+}
+
+.impressum-br-copywright p:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0.7rem;
 }
 
 .contact-number-impressum, .contact-email-impressum, .website {
