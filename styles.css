@@ -330,6 +330,7 @@ slide show
     padding: 0.2rem;
     cursor: pointer;
     align-self: center;
+    margin-left: 1rem;
 }
 
 .copyright.show {
@@ -1816,7 +1817,7 @@ summer
 
 .main-container-summer {
     min-height: 65vh;
-    background-image: url(images/summer.jpeg);
+    background-image: url(images/wandern.jpg);
     background-size: cover;
     background-position: center;
     background-color: rgb(120, 120, 120);   
