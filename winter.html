@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/7bc91d0a4f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -87,10 +88,10 @@
     <div class="winter-container">
       
       <div class="winter-child">
-        <div class="winter-child-left iframe-container">
+        <div class="winter-child-left iframe-container" data-aos="fade-up">
           <iframe src="https://www.youtube.com/embed/v/Y6Vbl_-4RWg?version=3&autoplay=1&mute=1&loop=1&controls=0&playlist=Y6Vbl_-4RWg" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="winter-child-right">
+        <div class="winter-child-right" data-aos="fade-up">
           <h2>Ötztal Inside Card</h2>
           <p>Die Inside Card ermöglicht die freie und sichere Fahrt mit den öffentlichen Verkehrsmitteln, kostenlosen Eintritt in Museen und Freizeiteinrichtungen u.v.m.</p>
           <p><b>Erhältlich für 3, 7 oder 10 Tage!</b></p>
@@ -100,10 +101,10 @@
       </div>
 
       <div class="winter-child">
-        <div class="winter-child-left">
+        <div class="winter-child-left" data-aos="fade-up">
           <img src="images/piburger-see-winter.webp" alt="Pipurger See im Winter">
         </div>
-        <div class="winter-child-right">
+        <div class="winter-child-right" data-aos="fade-up">
           <h2>Eislaufen und Spaziergänge auf dem Piburger See</h2>
           <p>Die zwei Kilometer lange Eisfläche auf dem See wird gekehrt und geräumt und bieten somit perfekte winterliche Bedingungen. Auch für die richtige Ausrüstung ist gesorgt, nutze einfach den Schlittschuhverleih im Gasthof Piburger See.</p>
             <br>
@@ -126,6 +127,13 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1300,
+      once: true,
+    });
+  </script>
 
 </body>
 
