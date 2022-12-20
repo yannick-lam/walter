@@ -136,6 +136,10 @@ header {
     overflow: scroll;
 }
 
+.navigation::-webkit-scrollbar {
+    display: none;
+}
+
 .nav {
     /* border: 3px solid yellow; */
     background: white;
@@ -143,7 +147,8 @@ header {
     width: 100%;
     max-width: 200px;
     margin: 0 auto;
-    top: 8.2rem;
+    padding-bottom: 2rem;
+    top: 8rem;
     left: 0;
     right: 0;
 }
@@ -158,23 +163,65 @@ header {
     list-style-type: none;
     padding-left: 0.7rem;
     padding-bottom: 0.8rem;
-    margin: 1.3rem 0 0;
+    margin: 0 0 1.3rem;
     border-bottom: 1pt solid rgba(0, 0, 0, 0.2);
 }
 
-.a-two {
+.a-two, .a-two-small {
     text-decoration: none;
     color: black;
 }
 
-.a-two, .hamburger {
+.navigation ul .a-two-small-summer li,
+.navigation ul .a-two-small-winter li {
+    /* border: 3px solid blue; */
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    border-bottom: 1pt solid rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.7px;
+}
+
+.navigation ul .a-two-small-summer li {
+    margin-top: -0.5rem;
+}
+
+.navigation ul .a-two-small-winter li {
+    margin-top: 0.8rem;
+    margin-bottom: 1.1rem;
+}
+
+.a-two, .a-two-small, .hamburger {
     cursor: pointer;
+}
+
+.a-two-small-summer,
+.a-two-small-winter {
+    display: none;
+}
+
+.a-two-small-summer.show,
+.a-two-small-winter.show {
+        display: inherit;
 }
 
 .nav ul li:hover {
     color: rgb(10, 100, 170);
     border-bottom: 2px solid rgb(20, 60, 80);
     font-size: 0.9rem;
+    transition: 0.1s;
+}
+
+.nav ul .a-two-small li:hover {
+    color: rgb(10, 100, 170);
+    border-bottom: 2px solid rgb(20, 60, 80);
+    font-size: 0.8rem;
     transition: 0.1s;
 }
 
@@ -238,7 +285,7 @@ header {
     }
 
     .nav {
-        top: 6rem;
+        top: 5.8rem;
     }
 
     .navigation ul li{

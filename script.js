@@ -107,6 +107,11 @@ function showCopy() {
     document.querySelector(".fa-camera").classList.toggle("show")
 }
 
+function showGallery() {
+    document.querySelector(".a-two-small-summer").classList.toggle("show")
+    document.querySelector(".a-two-small-winter").classList.toggle("show")
+}
+
 function show() {
     document.querySelector(".body").classList.toggle("locked")
     document.querySelector(".hamburger").classList.toggle("open")

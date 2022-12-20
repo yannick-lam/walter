@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<header class="header">
+
+  <div class="container">
+    <div class="site-title" id="sitetitle">
+      <a href="index.html">
+        <h1>Agnesn Apartmenthaus</h1>
+      </a>
+      <!-- <img class="logo-agnesn" src="images/logo.jpeg" alt="Agnesn Apartmenthaus logo"> -->
+    </div>
+    <div class="top">
+      <button class="hamburger nav-btn" id="hamburger" onclick="show()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </button>
+    </div>
+  </div>
+  <div class="navigation" id="navigation">
+    <nav class="nav">
+      <ul>
+        <a class="a-two" id="a-two" href="index.html">
+          <li>Home</li>
+        </a>
+        <a class="a-two" id="a-two" href="apartments.html">
+          <li>Apartments</li>
+        </a>
+        <a class="a-two" id="a-two" href="apartments.html#preise">
+          <li>Preise</li>
+        </a>
+        <a class="a-two" id="a-two" href="winter.html">
+          <li>Winter</li>
+        </a>
+        <a class="a-two" id="a-two" href="summer.html">
+          <li>Sommer</li>
+        </a>
+        <a class="a-two" id="a-two" href="index.html#contact">
+          <li>Kontakt / Anfrage</li>
+        </a>
+        <a class="a-two" id="a-two" href="index.html#gries-anreise">
+          <li>Lage / Anreise</li>
+        </a>
+        <a class="a-two" id="a-two" onclick="showGallery()">
+          <li>Bildergalerie</li>
+        </a>
+        <a class="a-two-small a-two-small-summer" id="a-two-small-summer" href="galery-summer.html">
+          <li>Sommer</li>
+        </a>
+        <a class="a-two-small a-two-small-winter" id="a-two-small-winter" href="galery-winter.html">
+          <li>Winter</li>
+        </a>
+        <a class="a-two" id="a-two" href="impressum.html">
+          <li>Impressum</li>
+        </a>
+      </ul>
+    </nav>
+  </div>
+
+</header>
+
+
+<body class="body">
+
+  <!-- <div class="main-container">
+    <div class="main-one"></div>
+    <div class="main-two"></div>
+    <div class="main-three"></div>
+    <div class="main-four"></div>
+    <div class="main-five"></div>
+    <div class="slide-container">
+      <img class="slide1" src="images/gries-neu.jpeg" alt="Bild von Gries im Sulztal">
+      <img class="slide slide2" src="images/haus-neu.jpeg" alt="Agnesn Apartmenthaus von außen">
+      <img class="slide slide3" src="images/küche.jpeg" alt="große Küche">
+      <img class="slide slide4" src="images/schlafzimmer-neu.jpeg" alt="großes Schlafzimmer">
+      <img class="slide slide5" src="images/bad.jpeg" alt="Badezimmer mit WC Dusche und Badewanne">
+    </div>
+  </div> -->
+  
+  <main class="galery-main">
+    <div class="galery-container">
+      
+      <h1>Sommer</h1>
+      <div class="galery-pic-container">
+        
+        <div class="horizontal-pic stimmung1-resize" data-aos="fade-up">
+          <img src="images/ötztal-tvb/stimmung1.jpg" alt="Ötztal, Gurgl, Sommer, Wandern, Soomsee, Seenplatte, Sonnenaufgang, Stimmung, Lanschaft">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/bike1.jpg" alt="Fotoshooting für das Magazin Rollin | Martin Erd,Ötztal, Sölden, Bike Republic Sölden, BRS, Enduro, Freeride, Sommer">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/gries_sommer.jpg" alt="Ötztal, Gries in Längenfeld, Ortsaufnahme, Sommer">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/hochoetz_widiversum2.jpg" alt="Ötztal, Region Oetz, Almenregion Hochoetz, WIDIVERSUM Hochoetz, Sommer, Familie, Kinder, Plitschplatschteich, Floß, Wasser, See, blauer Himmel, Spaß">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/wandern5.jpg" alt="Ötztal, Gurgl, Wandern, Sommer">
+        </div>
+        <div class="vertical-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/stuibenfall.jpg" alt="Ötztal, Umhausen, Stuibenfall, Sommer, Wasserfall, Aussichtsplattform, Aussichtspunkt">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/wandern2.jpg" alt="Ötztal, Region Oetz, Hochoetz, WIDIVERSUM, Sommer">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/aqua_dome.jpg" alt="Ötztal, Längenfeld, AQUA DOME - Tirol Therme Längenfeld, Wellness, SPA, Relax, Becken">
+        </div>
+        <div class="horizontal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/wandern1.jpg" alt="Ötztal, Gurgl, Alpine Auszeit, Sommer, Wandern, Familie, Kinder">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/stimmung3.jpg" alt="Längenfeld, 4-Seen Weg, 4-Seen Marsch, Sommer, Plattach See, Wasser, Stimmung, blauer Himmel, Steine, Berge, Sonnenstrahlen">
+        </div>
+        <div class="vertical-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/stimmung2.jpg" alt="Ötztal, Region Oetz, Hochoetz, Sommer, Wandern, Knappenweg, Schaf">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/haengebruecke.jpg" alt="Ötztal, Ötztaler Urweg, Sommer, Landschaft, Hängebrücke">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/stimmung5.jpg" alt="Ötztal, Brand bei Längenfeld, Ortsaufnahme, Sommer">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/gaislachkoglbahn.jpg" alt="Ötztal, Sölden, Gaislachkoglbahn, Gondel, Sommer">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/wandern7.jpg" alt="Ötztal, Umhausen, Sommer, Wiesle, Kapelle, Landschaft, Natur, Wandern, Pärchen, Wiese">
+        </div>
+        <div class="vertical-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/piburger_see_sommer.jpg" alt="Fotoshooting für das Magazin Rollin | Martin Erd,Ötztal, Region Oetz, Piburger See, Schwimmen, Sommer">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/hochoetz_widiversum1.jpg" alt="Ötztal, Region Oetz, Almenregion Hochoetz, WIDIVERSUM Hochoetz, Sommer, Familie, Kinder, Berge, blauer Himmel, Wolken, Dohlenhorst, Wiese">
+        </div>
+        <div class="horizontal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/stimmung4.jpg" alt="Ötztal, Umhausen-Niederthai, Erlanger Hütte, Sonnenaufgang, Landschaft, Stimmung, Sommer">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/bike2.jpg" alt="Ötztal, Sölden, E-Bike, Ebike, E Bike zur Kleble Alm, Stille Seite, Sommer, Pärchen, Mann, Frau, Himmel, Berge, Nederkogl, Wald, Bäume, Himmel, biken">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/piburger_see_sommer2.jpg" alt="Ötztal, Region Oetz, Piburger See, Sommer, Summer Card, Pärchen">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/teufelskanzel.jpg" alt="Kraftquell Längenfeld, Teufelskanzel, Aussichtsplattform, Sommer, Bäume, Wald, Fahne, Brand, Berge, Wiese, Dorf, Häuser, Ausblick, Kraftplatz">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/wandern6.jpg" alt="Ötztal, Sölden, Naturerfahrungsweg, Themenweg, Annemaries Hühnersteign, Familie, Kinder, Wandern, Daniela & Martin Schöpf, Sommer">
+        </div>
+        <div class="horizontal-pic stimmung6-resize" data-aos="fade-up">
+          <img src="images/ötztal-tvb/stimmung6.jpg" alt="Ötztal, Vent, Sommer, Wandern, Sonnbergweg">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/adlerblick.jpg" alt="Kraftquell Längenfeld, Adlerblick, Sommer, Himmel, Berge, Häuser, Ortsbild, Sommer, Wiese, Bäume, Aussichtsplattform, Landschaft, Ausblick, Kraftplatz">
+        </div>
+        <div class="horizontal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/outdoor_parcours.jpg" alt="Ötztal, Sautens, Ötztaler Outdoor Parcours, Klettern, Hochseilgarten, Sommer">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/stuibenfall2.jpg" alt="Urkraft Umhausen, Stuibenfall, Wasserfall, Sommer, Wald, Bäume, Stahlstufen, Hängebrücke, Aussichtsplattform, blauer Himmel, Sehenswertes, Ort, Berge">
+        </div>
+        <div class="vertical-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/wandern3.jpg" alt="Ötztal, Gurgl, Sommer, Wandern, Richtung Hohe Mut Alm, Gaisbergtal, Rotmoostal">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/haengebruecke2.jpg" alt="Hängebrücke Längenfeld">
+        </div>
+        <div class="normal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/rafting.jpg" alt="AREA 47 der größte Outdoor Freizeitpark in Österreich, Outdoor-Highlight im Ötztal, Outdoor, Sommer, Spaß, Imster Schlucht, Rafting">
+        </div>
+        <div class="horizontal-pic" data-aos="fade-up">
+          <img src="images/ötztal-tvb/bike3.jpg" alt="Ötztal, Sölden, Bike Republic Sölden, BRS, Enduro, Sommer, Bartigs Bödele Trail, Korbinian Engstler, Johannes Fischbach, Celine Blochberger">
+        </div>
+        
+      </div>
+      
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container-footer">
+      <p class="footer-title">Agnesn Apartmenthaus</p>
+      <p>©2022</p>
+    </div>
+  </footer>
+
+  <div class="to-top">
+    <img src="images/up.png" alt="arrow showing to the top">
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 0,
+      duration: 2000,
+      once: true,
+    });
+  </script>
+
+</body>
+
+</html>
