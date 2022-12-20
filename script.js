@@ -119,7 +119,7 @@ function show() {
 }
 
 document.onclick = function(clickEvent) {
-    if (clickEvent.target.id !== "a-two" && clickEvent.target.id !== "navigation" && clickEvent.target.id !== "hamburger" && clickEvent.target.id !== "bar1" && clickEvent.target.id !== "bar2" && clickEvent.target.id !== "bar3") {
+    if (clickEvent.target.id == "a-two-gallery" && clickEvent.target.id !== "a-two" && clickEvent.target.id !== "navigation" && clickEvent.target.id !== "hamburger" && clickEvent.target.id !== "bar1" && clickEvent.target.id !== "bar2" && clickEvent.target.id !== "bar3") {
         document.querySelector(".body").classList.remove("locked")
         document.querySelector(".hamburger").classList.remove("open")
         document.querySelector(".navigation").classList.remove("active")
