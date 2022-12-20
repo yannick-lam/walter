@@ -22,6 +22,7 @@ html {
 body {
     /* border: 3px solid green; */
     width: 100%;
+    overflow-x: hidden;
 }
 
 @media (min-width: 1020px) {
@@ -1817,7 +1818,7 @@ summer
 
 .main-container-summer {
     min-height: 65vh;
-    background-image: url(images/ötztal-tvb/sommer.jpg);
+    background-image: url(images/ötztal-tvb/sommer2.jpg);
     background-size: cover;
     background-position: center;
     background-color: rgb(120, 120, 120);   
@@ -2002,9 +2003,9 @@ galery
 
 .galery-pic-container {
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(autofit, minmax(100px, 1fr));
-    grid-auto-rows: 250px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, minmax(20px, 1fr));
+    grid-auto-rows: 230px;
     grid-auto-flow: dense;
 }
 
@@ -2017,22 +2018,39 @@ galery
 
 .normal-pic {
     /* border: 3px solid red; */
+    overflow: hidden;
+    grid-column: span 6;
 }
 
 .vertical-pic {
     /* border: 3px solid green; */
+    overflow: hidden;
+    grid-column: span 3;
     grid-row: span 2;
 }
 
 .horizontal-pic {
     /* border: 3px solid blue; */
-    grid-column: span 2;
+    overflow: hidden;
+    grid-column: span 6;
 }
 
-.big-pic {
-    /* border: 3px solid yellow; */
-    grid-row: span 2;
-    grid-column: span 2;
+.normal-pic img,
+.vertical-pic img,
+.horizontal-pic img {
+    transition: 0.5s ease-in-out;
+}
+
+.normal-pic:hover img,
+.vertical-pic:hover img,
+.horizontal-pic:hover img {
+    transform: scale(1.2);
+}
+
+.normal-pic:focus img,
+.vertical-pic:focus img,
+.horizontal-pic:focus img {
+    transform: scale(1.2);
 }
 
 .galery-container:last-child {
@@ -2046,6 +2064,40 @@ galery
 
     .galery-container h1 {
         padding: 2rem 0;
+    }
+}
+
+@media (min-width: 500px) {
+    .normal-pic {
+        grid-column: span 3;
+    }
+}
+
+@media (min-width: 700px) {
+    .normal-pic {
+        grid-column: span 2;
+    }
+
+    .vertical-pic {
+        grid-column: span 2;
+    }
+
+    .horizontal-pic {
+        grid-column: span 4;
+    }
+
+    .stimmung6-resize {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 1350px) {
+    .horizontal-pic {
+        grid-column: span 2;
+    }
+
+    .stimmung1-resize {
+        grid-column: span 6;
     }
 }
     
