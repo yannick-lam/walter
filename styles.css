@@ -1595,7 +1595,7 @@ apartment
 
 .show-text-bed-p2, .show-text-kitchen-p2, .show-text-bath-p2 {
     position: relative;
-    left: -100%;
+    /* left: -100%; */
     transition: all 0.8s ease-out;
 }
 
