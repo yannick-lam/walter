@@ -1561,10 +1561,10 @@ apartment
     position: relative;
     right: -100%;
     transition: all 0.8s ease-out;
+    line-height: 1.6;
 }
 
 .show-text-bed-p.show, .show-text-kitchen-p.show, .show-text-bath-p.show {
-    line-height: 1.6;
     right: 0;
 }
 
@@ -1595,14 +1595,14 @@ apartment
 
 .show-text-bed-p2, .show-text-kitchen-p2, .show-text-bath-p2 {
     position: relative;
-    right: -100%;
+    left: -100%;
     transition: all 0.8s ease-out;
+    line-height: 1.6;
 }
 
 
 
 .show-text-bed-p2.show, .show-text-kitchen-p2.show, .show-text-bath-p2.show {
-    line-height: 1.6;
     left: 0;
 }
 
