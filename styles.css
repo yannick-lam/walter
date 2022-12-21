@@ -1795,7 +1795,7 @@ winter
     padding: 3rem 0 2rem;
 }
 
-.winter-child {
+.winter-child, .winter-child-reverse {
     /* border: 3px solid yellow; */
     display: flex;
     flex-direction: column;
@@ -1854,6 +1854,12 @@ winter
 @media (min-width: 710px) {
     .winter-child {
         flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .winter-child-reverse {
+        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: flex-start;
     }
@@ -1962,7 +1968,7 @@ summer
     padding: 3rem 0 2rem;
 }
 
-.summer-child {
+.summer-child, .summer-child-reverse {
     /* border: 3px solid yellow; */
     display: flex;
     flex-direction: column;
@@ -2027,6 +2033,12 @@ summer
 @media (min-width: 710px) {
     .summer-child {
         flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .summer-child-reverse {
+        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: flex-start;
     }
