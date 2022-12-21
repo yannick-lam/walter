@@ -2174,8 +2174,19 @@ Impressum
     padding-bottom: 2rem;
 }
 
+.impressum-br-copywright {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.impressum-br-copywright-child {
+    /* border: 3px solid green; */
+    width: 50%;
+}
+
 .impressum-br-copywright p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .impressum-br-copywright p:not(:last-of-type) {
@@ -2225,5 +2236,11 @@ Impressum
     .y-lam:hover,
     .y-lam:focus {
         font-size: 1.13rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .impressum-br-copywright {
+        flex-direction: row;
     }
 }
