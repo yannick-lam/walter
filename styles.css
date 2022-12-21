@@ -1545,7 +1545,6 @@ apartment
 .show-text-bed, .show-text-kitchen, .show-text-bath {
     opacity: 0;
     height: 0;
-    transition: 0.2s;
 }
 
 .show-text-bed.show, .show-text-kitchen.show, .show-text-bath.show {
@@ -1555,17 +1554,6 @@ apartment
     padding: 0.8rem;
     padding-left: 1.8rem;
     letter-spacing: 0.3px;
-}
-
-.show-text-bed-p, .show-text-kitchen-p, .show-text-bath-p {
-    position: relative;
-    right: -100%;
-    transition: all 0.8s ease-out;
-    line-height: 1.6;
-}
-
-.show-text-bed-p.show, .show-text-kitchen-p.show, .show-text-bath-p.show {
-    right: 0;
 }
 
 .img-arrow-bed, .img-arrow-kitchen, .img-arrow-bath {
@@ -1581,29 +1569,15 @@ apartment
 .show-text-bed2, .show-text-kitchen2, .show-text-bath2 {
     opacity: 0;
     height: 0;
-    transition: 0.2s;
 }
 
 .show-text-bed2.show, .show-text-kitchen2.show, .show-text-bath2.show {
-    height: auto;
     opacity: 1;
+    height: auto;
     width: 100%;
     padding: 0.8rem;
     padding-left: 1.8rem;
     letter-spacing: 0.3px;
-}
-
-.show-text-bed-p2, .show-text-kitchen-p2, .show-text-bath-p2 {
-    position: relative;
-    left: -100%;
-    transition: all 0.8s ease-out;
-    line-height: 1.6;
-}
-
-
-
-.show-text-bed-p2.show, .show-text-kitchen-p2.show, .show-text-bath-p2.show {
-    left: 0;
 }
 
 .img-arrow-bed2, .img-arrow-kitchen2, .img-arrow-bath2 {
