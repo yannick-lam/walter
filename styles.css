@@ -1801,7 +1801,8 @@ winter
     flex-direction: column;
 }
 
-.winter-child:not(:first-of-type) {
+.winter-child:not(:first-of-type),
+.winter-child-reverse {
     margin-top: 4rem;
 }
 
@@ -1975,7 +1976,8 @@ summer
     overflow: hidden;
 }
 
-.summer-child:not(:first-of-type) {
+.summer-child:not(:first-of-type),
+.summer-child-reverse {
     margin-top: 4rem;
 }
 
