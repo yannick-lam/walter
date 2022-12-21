@@ -2182,7 +2182,7 @@ Impressum
 
 .impressum-br-copywright-child {
     /* border: 3px solid green; */
-    width: 50%;
+    width: 100%;
 }
 
 .impressum-br-copywright p {
@@ -2242,5 +2242,9 @@ Impressum
 @media (min-width: 700px) {
     .impressum-br-copywright {
         flex-direction: row;
+    }
+
+    .impressum-br-copywright-child {
+        width: 50%;
     }
 }
