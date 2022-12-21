@@ -22,7 +22,7 @@ html {
 body {
     /* border: 3px solid green; */
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 @media (min-width: 1020px) {
@@ -671,7 +671,7 @@ slide show
     max-width: 195px;
     margin: 0 auto;
     height: 100%;
-    /* padding-left: 0.3rem; */
+    padding-left: 0.3rem;
 }
 
 .welcome-content-child-right {
@@ -707,6 +707,7 @@ slide show
     
     .welcome-content-child-left-parent {
         max-width: 240px;
+        padding-left: 0.5rem;
     }
 
     .welcome-content-child-right {
