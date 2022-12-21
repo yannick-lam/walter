@@ -671,7 +671,7 @@ slide show
     max-width: 195px;
     margin: 0 auto;
     height: 100%;
-    padding-left: 0.3rem;
+    /* padding-left: 0.3rem; */
 }
 
 .welcome-content-child-right {
@@ -707,7 +707,6 @@ slide show
     
     .welcome-content-child-left-parent {
         max-width: 240px;
-        padding-left: 0.4rem;
     }
 
     .welcome-content-child-right {
