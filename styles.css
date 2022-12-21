@@ -1595,9 +1595,11 @@ apartment
 
 .show-text-bed-p2, .show-text-kitchen-p2, .show-text-bath-p2 {
     position: relative;
-    /* left: -100%; */
+    right: -100%;
     transition: all 0.8s ease-out;
 }
+
+
 
 .show-text-bed-p2.show, .show-text-kitchen-p2.show, .show-text-bath-p2.show {
     line-height: 1.6;
@@ -1990,6 +1992,7 @@ summer
     /* border: 3px solid yellow; */
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .summer-child:not(:first-of-type) {
@@ -2018,6 +2021,7 @@ summer
 
 .summer-child-right {
     /* border: 3px solid green; */
+    overflow: hidden;
 }
 
 .summer-child-right h2 {
