@@ -163,8 +163,12 @@ header {
     list-style-type: none;
     padding-left: 0.7rem;
     padding-bottom: 0.8rem;
-    margin: 0 0 1.3rem;
+    margin-top: 1.3rem;
     border-bottom: 1pt solid rgba(0, 0, 0, 0.2);
+}
+
+.navigation ul .navigation-home {
+    margin-top: 0;
 }
 
 .a-two, .a-two-small {
@@ -189,7 +193,7 @@ header {
 }
 
 .navigation ul .a-two-small-summer li {
-    margin-top: -0.5rem;
+    margin-top: 0.8rem;
 }
 
 .navigation ul .a-two-small-winter li {
@@ -664,7 +668,7 @@ slide show
 .welcome-content-child-left-parent {
     /* border: 3px solid blue; */
     width: 100%;
-    max-width: 190px;
+    max-width: 195px;
     margin: 0 auto;
     height: 100%;
     padding-left: 0.3rem;
@@ -703,7 +707,7 @@ slide show
     
     .welcome-content-child-left-parent {
         max-width: 240px;
-        padding-left: 0.5rem;
+        padding-left: 0.4rem;
     }
 
     .welcome-content-child-right {
