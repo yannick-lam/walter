@@ -1326,7 +1326,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 
 .top-child-up {
     /* border: 3px solid blue; */
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 2rem;
 }
 
@@ -1339,6 +1339,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 .footer-loc, .footer-contact {
     color: black;
     font-weight: bold;
+    font-size: 0.75rem;
     text-decoration: none;
 }
 
@@ -1451,6 +1452,10 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 
     .footer-bottom-container-one {
         margin: 0 auto 2rem;
+    }
+
+    .top-child-up {
+        font-size: 1rem;
     }
 }
 
