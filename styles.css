@@ -1450,7 +1450,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     }
 
     .top-child-down {
-        padding-top: 1.5rem;
+        padding-top: 0.5rem;
     }
 
     .footer-bottom-container {
