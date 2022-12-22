@@ -1449,10 +1449,6 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
         flex-direction: row;
     }
 
-    .top-child-down {
-        padding-top: 0.5rem;
-    }
-
     .footer-bottom-container {
         flex-direction: column;
         justify-content: center;
