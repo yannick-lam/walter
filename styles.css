@@ -641,10 +641,11 @@ slide show
 .welcome-container p {
     /* border: 3px solid green; */
     color: black;
-    /* text-shadow: 2px 2px 4px black; */
+    /* text-shadow: 0px 0px 4px white; */
     font-size: 0.8rem;
     font-weight: bold;
     line-height: 1.5;
+    z-index: 99999;
 }
 
 .welcome-content {
@@ -1303,21 +1304,174 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
    footer
    ===============*/
 
-.container-footer {
+.footer-container {
+    /* border: 3px solid red; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 0;
-    background: rgb(20, 60, 80);
-    color: rgb(160, 160, 160);
+    background: rgb(10, 10, 15);
+    color: white;
     font-size: 0.8rem;
-    padding: 1.5em 0;
+    min-height: 40vh;
+    padding: 3rem 2rem 0;
 }
 
-.footer-title {
-    color: rgb(200, 200, 200);
-    margin-bottom: 0.1rem;
+.footer-top-container {
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
+
+.top-child-up {
+    /* border: 3px solid blue; */
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.top-child-middle {
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.footer-loc {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact {
+    color: white;
+    font-weight: inherit;
+    text-decoration: none;
+}
+
+.footer-i {
+    /* border: 3px solid yellow;  */
+}
+
+.top-child-middle-loc, .top-child-middle-number, .top-child-middle-email {
+    /* border: 3px solid red; */
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.top-child-middle-loc {
+    margin-bottom: 0;
+}
+
+.top-child-middle-loc i, .top-child-middle-number i, .top-child-middle-email i {
+    width: 2rem;
+    font-size: 1rem;
+}
+
+.top-child-middle-loc p, .top-child-middle-number p, .top-child-middle-email p {
+    margin-bottom: 0.3rem;
+}
+
+.top-child-down {
+    /* border: 3px solid rebeccapurple; */
+    background: rgb(10, 10, 15);
+    font-size: 0.7rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.top-child-down p {
+    color: rgb(200, 200, 200);
+    margin-bottom: 0.2rem;
+}
+
+.footer-bottom-container {
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 1rem 0 2.5rem;
+}
+
+.footer-bottom-container-one {
+    /* border: 3px solid blue; */
+    width: 25%;
+    max-width: 70px;
+    margin: 0 auto 2rem;
+}
+
+.footer-bottom-container-two {
+    /* border: 3px solid blue; */
+    width: 50%;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.footer-bottom-container img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 300px) {
+    .footer-bottom-container {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .footer-bottom-container-one {
+        margin: 0 auto;
+    }
+
+    .top-child-down {
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 500px) {
+    .footer-container {
+        padding: 3.5rem 3rem 0;
+    }
+}
+
+@media (min-width: 650px) {
+    .footer-container {
+        flex-direction: row;
+    }
+
+    .top-child-down {
+        padding-top: 1.5rem;
+    }
+
+    .footer-bottom-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-bottom-container-one {
+        margin: 0 auto 2rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .footer-bottom-container {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .footer-bottom-container-one {
+        margin: 0 auto 0;
+    }
+}
+
+/* ===============
+to top
+===============*/
 
 .to-top {
     position: fixed;
@@ -1340,7 +1494,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     height: 37px;   
     object-fit: cover;
     border-radius: 0.2rem;
-    box-shadow: 0 0 10px rgb(100, 100, 100);
+    box-shadow: 0 0 5px rgb(100, 100, 100);
 }
 
 .to-top img:hover, .to-top img:focus {
