@@ -1310,8 +1310,8 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     flex-direction: column;
     /* align-items: center; */
     margin-bottom: 0;
-    background: rgb(10, 10, 15);
-    color: white;
+    background: rgb(247, 239, 220);
+    color: black;
     font-size: 0.8rem;
     min-height: 40vh;
     padding: 3rem 2rem 0;
@@ -1334,16 +1334,15 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     /* border: 3px solid green; */
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.5rem;
 }
 
 .footer-loc {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 .footer-contact {
-    color: white;
+    color: black;
     font-weight: inherit;
     text-decoration: none;
 }
@@ -1375,14 +1374,14 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 
 .top-child-down {
     /* border: 3px solid rebeccapurple; */
-    background: rgb(10, 10, 15);
+    background: rgb(247, 239, 220);
     font-size: 0.7rem;
     text-align: center;
     padding-bottom: 1rem;
 }
 
 .top-child-down p {
-    color: rgb(200, 200, 200);
+    color: rgb(20, 20, 20);
     margin-bottom: 0.2rem;
 }
 
@@ -1452,6 +1451,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     .footer-bottom-container {
         flex-direction: column;
         justify-content: center;
+        padding: 1rem 0;
     }
 
     .footer-bottom-container-one {
