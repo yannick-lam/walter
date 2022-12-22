@@ -1395,7 +1395,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     width: 100%;
     max-width: 380px;
     margin: 0 auto;
-    padding: 1rem 0 2.5rem;
+    padding: 1rem 0 2rem;
 }
 
 .footer-bottom-container-one {
@@ -1466,7 +1466,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     }
 
     .footer-bottom-container-one {
-        margin: 0 auto 0;
+        margin: 0 auto;
     }
 }
 
