@@ -1400,6 +1400,9 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 
 .footer-bottom-container-one {
     /* border: 3px solid blue; */
+    background-color: white;
+    padding: 0.25rem;
+    padding-left: 0.15rem;
     width: 25%;
     max-width: 70px;
     margin: 0 auto 2rem;
@@ -1407,6 +1410,8 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 
 .footer-bottom-container-two {
     /* border: 3px solid blue; */
+    background-color: white;
+    padding: 0.25rem;
     width: 50%;
     max-width: 150px;
     margin: 0 auto;
