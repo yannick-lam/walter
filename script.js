@@ -208,10 +208,10 @@ function sendMail() {
     const email = document.getElementById("email").value
     const telnumber = document.getElementById("telnumber").value
     const street = document.getElementById("street").value
+    const hnumber = document.getElementById("hnumber").value
     const city = document.getElementById("location").value
     const locnumber = document.getElementById("locnumber").value
     const country = document.getElementById("country").value
-    const fax = document.getElementById("fax").value
     var params = {
         firstname: document.getElementById("fname").value,
         lastname: document.getElementById("lname").value,
@@ -230,10 +230,10 @@ function sendMail() {
             E-Mail: ${email}
             Telefon: ${telnumber}
             Straße: ${street}
+            Hausnummer: ${hnumber}
             Ort: ${city}
             PLZ: ${locnumber}
             Land: ${country}
-            Fax: ${fax}
         `
     }
     const serviceId = "service_jjgus4m"
