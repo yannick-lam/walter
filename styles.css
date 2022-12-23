@@ -51,9 +51,17 @@ body {
     scroll-margin-top: 110px;
 }
 
+.scroll-margin-big {
+    scroll-margin-top: 240px;
+}
+
 @media (min-width: 330px) {
     .scroll-margin {
         scroll-margin-top: 70px;
+    }
+
+    .scroll-margin-big {
+        scroll-margin-top: 200px;
     }
 }
 
@@ -922,7 +930,7 @@ slide show
     color: white;
     border: none;
     border-radius: 5px;
-    background-color: rgb(0, 0, 170);
+    background-color: rgb(20, 60, 80);
     box-shadow: 4px 4px 5px rgb(50, 50, 50);
     padding: 0.4rem 0.9rem;
     letter-spacing: 0.8px;
