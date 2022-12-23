@@ -1456,7 +1456,6 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
         flex-direction: column;
         justify-content: center;
         padding: 1rem 0;
-        margin-bottom: 1rem;
     }
 
     .footer-bottom-container-one {
