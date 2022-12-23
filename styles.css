@@ -1321,7 +1321,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     background: rgb(247, 239, 220);
     color: black;
     font-size: 0.8rem;
-    min-height: 40vh;
+    /* min-height: 40vh; */
     padding: 3rem 2rem 0;
 }
 
