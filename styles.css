@@ -1727,6 +1727,10 @@ apartment
     z-index: 999;
 }
 
+.category-arrow {
+    z-index: 999;
+}
+
 .img-arrow-bed.show, .img-arrow-kitchen.show, .img-arrow-bath.show {
     transform: inherit;
 }
