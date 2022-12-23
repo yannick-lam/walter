@@ -1471,7 +1471,6 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     .footer-bottom-container {
         flex-direction: row-reverse;
         justify-content: space-around;
-        padding: 0;
     }
 
     .footer-bottom-container-one {
