@@ -1720,9 +1720,11 @@ apartment
 }
 
 .img-arrow-bed, .img-arrow-kitchen, .img-arrow-bath {
+    /* border: 3px solid red; */
     margin-left: auto;
     transform: rotate(180deg);
     transition: all 0.3s;
+    z-index: 999;
 }
 
 .img-arrow-bed.show, .img-arrow-kitchen.show, .img-arrow-bath.show {
@@ -1747,6 +1749,7 @@ apartment
     margin-left: auto;
     transform: rotate(180deg);
     transition: all 0.3s;
+    z-index: 999;
 }
 
 .img-arrow-bed2.show, .img-arrow-kitchen2.show, .img-arrow-bath2.show {
