@@ -1325,7 +1325,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     width: 90%;
     max-width: 350px;
     margin: 0 auto;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0.5rem;
     font-size: 1rem;
     /* text-transform: uppercase; */
     text-align: center;
@@ -1340,6 +1340,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 @media (min-width: 600px) {
     .request-parent {
         max-width: 600px;
+        padding: 1.5rem 0;
     }
 }
 
