@@ -930,8 +930,8 @@ slide show
     color: white;
     border: none;
     border-radius: 5px;
-    background-color: rgb(20, 60, 80);
-    box-shadow: 4px 4px 5px rgb(50, 50, 50);
+    background-color: rgba(20, 60, 80, 0.8);
+    box-shadow: 2px 2px 5px rgb(50, 50, 50);
     padding: 0.4rem 0.9rem;
     letter-spacing: 0.8px;
 }
