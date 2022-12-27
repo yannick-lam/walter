@@ -437,27 +437,27 @@ slide show
 
 .main-one {
     /* border: 3px solid blueviolet; */
-    background-image: url(images/gries-neu.jpeg);
+    background-image: url(images/haus-neu.JPG);
     animation: cool1 20s ease-in-out infinite;
 }
 .main-two {
     /* border: 3px solid orangered; */
-    background-image: url(images/haus.jpg);
+    background-image: url(images/küche.jpeg);
     animation: cool2 20s ease-in-out infinite;
 }
 .main-three {
     /* border: 3px solid green; */
-    background-image: url(images/küche.jpeg);
+    background-image: url(images/schlafzimmer-neu.jpeg);
     animation: cool3 20s ease-in-out infinite;
 }
 .main-four {
     /* border: 3px solid yellow; */
-    background-image: url(images/schlafzimmer-neu.jpeg);
+    background-image: url(images/bad.jpeg);
     animation: cool4 20s ease-in-out infinite;
 }
 .main-five {
     /* border: 3px solid red; */
-    background-image: url(images/bad.jpeg);
+    background-image: url(images/haus-rüchseite.JPG);
     animation: cool5 20s ease-in-out infinite;
 }
 
