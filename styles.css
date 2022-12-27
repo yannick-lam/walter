@@ -349,7 +349,7 @@ slide show
 }
 
 .main-container-home {
-    background-image: url(images/haus-hell.jpeg);
+    background-image: url(images/haus.jpg);
     background-size: cover;
     background-position: center;
     background-color: rgb(100, 100, 100);
@@ -358,7 +358,7 @@ slide show
 }
 
 .home-img-div {
-    background-image: url(images/haus-hell.jpeg);
+    background-image: url(images/haus.jpg);
     background-size: cover;
     background-position: center;
     background-color: rgb(100, 100, 100);
