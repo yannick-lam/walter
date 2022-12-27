@@ -362,7 +362,7 @@ slide show
     background-size: cover;
     background-position: center;
     background-color: rgb(100, 100, 100);
-    min-height: 50vh;
+    min-height: 45vh;
     height: calc(100vw*0.65);
     max-height: 80vh;
     width: 100%;
