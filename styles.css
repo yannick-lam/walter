@@ -618,10 +618,10 @@ slide show
 
 .welcome-container {
     /* border: 3px solid yellow; */
-    background-image: url(images/ötztal-tvb/w-stimmung5.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(70, 70, 70);
+    /* background-image: url(images/ötztal-tvb/w-stimmung5.jpg); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-color: rgb(70, 70, 70); */
 /*FÜR BLEND-MODE IMMER AUCH BACKGROUND COLOR VERWENDEN!*/
     /* background-blend-mode: soft-light; */
     /* background-color: rgb(247, 239, 220); */
@@ -632,6 +632,17 @@ slide show
     height: 300px;
     z-index: -999;
 }
+
+.logo-agnesn {
+    width: 90%;
+    margin: 0 auto;
+}
+.logo-agnesn img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 .welcome-container h1 {
     /* border: 3px solid rebeccapurple; */
