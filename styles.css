@@ -349,7 +349,7 @@ slide show
 }
 
 .main-container-home {
-    background-image: url(images/ötztal-tvb/gries.jpg);
+    background-image: url(images/haus-hell.jpeg);
     background-size: cover;
     background-position: center;
     background-color: rgb(100, 100, 100);
@@ -358,7 +358,7 @@ slide show
 }
 
 .home-img-div {
-    background-image: url(images/ötztal-tvb/gries.jpg);
+    background-image: url(images/haus-hell.jpeg);
     background-size: cover;
     background-position: center;
     background-color: rgb(100, 100, 100);
@@ -442,7 +442,7 @@ slide show
 }
 .main-two {
     /* border: 3px solid orangered; */
-    background-image: url(images/haus-neu.jpeg);
+    background-image: url(images/haus.jpg);
     animation: cool2 20s ease-in-out infinite;
 }
 .main-three {
@@ -632,17 +632,6 @@ slide show
     height: 300px;
     z-index: -999;
 }
-
-.logo-agnesn {
-    width: 90%;
-    margin: 0 auto;
-}
-.logo-agnesn img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
-
 
 .welcome-container h1 {
     /* border: 3px solid rebeccapurple; */
