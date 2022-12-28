@@ -1595,7 +1595,7 @@ apartment
 }
 
 .architect-parent {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
@@ -1637,7 +1637,7 @@ apartment
 .architect-child .x {
     /* border: 3px solid yellow; */
     color: white;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     font-weight: bold;
     width: fit-content;
     margin-left: auto;
