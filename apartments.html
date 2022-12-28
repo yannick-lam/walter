@@ -99,6 +99,10 @@
 
       <h1>Apartments</h1>
 
+      <div class="apartment-info-header small-big-screen scroll-margin-middle" id="top1">
+        <p class="small-screen">Top 1</p>
+      </div>
+
       <div class="apartment-container-child">
 
         <div class="oans swiper">
@@ -141,11 +145,25 @@
           <div class="swiper-pagination"></div>
         </div>
 
+        <div class="architect-parent architect-parent-one">
+          <div class="architect-child">
+            <img src="images/top1gr.jpeg" alt="Grundriss Top 1">
+            <div class="x" onclick="removeArchitectOne()">
+              <p>X</p>
+            </div>
+          </div>
+        </div>
+        
         <div class="apartment-info">
           <div class="apartment-info-header" data-aos="fade-left">
-            <p>Top 1</p>
+            <p class="big-screen">Top 1</p>
           </div>
           <div class="apartment-info-parent">
+            <div class="apartment-info-child" data-aos="fade-left">
+              <div class="architect-container" onclick="showArchitectOne()">
+                <p>Grundriss Top 1 anzeigen</p>
+              </div>
+            </div>
             <div class="apartment-info-child" data-aos="fade-left">
               <img src="images/maximize.png" alt="icon">
               <p class="category"><span>Grösse</span> 46 m²</p>
@@ -198,6 +216,9 @@
         </div>
       </div>
 
+      <div class="apartment-info-header small-big-screen scroll-margin-middle" id="top2">
+        <p class="small-screen">Top 2</p>
+      </div>
       <div class="apartment-container-child-last">
 
         <div class="oans swiper">
@@ -243,11 +264,25 @@
           <div class="swiper-pagination"></div>
         </div>
 
+        <div class="architect-parent architect-parent-two">
+          <div class="architect-child">
+            <img src="images/top2gr.jpeg" alt="Grundriss Top 2">
+            <div class="x" onclick="removeArchitectTwo()">
+              <p>X</p>
+            </div>
+          </div>
+        </div>
+
         <div class="apartment-info">
           <div class="apartment-info-header" data-aos="fade-right">
-            <p>Top 2</p>
+            <p class="big-screen">Top 2</p>
           </div>
           <div class="apartment-info-parent">
+            <div class="apartment-info-child" data-aos="fade-right">
+              <div class="architect-container" onclick="showArchitectTwo()">
+                <p>Grundriss Top 2 anzeigen</p>
+              </div>
+            </div>
             <div class="apartment-info-child" data-aos="fade-right">
               <img src="images/maximize.png" alt="icon">
               <p class="category"><span>Grösse</span> 82 m²</p>
@@ -289,7 +324,8 @@
                 <img class="img-arrow-bath2" onclick="arrowBath2()" id="img-arrow-bath" src="images/arrow-up.png"
                   alt="icon">
                 <div class="show-text-bath2">
-                  <p class="show-text-bath-p2">Haartrockner, Kosmetikspiegel, 2 Badezimmer (großes Badezimmer <b>mit Eckbadewanne</b>),
+                  <p class="show-text-bath-p2">Haartrockner, Kosmetikspiegel, 2 Badezimmer (großes Badezimmer <b>mit
+                      Eckbadewanne</b>),
                     Dusche/WC, Handtücher, Duschtücher
                     vorhanden</p>
                 </div>

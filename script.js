@@ -118,6 +118,22 @@ function show() {
     document.querySelector(".navigation").classList.toggle("active")
 }
 
+function showArchitectOne() {
+    document.querySelector(".architect-parent-one").classList.add("show")
+}
+
+function removeArchitectOne() {
+    document.querySelector(".architect-parent-one").classList.remove("show")
+}
+
+function showArchitectTwo() {
+    document.querySelector(".architect-parent-two").classList.add("show")
+}
+
+function removeArchitectTwo() {
+    document.querySelector(".architect-parent-two").classList.remove("show")
+}
+
 document.onclick = function(clickEvent) {
     if (clickEvent.target.id == "a-two-gallery" && clickEvent.target.id !== "a-two" && clickEvent.target.id !== "navigation" && clickEvent.target.id !== "hamburger" && clickEvent.target.id !== "bar1" && clickEvent.target.id !== "bar2" && clickEvent.target.id !== "bar3") {
         document.querySelector(".body").classList.remove("locked")
