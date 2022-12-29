@@ -1104,6 +1104,10 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
         padding-right: 5%;
     }
 
+    .form-scroller {
+        width: 0;
+    }
+
     .form-section-one {
         display: flex;
         justify-content: space-between;
@@ -1402,6 +1406,16 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     display: flex;
     flex-direction: row;
     margin-bottom: 1rem;
+}
+
+.top-child-middle-loc:hover,
+.top-child-middle-number:hover,
+.top-child-middle-email:hover,
+.top-child-middle-loc:focus,
+.top-child-middle-number:focus,
+.top-child-middle-email:focus {
+    scale: 1.05;
+    transition: 0.3s;
 }
 
 .top-child-middle-loc {
@@ -1895,7 +1909,7 @@ apartment
 
 .apartment-container-price {
     /* border: 3px solid red; */
-    background-color: rgb(220, 230, 250);
+    background-color: rgb(247, 239, 220);
     padding: 1.3rem;
 }
 
@@ -1947,6 +1961,68 @@ apartment
 }
 
 /* price end */
+
+/* inclusiv start */
+
+.inclusive-container {
+    /* border: 3px solid red; */
+    background: white;
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
+}
+
+.inclusive-container h1 {
+    background-color: rgb(220, 230, 250);
+    font-size: 1.8rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.inclusive-parent {
+    /* border: 3px solid yellow; */
+    background-color: rgb(220, 230, 250);
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inclusive-parent li {
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    padding-top: 0.5rem;
+}
+
+@media (min-width: 350px) {
+    .inclusive-container h1 {
+        padding: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .inclusive-parent {
+        padding: 0 2rem 2rem 3rem;
+    }
+}
+
+@media (min-width: 710px) {
+    .inclusive-parent {
+        flex-direction: row;
+    }
+
+    .inclusive-parent-left {
+        /* border: 3px solid blue; */
+        width: 50%;
+    }
+    
+    .inclusive-parent-right {
+        /* border: 3px solid green; */
+        width: 50%;
+    }
+}
+
+/* inclusiv end */
 
 .apartment-container:last-child {
     padding-bottom: 2rem;
