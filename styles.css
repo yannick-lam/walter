@@ -1995,6 +1995,17 @@ apartment
     padding-top: 0.5rem;
 }
 
+@media (min-width: 350px) {
+    .inclusive-container h1 {
+        padding: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .inclusive-parent {
+        padding: 0 2rem 2rem 2.5rem;
+    }
+}
+
 @media (min-width: 400px) {
     .inclusive-container h1 {
         padding: 2rem;
