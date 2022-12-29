@@ -822,12 +822,18 @@ slide show
     color: black;
 }
 
+.form-scroller {
+    /* border: 3px solid red; */
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
 .form-section-two {
     width: 90%;
     margin: 0 auto;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 
-    /* border: 3px solid red; */
     overflow: hidden;
     height: fit-content;
     background-color: rgb(247, 239, 220);
