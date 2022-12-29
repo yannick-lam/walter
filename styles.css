@@ -1995,7 +1995,7 @@ apartment
     padding-top: 0.5rem;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 360px) {
     .inclusive-container h1 {
         padding: 1.5rem;
         padding-bottom: 1rem;
