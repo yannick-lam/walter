@@ -2487,7 +2487,7 @@ galery
         grid-column: span 3;
     }
     
-    .bike3-resize {
+    .pic-resize {
         grid-column: span 3;
     }
 }
@@ -2505,13 +2505,7 @@ galery
         grid-column: span 4;
     }
 
-    .bike3-resize {
-        grid-column: span 2;
-    }
-}
-
-@media (min-width: 1350px) {
-    .horizontal-pic {
+    .pic-resize {
         grid-column: span 2;
     }
 }
