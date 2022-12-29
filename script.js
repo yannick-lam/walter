@@ -215,8 +215,8 @@ function sendMail() {
     const adult = document.getElementById("adult").value
     const kid = document.getElementById("kid").value
     const age = document.getElementById("age").value
-    const date = document.getElementById("date").value
-    const nights = document.getElementById("nights").value
+    const datein = document.getElementById("datein").value
+    const dateout = document.getElementById("dateout").value
     const wish = document.getElementById("wish").value   
     const sex = document.getElementById("sex").value
     const firstname = document.getElementById("fname").value
@@ -237,8 +237,8 @@ function sendMail() {
             Erwachsene: ${adult}
             Kinder: ${kid}
             Alter (Kinder): ${age}
-            Terminwunsch: ${date}
-            Nächte: ${nights}
+            Tag der Anreise: ${datein}
+            Tag der Abreise: ${dateout}
             Wünsche/Anregungen: ${wish}
             Anrede: ${sex}
             Vorname: ${firstname}
