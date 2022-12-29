@@ -2050,7 +2050,7 @@ winter
 
 .main-container-winter {
     min-height: 65vh;
-    background-image: url(images/ötztal-tvb/winter-gries-neu.JPG);
+    background-image: url(images/ötztal-tvb/winter.webp);
     background-size: cover;
     background-position: center;
     background-color: rgb(120, 120, 120);   
@@ -2486,6 +2486,10 @@ galery
     .normal-pic {
         grid-column: span 3;
     }
+    
+    .bike3-resize {
+        grid-column: span 3;
+    }
 }
 
 @media (min-width: 700px) {
@@ -2501,7 +2505,7 @@ galery
         grid-column: span 4;
     }
 
-    .stimmung6-resize {
+    .bike3-resize {
         grid-column: span 2;
     }
 }
@@ -2509,10 +2513,6 @@ galery
 @media (min-width: 1350px) {
     .horizontal-pic {
         grid-column: span 2;
-    }
-
-    .stimmung1-resize {
-        grid-column: span 6;
     }
 }
     
