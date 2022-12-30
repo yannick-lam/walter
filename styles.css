@@ -1299,7 +1299,7 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     }
 
     .holiday-text-p p {
-        max-width: inherit;
+        max-width: 480px;
     }
 }
 
