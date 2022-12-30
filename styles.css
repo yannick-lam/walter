@@ -1164,12 +1164,21 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     line-height: 1.7;
 }
 
+.holiday-text {
+    margin-top: 0;
+}
+
 .anreise-text-p {
     /* border: 3px solid rebeccapurple; */
     position: relative;
     background: linear-gradient(transparent 40%, rgba(220, 230, 250) 100%);
     height: 180px;
     overflow: hidden;
+}
+
+.holiday-text-p {
+    background: linear-gradient(transparent 40%, white 100%);
+    height: 280px;
 }
 
 .anreise-text-p.read-more {
@@ -1186,12 +1195,16 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     background: linear-gradient(transparent, rgba(220, 230, 250));
 }
 
+.anreise-text .holiday-text-p::before {
+    background: linear-gradient(transparent, white);    
+}
+
 .anreise-text.read-more .anreise-text-p::before {
     display: none;
 }
 
 .anreise-text-rm {
-    /* border: 3px solid green; */
+    /* border: 3px solid yellow; */
     font-size: 1rem;
     font-weight: bold;
     text-align: end;
@@ -1201,6 +1214,10 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 
 .anreise-text-rm.read-more {
     margin-top: 1rem;
+}
+
+.holiday-text-rm.read-more {
+    margin-top: 0;
 }
 
 .anreise-text-rm:hover, .anreise-text-rm:focus {
@@ -1270,21 +1287,25 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     .anreise-text-p {
         height: 150px;
     }
+
+    .holiday-text-p {
+        height: 280px;
+    }
 }
 
 @media (min-width: 625px) {
     .anreise-text-p p {
         max-width: 430px;
     }
+
+    .holiday-text-p p {
+        max-width: inherit;
+    }
 }
 
 @media (min-width: 710px) {
     .anreise {
         padding: 3rem;
-    }
-
-    .anreise-text-p p {
-        max-width: 430px;
     }
 }
 
@@ -1325,6 +1346,10 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     /* border: 3px solid red; */
     background: white;
     padding-bottom: 2rem;
+}
+
+.request-container-top {
+    padding-top: 1rem;
 }
 
 .request-parent {
