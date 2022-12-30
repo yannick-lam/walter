@@ -1220,10 +1220,10 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     margin-top: 0;
 }
 
-.anreise-text-rm:hover, .anreise-text-rm:focus {
+/* .anreise-text-rm:hover, .anreise-text-rm:focus {
     scale: 1.03;
     transition: 0.2s;
-}
+} */
 
 .anreise-text-rm p::before {
     content: "mehr lesen";
