@@ -1228,9 +1228,9 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     margin-top: 1rem;
 }
 
-.holiday-text-rm.read-more {
+/* .holiday-text-rm.read-more {
     margin-top: 0;
-}
+} */
 
 /* .anreise-text-rm:hover, .anreise-text-rm:focus {
     scale: 1.03;

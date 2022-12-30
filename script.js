@@ -119,6 +119,30 @@ function readMoreThree() {
     document.querySelector(".holiday-text-rm-three").classList.toggle("read-more")
 }
 
+function readMoreFour() {
+    document.querySelector(".holiday-text-four").classList.toggle("read-more")
+    document.querySelector(".holiday-text-p-four").classList.toggle("read-more")
+    document.querySelector(".holiday-text-rm-four").classList.toggle("read-more")
+}
+
+function readMoreFive() {
+    document.querySelector(".holiday-text-five").classList.toggle("read-more")
+    document.querySelector(".holiday-text-p-five").classList.toggle("read-more")
+    document.querySelector(".holiday-text-rm-five").classList.toggle("read-more")
+}
+
+function readMoreSix() {
+    document.querySelector(".holiday-text-six").classList.toggle("read-more")
+    document.querySelector(".holiday-text-p-six").classList.toggle("read-more")
+    document.querySelector(".holiday-text-rm-six").classList.toggle("read-more")
+}
+
+function readMoreSeven() {
+    document.querySelector(".holiday-text-seven").classList.toggle("read-more")
+    document.querySelector(".holiday-text-p-seven").classList.toggle("read-more")
+    document.querySelector(".holiday-text-rm-seven").classList.toggle("read-more")
+}
+
 function showCopy() {
     document.querySelector(".copyright").classList.toggle("show")
     document.querySelector(".copyright-p").classList.toggle("show")
