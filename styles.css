@@ -680,9 +680,9 @@ slide show
     background-image: url(images/apartments/top1-wohn-neu.JPG);
     background-size: cover;
     background-position: center;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(150, 150, 150);
 /*FÜR BLEND-MODE IMMER AUCH BACKGROUND COLOR VERWENDEN!*/
-    background-blend-mode: soft-light;
+    background-blend-mode: multiply;
     margin-bottom: 2rem;
 }
 
@@ -691,9 +691,9 @@ slide show
     background-image: url(images/apartments/top2-wohnküch-neu.JPG);
     background-size: cover;
     background-position: center;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(150, 150, 150);
 /*FÜR BLEND-MODE IMMER AUCH BACKGROUND COLOR VERWENDEN!*/
-    background-blend-mode: soft-light;
+    background-blend-mode: multiply;
 }
 
 @media (min-width: 400px) {
