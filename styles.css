@@ -733,7 +733,19 @@ slide show
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 950px) {
+    .welcome-content {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1020px) {
+    .welcome-content {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) {
     .welcome-content {
         justify-content: space-around;
     }
