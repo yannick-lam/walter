@@ -113,6 +113,12 @@ function readMoreTwo() {
     document.querySelector(".holiday-text-rm-two").classList.toggle("read-more")
 }
 
+function readMoreThree() {
+    document.querySelector(".holiday-text-three").classList.toggle("read-more")
+    document.querySelector(".holiday-text-p-three").classList.toggle("read-more")
+    document.querySelector(".holiday-text-rm-three").classList.toggle("read-more")
+}
+
 function showCopy() {
     document.querySelector(".copyright").classList.toggle("show")
     document.querySelector(".copyright-p").classList.toggle("show")
