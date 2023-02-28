@@ -1486,6 +1486,11 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
     color: black;
 }
 
+.top-child-down .refs {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
 .footer-bottom-container {
     /* border: 3px solid green; */
     display: flex;
@@ -1541,6 +1546,10 @@ input:focus, select:focus, textarea:focus, .next-p:focus, .back-p:focus, .next-b
 @media (min-width: 500px) {
     .footer-container {
         padding: 3.5rem 3rem 0;
+    }
+
+    .top-child-down .refs {
+        max-width: inherit;
     }
 }
 
@@ -2655,10 +2664,27 @@ Impressum
 .impressum-container {
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.impressum-container img {
+    margin-top: 1.5rem;
+}
+
+.impressum-container p {
+    margin-top: 0.7rem;
 }
 
 .impressum-container h1 {
     padding: 1.8rem 0;
+}
+
+.impressum-container h2 {
+    padding: 1.5rem 0 0.5rem;
+}
+
+.impressum-container h3 {
+    padding: 1rem 0 0.3rem;
 }
 
 .impressum-child-container p:not(:last-of-type) {

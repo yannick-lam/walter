@@ -312,10 +312,6 @@ function sendMail() {
 
 
 
-
-
-
-
 // var count = 0
 // setInterval(function() {
 //     document.querySelector(".slide" + count).classList.remove("slideleft")
